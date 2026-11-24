@@ -124,6 +124,35 @@
       },
       "source": "native.uniref50.jsonl",
       "source_sha256": "362b4810b1f7183924a5ca2ff7b544d044d2dcd352f398acc7bfd9950a4fd2e1"
+    },
+    {
+      "id": "ctrl.trion1_bdlm.dplm1",
+      "name": "Trion1-M(dplm1)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "score": 45.64150455093384,
+      "scores": {
+        "plddt_overall": 45.64150455093384,
+        "plddt_100": 45.042460651397704,
+        "plddt_200": 48.93274967193604,
+        "plddt_300": 44.578085613250735,
+        "plddt_400": 46.53899236679077,
+        "plddt_500": 43.115234451293944,
+        "repeat": 4.382233333333333,
+        "rep2": 44.69117088282172,
+        "rep5": 10.146966522600163
+      },
+      "source": "ctrl.trion1_bdlm.dplm1.jsonl",
+      "source_sha256": "86c9243d532be12716366661d6ceb92fc9a7ca4d96ff6a3239eb4524caf44290"
     }
   ],
   "status": "results_available",
