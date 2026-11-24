@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protein Understanding Leaderboard · Tianyu Lu</title>
+  <meta name="description" content="AMIX2 protein understanding benchmark: sortable model scores across function, interaction, and localization tasks.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="nav-bar">
+    <a class="brand" href="./"><span class="brand-gem" aria-hidden="true">PB</span>Protein Benchmark</a>
+    <nav class="nav-links" aria-label="Site"><a href="https://lutianyu21.github.io/">Tianyu Lu</a><a href="https://github.com/lutianyu21/lutianyu21.github.io">GitHub ↗</a></nav>
+  </div></header>
+  <main>
+    <nav class="benchmark-tabs" aria-label="Benchmark pages">
+      <a href="./">Sequence Uncond</a>
+      <a href="understanding.html" aria-current="page">Sequence Understanding <span>S2T</span></a>
+    </nav>
+    <span class="sec-kicker">Benchmark results</span>
+    <h1>Protein understanding leaderboard</h1>
+    <p class="section-sub">Sequence-to-text evaluation on AMIX2. Compare model accuracy across protein function, interaction and binding, and location and modification.</p>
+    <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">S2T · 17 model settings · 455 questions</span></span><span class="sub">Click a metric to sort</span></div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Protein understanding scores, scroll horizontally on small screens">
+      <table id="lb-table">
+        <caption class="sr-only">AMIX2 S2T accuracy (%). Higher is better. Click a metric heading to sort.</caption>
+        <thead><tr>
+          <th class="num" scope="col">#</th><th scope="col">Model</th>
+          <th class="num" scope="col" data-sort="0" aria-sort="descending"><button type="button" aria-label="Sort by Overall accuracy">Overall</button><span class="metric-meta">ACC (%) · n = 455</span></th>
+          <th class="num" scope="col" data-sort="1" aria-sort="none"><button type="button" aria-label="Sort by Function and Family accuracy">Function &amp;<br>Family</button><span class="metric-meta">ACC (%) · n = 150</span></th>
+          <th class="num" scope="col" data-sort="2" aria-sort="none"><button type="button" aria-label="Sort by Interaction and Binding accuracy">Interaction &amp;<br>Binding</button><span class="metric-meta">ACC (%) · n = 152</span></th>
+          <th class="num" scope="col" data-sort="3" aria-sort="none"><button type="button" aria-label="Sort by Location and Modification accuracy">Location &amp;<br>Modification</button><span class="metric-meta">ACC (%) · n = 153</span></th>
+        </tr></thead>
+        <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-anthropic">Anthropic</span><strong>Claude Opus 4.7</strong></div></th><td class="num" data-value="64.39"><span class="lb-score-cell"><strong>64.39</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-anthropic" style="width:64.39%"></span></span></span></td><td class="num" data-value="64.0"><strong>64.00</strong></td><td class="num" data-value="61.84">61.84</td><td class="num" data-value="67.32">67.32</td></tr>
+<tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix2</span><strong>Amix2-SFT2-4B</strong></div></th><td class="num" data-value="64.39"><span class="lb-score-cell"><strong>64.39</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:64.39%"></span></span></span></td><td class="num" data-value="59.33">59.33</td><td class="num" data-value="62.5"><strong>62.50</strong></td><td class="num" data-value="71.24"><strong>71.24</strong></td></tr>
+<tr class="lead-row"><td class="num rank">3</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix2</span><strong>Amix2-SFT1-4B</strong></div></th><td class="num" data-value="61.76"><span class="lb-score-cell"><strong>61.76</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:61.76%"></span></span></span></td><td class="num" data-value="58.67">58.67</td><td class="num" data-value="61.18">61.18</td><td class="num" data-value="65.36">65.36</td></tr>
+<tr class=""><td class="num rank">4</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix2</span><strong>Amix2-Uni-4B</strong></div></th><td class="num" data-value="57.14"><span class="lb-score-cell"><strong>57.14</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:57.14%"></span></span></span></td><td class="num" data-value="56.0">56.00</td><td class="num" data-value="53.95">53.95</td><td class="num" data-value="61.44">61.44</td></tr>
+<tr class=""><td class="num rank">5</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Gemini</span><strong>Gemini 3.1 Pro</strong></div></th><td class="num" data-value="52.66"><span class="lb-score-cell"><strong>52.66</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:52.66%"></span></span></span></td><td class="num" data-value="42.0">42.00</td><td class="num" data-value="54.61">54.61</td><td class="num" data-value="61.18">61.18</td></tr>
+<tr class=""><td class="num rank">6</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-openai">OpenAI</span><strong>GPT-5.5 xHigh</strong></div></th><td class="num" data-value="50.51"><span class="lb-score-cell"><strong>50.51</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-openai" style="width:50.51%"></span></span></span></td><td class="num" data-value="33.11">33.11</td><td class="num" data-value="51.66">51.66</td><td class="num" data-value="66.44">66.44</td></tr>
+<tr class=""><td class="num rank">7</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Gemini</span><strong>Gemini 3 Flash Thinking</strong></div></th><td class="num" data-value="49.67"><span class="lb-score-cell"><strong>49.67</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:49.67%"></span></span></span></td><td class="num" data-value="42.0">42.00</td><td class="num" data-value="46.05">46.05</td><td class="num" data-value="60.78">60.78</td></tr>
+<tr class=""><td class="num rank">8</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Gemini</span><strong>Gemini 3.1 Pro Thinking</strong></div></th><td class="num" data-value="49.45"><span class="lb-score-cell"><strong>49.45</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:49.45%"></span></span></span></td><td class="num" data-value="41.33">41.33</td><td class="num" data-value="47.37">47.37</td><td class="num" data-value="59.48">59.48</td></tr>
+<tr class=""><td class="num rank">9</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-openai">OpenAI</span><strong>GPT-5.5</strong></div></th><td class="num" data-value="48.57"><span class="lb-score-cell"><strong>48.57</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-openai" style="width:48.57%"></span></span></span></td><td class="num" data-value="32.0">32.00</td><td class="num" data-value="46.05">46.05</td><td class="num" data-value="67.32">67.32</td></tr>
+<tr class=""><td class="num rank">10</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-openai">OpenAI</span><strong>GPT-5.4</strong></div></th><td class="num" data-value="47.25"><span class="lb-score-cell"><strong>47.25</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-openai" style="width:47.25%"></span></span></span></td><td class="num" data-value="29.33">29.33</td><td class="num" data-value="42.76">42.76</td><td class="num" data-value="69.28">69.28</td></tr>
+<tr class=""><td class="num rank">11</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-anthropic">Anthropic</span><strong>Claude Opus 4.6 Thinking</strong></div></th><td class="num" data-value="46.82"><span class="lb-score-cell"><strong>46.82</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-anthropic" style="width:46.82%"></span></span></span></td><td class="num" data-value="32.67">32.67</td><td class="num" data-value="48.03">48.03</td><td class="num" data-value="59.48">59.48</td></tr>
+<tr class=""><td class="num rank">12</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DeepSeek</span><strong>DeepSeek V4 Pro</strong></div></th><td class="num" data-value="46.38"><span class="lb-score-cell"><strong>46.38</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:46.38%"></span></span></span></td><td class="num" data-value="36.67">36.67</td><td class="num" data-value="44.74">44.74</td><td class="num" data-value="57.52">57.52</td></tr>
+<tr class=""><td class="num rank">13</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-openai">OpenAI</span><strong>GPT-OSS-120B</strong></div></th><td class="num" data-value="41.54"><span class="lb-score-cell"><strong>41.54</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-openai" style="width:41.54%"></span></span></span></td><td class="num" data-value="32.0">32.00</td><td class="num" data-value="37.5">37.50</td><td class="num" data-value="54.9">54.90</td></tr>
+<tr class=""><td class="num rank">14</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">GLM</span><strong>GLM-5.1</strong></div></th><td class="num" data-value="38.46"><span class="lb-score-cell"><strong>38.46</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:38.46%"></span></span></span></td><td class="num" data-value="26.67">26.67</td><td class="num" data-value="37.5">37.50</td><td class="num" data-value="50.98">50.98</td></tr>
+<tr class=""><td class="num rank">15</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix2</span><strong>Amix2-CPT2-4B</strong></div></th><td class="num" data-value="27.91"><span class="lb-score-cell"><strong>27.91</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:27.91%"></span></span></span></td><td class="num" data-value="32.0">32.00</td><td class="num" data-value="19.08">19.08</td><td class="num" data-value="32.68">32.68</td></tr>
+<tr class=""><td class="num rank">16</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix2</span><strong>Amix2-CPT1-4B</strong></div></th><td class="num" data-value="27.03"><span class="lb-score-cell"><strong>27.03</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:27.03%"></span></span></span></td><td class="num" data-value="25.33">25.33</td><td class="num" data-value="16.45">16.45</td><td class="num" data-value="39.22">39.22</td></tr>
+<tr class=""><td class="num rank">17</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">BioMatrix</span><strong>BioMatrix-4B</strong></div></th><td class="num" data-value="26.81"><span class="lb-score-cell"><strong>26.81</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:26.81%"></span></span></span></td><td class="num" data-value="31.33">31.33</td><td class="num" data-value="25.0">25.00</td><td class="num" data-value="24.18">24.18</td></tr></tbody>
+      </table>
+    </div>
+    <p class="sub">Higher is better for all metrics. Bars show overall accuracy on a 0–100 scale. Bold values mark each column’s best score; overall scores are bold throughout.</p>
+    <p class="sub" id="sort-status" role="status" aria-live="polite">Sorted by Overall · highest first. Equal scores share a rank.</p>
+    <div class="protocol sub">
+      <p><strong>Evaluation scope.</strong> 455 reference questions: Function &amp; Family (150), Interaction &amp; Binding (152), and Location &amp; Modification (153). Hydrophobicity Property and Structural Composition questions are excluded.</p>
+      <p>Scores are reproduced from the existing benchmark summary, without recomputing or combining metrics. Models without reported S2T results are omitted. <a href="scores.json">Score data ↗</a></p>
+    </div>
+    <footer>Scoreboard design adapted from <a href="https://jvogan.github.io/trace2fold/#results">Trace2Fold</a> by Jacob Vogan · <a href="THIRD_PARTY_LICENSE.txt">MIT license</a></footer>
+  </main>
+  <script>
+    'use strict';
+    // Nulls remain last in both directions; ties retain source order.
+    function compareValues(a, b, ascending) {
+      if (a === null && b === null) return 0;
+      if (a === null) return 1;
+      if (b === null) return -1;
+      return ascending ? a - b : b - a;
+    }
+    const table = document.getElementById('lb-table');
+    const tbody = table.tBodies[0];
+    const originalRows = Array.from(tbody.rows);
+    const headings = Array.from(table.querySelectorAll('th[data-sort]'));
+    let activeMetric = 0;
+    let ascending = false;
+    function valueOf(row, metric) {
+      const value = row.cells[metric + 2].dataset.value;
+      return value === '' ? null : Number(value);
+    }
+    function sortBy(metric) {
+      ascending = metric === activeMetric ? !ascending : false;
+      activeMetric = metric;
+      const rows = originalRows.slice().sort((a,b) => compareValues(valueOf(a,metric), valueOf(b,metric), ascending));
+      const ranking = originalRows.map(row => valueOf(row,metric)).filter(value => value !== null).sort((a,b) => b-a);
+      rows.forEach(row => {
+        const value = valueOf(row,metric);
+        const rank = value === null ? null : ranking.indexOf(value)+1;
+        row.cells[0].textContent = rank === null ? '—' : String(rank);
+        row.classList.toggle('lead-row', rank !== null && rank <= 3);
+        tbody.appendChild(row);
+      });
+      headings.forEach((heading,index) => heading.setAttribute('aria-sort',index === metric ? (ascending ? 'ascending' : 'descending') : 'none'));
+      const label = ['Overall','Function & Family','Interaction & Binding','Location & Modification'][metric];
+      document.getElementById('sort-status').textContent = `Sorted by ${label} · ${ascending ? 'lowest' : 'highest'} first. Ranks indicate performance, with equal scores sharing a rank.`;
+    }
+    headings.forEach((heading,index) => heading.querySelector('button').addEventListener('click',() => sortBy(index)));
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "task": "Sequence Uncond",
+  "length_mode": "fixed",
+  "lengths_aa": [
+    100,
+    200,
+    300,
+    400,
+    500
+  ],
+  "models": [],
+  "status": "awaiting_results",
+  "metrics": [
+    {
+      "key": "plddt_overall",
+      "label": "Overall pLDDT",
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_100",
+      "label": "pLDDT · 100 aa",
+      "length_aa": 100,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_200",
+      "label": "pLDDT · 200 aa",
+      "length_aa": 200,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_300",
+      "label": "pLDDT · 300 aa",
+      "length_aa": 300,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_400",
+      "label": "pLDDT · 400 aa",
+      "length_aa": 400,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_500",
+      "label": "pLDDT · 500 aa",
+      "length_aa": 500,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "repeat",
+      "label": "Repeat",
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep2",
+      "label": "Rep2",
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep5",
+      "label": "Rep5",
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    }
+  ],
+  "repetition_protocol": {
+    "source": "qiukeyue PDFBench",
+    "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",
+    "repn": "1 - unique n-grams / (L - n + 1), with 0 for L <= n; n = 2 or 5.",
+    "display": "Mean per-sequence value multiplied by 100."
+  }
+}
