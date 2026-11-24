@@ -45,7 +45,7 @@
       "source": "baseline/esm-if1/B2S_monomeric.json",
       "source_sha256": "2b9669b38563c28ee6ea23bc5bc5b6b6a23aab1a4ccf928a4baf30c3c7ad3d09",
       "parameter_size": null,
-      "family": "ESM-IF1",
+      "family": "ESM",
       "style": "openai"
     },
     {
@@ -65,7 +65,7 @@
       "source": "baseline/esm3/B2S_monomeric.json",
       "source_sha256": "431cf961a0a6b99f15acb0bba14e5e5578985412886fdab42c832897e63a4663",
       "parameter_size": null,
-      "family": "ESM3",
+      "family": "ESM",
       "style": "openai"
     },
     {

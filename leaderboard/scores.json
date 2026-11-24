@@ -38,7 +38,7 @@
     },
     {
       "name": "Amix2-SFT2-4B",
-      "family": "Amix2",
+      "family": "Amix",
       "style": "gemini",
       "score": 64.39,
       "scores": [
@@ -50,7 +50,7 @@
     },
     {
       "name": "Amix2-SFT1-4B",
-      "family": "Amix2",
+      "family": "Amix",
       "style": "gemini",
       "score": 61.76,
       "scores": [
@@ -62,7 +62,7 @@
     },
     {
       "name": "Amix2-Uni-4B",
-      "family": "Amix2",
+      "family": "Amix",
       "style": "gemini",
       "score": 57.14,
       "scores": [
@@ -194,7 +194,7 @@
     },
     {
       "name": "Amix2-CPT2-4B",
-      "family": "Amix2",
+      "family": "Amix",
       "style": "gemini",
       "score": 27.91,
       "scores": [
@@ -206,7 +206,7 @@
     },
     {
       "name": "Amix2-CPT1-4B",
-      "family": "Amix2",
+      "family": "Amix",
       "style": "gemini",
       "score": 27.03,
       "scores": [

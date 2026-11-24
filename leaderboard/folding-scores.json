@@ -157,7 +157,7 @@
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
       "parameter_size": "3.7B",
-      "family": "ESMFold",
+      "family": "ESM",
       "style": "openai"
     },
     {
@@ -395,7 +395,7 @@
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
       "parameter_size": "3.5B",
-      "family": "ESMFlow",
+      "family": "ESM",
       "style": "openai"
     },
     {
@@ -645,7 +645,7 @@
       "protocol": "TMscore -seq fallback",
       "tmus_algorithm": "TMscore -seq",
       "parameter_size": "1.4B",
-      "family": "ESMDiff",
+      "family": "ESM",
       "style": "openai"
     },
     {
@@ -789,7 +789,7 @@
       "protocol": "TMscore -seq fallback",
       "tmus_algorithm": "TMscore -seq",
       "parameter_size": "1.4B",
-      "family": "ESM3",
+      "family": "ESM",
       "style": "openai"
     },
     {
@@ -1022,10 +1022,10 @@
     },
     {
       "id": "biomatrix-4b-oracle-1",
-      "name": "BioMatrix@1",
+      "name": "BioMatrix",
       "family_name": "BioMatrix",
       "variant": "",
-      "control": true,
+      "control": false,
       "group": "MMLLM-based",
       "score": 34.66462841530055,
       "scores": {
@@ -1055,8 +1055,8 @@
       "protocol": "pomni-folding-v3",
       "tmus_algorithm": "USalign",
       "parameter_size": "4B",
-      "family": "Ctrl",
-      "style": "ctrl"
+      "family": "BioMatrix",
+      "style": "open"
     }
   ],
   "source": "trion/baseline/monomeric_folding/leaderboard_folding.html",
