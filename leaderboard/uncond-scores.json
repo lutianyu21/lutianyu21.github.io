@@ -26,6 +26,11 @@
       "score": 80.27254156112672,
       "scores": {
         "plddt_overall": 80.27254156112672,
+        "plddt_100": 76.93474544525147,
+        "plddt_200": 83.76878984451294,
+        "plddt_300": 81.06079668045044,
+        "plddt_400": 80.49212490081787,
+        "plddt_500": 79.10625093460084,
         "repeat": 5.192333333333334,
         "rep2": 44.96727942285879,
         "rep5": 5.830447988685316
@@ -50,6 +55,11 @@
       "score": 70.88119307327271,
       "scores": {
         "plddt_overall": 70.88119307327271,
+        "plddt_100": 53.10676809310913,
+        "plddt_200": 72.16232698440552,
+        "plddt_300": 75.1398711013794,
+        "plddt_400": 77.995950756073,
+        "plddt_500": 76.00104843139648,
         "repeat": 2.4446333333333334,
         "rep2": 39.26393063914839,
         "rep5": 0.5445224186871653
@@ -62,8 +72,49 @@
   "control_policy": "Controls participate in sorting, display Ctrl instead of a rank, and are excluded from ranking and best-score comparisons.",
   "metrics": [
     {
-      "key": "plddt_overall",
-      "label": "pLDDT",
+      "key": "plddt_100",
+      "label": "pLDDT 100 aa",
+      "length_aa": 100,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_200",
+      "label": "pLDDT 200 aa",
+      "length_aa": 200,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_300",
+      "label": "pLDDT 300 aa",
+      "length_aa": 300,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_400",
+      "label": "pLDDT 400 aa",
+      "length_aa": 400,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_500",
+      "label": "pLDDT 500 aa",
+      "length_aa": 500,
       "direction": "higher",
       "scale": [
         0,
@@ -111,7 +162,7 @@
     ],
     "source_metric": "plddt_overall"
   },
-  "aggregation": "Arithmetic mean over all sequences across the five fixed generation lengths.",
+  "aggregation": "Score and repetition metrics average all sequences; each length-specific pLDDT averages only sequences of that length. Overall pLDDT is retained in the data as plddt_overall.",
   "repetition_protocol": {
     "source": "qiukeyue PDFBench",
     "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",
