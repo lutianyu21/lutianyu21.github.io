@@ -73,11 +73,12 @@ footer { margin-top:30px; color:var(--subtle); font-size:.8rem; }
 .benchmark-tabs a span { font-size:.75rem; font-weight:400; margin-left:5px; }
 a:focus-visible,.table-wrap:focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
 .pending-badge { color:var(--subtle); font-size:.8rem; padding:3px 10px; border:1px solid var(--rule); border-radius:999px; background:var(--surface-soft); }
-#uncond-table { min-width:940px; }
+#uncond-table { min-width:1520px; }
 #uncond-table th,#uncond-table td { padding:12px 10px; line-height:1.35; }
 #uncond-table th:nth-child(2)[rowspan] { min-width:140px; }
 #uncond-table .metric-groups th[colspan] { text-align:center; padding:14px 10px; }
 #uncond-table .group-start { border-left:1px solid var(--rule); }
+#uncond-table .rep-column { min-width:142px; white-space:nowrap; }
 .direction { color:var(--blue); }
 #uncond-table .empty-row td { text-align:center; padding:54px 20px 58px; background:var(--surface); }
 .empty-row strong { display:block; color:var(--ink); font-size:1rem; font-weight:650; }

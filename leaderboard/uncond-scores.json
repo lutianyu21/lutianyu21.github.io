@@ -10,60 +10,139 @@
   ],
   "models": [],
   "status": "awaiting_results",
+  "column_groups": [
+    {
+      "label": "Overall",
+      "length_aa": null,
+      "columns": [
+        {
+          "label": "pLDDT",
+          "metric_keys": [
+            "plddt_overall"
+          ]
+        },
+        {
+          "label": "Rep",
+          "metric_keys": [
+            "repeat",
+            "rep2",
+            "rep5"
+          ],
+          "separator": " / "
+        }
+      ]
+    },
+    {
+      "label": "100 aa",
+      "length_aa": 100,
+      "columns": [
+        {
+          "label": "pLDDT",
+          "metric_keys": [
+            "plddt_100"
+          ]
+        },
+        {
+          "label": "Rep",
+          "metric_keys": [
+            "repeat_100",
+            "rep2_100",
+            "rep5_100"
+          ],
+          "separator": " / "
+        }
+      ]
+    },
+    {
+      "label": "200 aa",
+      "length_aa": 200,
+      "columns": [
+        {
+          "label": "pLDDT",
+          "metric_keys": [
+            "plddt_200"
+          ]
+        },
+        {
+          "label": "Rep",
+          "metric_keys": [
+            "repeat_200",
+            "rep2_200",
+            "rep5_200"
+          ],
+          "separator": " / "
+        }
+      ]
+    },
+    {
+      "label": "300 aa",
+      "length_aa": 300,
+      "columns": [
+        {
+          "label": "pLDDT",
+          "metric_keys": [
+            "plddt_300"
+          ]
+        },
+        {
+          "label": "Rep",
+          "metric_keys": [
+            "repeat_300",
+            "rep2_300",
+            "rep5_300"
+          ],
+          "separator": " / "
+        }
+      ]
+    },
+    {
+      "label": "400 aa",
+      "length_aa": 400,
+      "columns": [
+        {
+          "label": "pLDDT",
+          "metric_keys": [
+            "plddt_400"
+          ]
+        },
+        {
+          "label": "Rep",
+          "metric_keys": [
+            "repeat_400",
+            "rep2_400",
+            "rep5_400"
+          ],
+          "separator": " / "
+        }
+      ]
+    },
+    {
+      "label": "500 aa",
+      "length_aa": 500,
+      "columns": [
+        {
+          "label": "pLDDT",
+          "metric_keys": [
+            "plddt_500"
+          ]
+        },
+        {
+          "label": "Rep",
+          "metric_keys": [
+            "repeat_500",
+            "rep2_500",
+            "rep5_500"
+          ],
+          "separator": " / "
+        }
+      ]
+    }
+  ],
   "metrics": [
     {
       "key": "plddt_overall",
       "label": "Overall pLDDT",
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_100",
-      "label": "pLDDT · 100 aa",
-      "length_aa": 100,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_200",
-      "label": "pLDDT · 200 aa",
-      "length_aa": 200,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_300",
-      "label": "pLDDT · 300 aa",
-      "length_aa": 300,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_400",
-      "label": "pLDDT · 400 aa",
-      "length_aa": 400,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_500",
-      "label": "pLDDT · 500 aa",
-      "length_aa": 500,
+      "length_aa": null,
       "direction": "higher",
       "scale": [
         0,
@@ -72,7 +151,8 @@
     },
     {
       "key": "repeat",
-      "label": "Repeat",
+      "label": "Overall Repeat",
+      "length_aa": null,
       "direction": "lower",
       "unit": "percent",
       "scale": [
@@ -82,7 +162,8 @@
     },
     {
       "key": "rep2",
-      "label": "Rep2",
+      "label": "Overall Rep2",
+      "length_aa": null,
       "direction": "lower",
       "unit": "percent",
       "scale": [
@@ -92,7 +173,223 @@
     },
     {
       "key": "rep5",
-      "label": "Rep5",
+      "label": "Overall Rep5",
+      "length_aa": null,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_100",
+      "label": "100 aa pLDDT",
+      "length_aa": 100,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "repeat_100",
+      "label": "100 aa Repeat",
+      "length_aa": 100,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep2_100",
+      "label": "100 aa Rep2",
+      "length_aa": 100,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep5_100",
+      "label": "100 aa Rep5",
+      "length_aa": 100,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_200",
+      "label": "200 aa pLDDT",
+      "length_aa": 200,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "repeat_200",
+      "label": "200 aa Repeat",
+      "length_aa": 200,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep2_200",
+      "label": "200 aa Rep2",
+      "length_aa": 200,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep5_200",
+      "label": "200 aa Rep5",
+      "length_aa": 200,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_300",
+      "label": "300 aa pLDDT",
+      "length_aa": 300,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "repeat_300",
+      "label": "300 aa Repeat",
+      "length_aa": 300,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep2_300",
+      "label": "300 aa Rep2",
+      "length_aa": 300,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep5_300",
+      "label": "300 aa Rep5",
+      "length_aa": 300,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_400",
+      "label": "400 aa pLDDT",
+      "length_aa": 400,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "repeat_400",
+      "label": "400 aa Repeat",
+      "length_aa": 400,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep2_400",
+      "label": "400 aa Rep2",
+      "length_aa": 400,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep5_400",
+      "label": "400 aa Rep5",
+      "length_aa": 400,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "plddt_500",
+      "label": "500 aa pLDDT",
+      "length_aa": 500,
+      "direction": "higher",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "repeat_500",
+      "label": "500 aa Repeat",
+      "length_aa": 500,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep2_500",
+      "label": "500 aa Rep2",
+      "length_aa": 500,
+      "direction": "lower",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "rep5_500",
+      "label": "500 aa Rep5",
+      "length_aa": 500,
       "direction": "lower",
       "unit": "percent",
       "scale": [
@@ -101,6 +398,7 @@
       ]
     }
   ],
+  "aggregation": "Arithmetic mean over sequences: all sequences for Overall, matching fixed length for each length group.",
   "repetition_protocol": {
     "source": "qiukeyue PDFBench",
     "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",

@@ -28,36 +28,35 @@
     </div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Sequence Uncond scores, scroll horizontally on small screens">
       <table id="uncond-table">
-        <caption class="sr-only">Sequence Uncond benchmark. pLDDT overall and at 100, 200, 300, 400, and 500 amino acids; Repeat, Rep2, and Rep5. Results have not been added.</caption>
-        <colgroup span="2"></colgroup><colgroup span="6"></colgroup><colgroup span="3"></colgroup>
+        <caption class="sr-only">Sequence Uncond benchmark. Overall and 100, 200, 300, 400, and 500 amino acid groups, each with pLDDT and a Rep cell containing Repeat / Rep2 / Rep5 (%). Results have not been added.</caption>
+        <colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup>
         <thead>
           <tr class="metric-groups">
             <th class="num" scope="col" rowspan="2">#</th>
             <th scope="col" rowspan="2">Model</th>
-            <th class="group-start" scope="colgroup" colspan="6">pLDDT <span class="direction">↑</span></th>
-            <th class="group-start" scope="colgroup" colspan="3">Repetitiveness <span class="direction">↓</span></th>
+            <th class="group-start" scope="colgroup" colspan="2">Overall</th>
+<th class="group-start" scope="colgroup" colspan="2">100 aa</th>
+<th class="group-start" scope="colgroup" colspan="2">200 aa</th>
+<th class="group-start" scope="colgroup" colspan="2">300 aa</th>
+<th class="group-start" scope="colgroup" colspan="2">400 aa</th>
+<th class="group-start" scope="colgroup" colspan="2">500 aa</th>
           </tr>
-          <tr>
-            <th class="num group-start" scope="col">Overall</th>
-            <th class="num" scope="col">100 aa</th>
-            <th class="num" scope="col">200 aa</th>
-            <th class="num" scope="col">300 aa</th>
-            <th class="num" scope="col">400 aa</th>
-            <th class="num" scope="col">500 aa</th>
-            <th class="num group-start" scope="col">Repeat</th>
-            <th class="num" scope="col">Rep2</th>
-            <th class="num" scope="col">Rep5</th>
-          </tr>
+          <tr><th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="Overall Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
+<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="100 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
+<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="200 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
+<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="300 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
+<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="400 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
+<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="500 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th></tr>
         </thead>
         <tbody>
-          <tr class="empty-row"><td colspan="11">
+          <tr class="empty-row"><td colspan="14">
             <strong>No results yet</strong>
             <span>Model scores will appear here once evaluations are available.</span>
           </td></tr>
         </tbody>
       </table>
     </div>
-    <p class="sub">pLDDT is reported overall and separately for each fixed generation length. Repetitiveness metrics summarize generated sequences across lengths.</p>
+    <p class="sub">Each length group reports pLDDT and Rep. Rep cells show Repeat / Rep2 / Rep5 (%), in that order. Overall averages all sequences; each fixed-length group averages only sequences of that length.</p>
     <div class="protocol sub">
       <p><strong>Fixed-length evaluation.</strong> Target lengths are 100, 200, 300, 400, and 500 amino acids. The table is awaiting model results.</p>
       <p><strong>Repeat.</strong> Percentage of residues covered by contiguous motifs of 1–20 residues repeated at least three times. Overlapping repeat regions are merged.</p>
