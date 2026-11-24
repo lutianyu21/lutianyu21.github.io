@@ -10,6 +10,64 @@
   ],
   "models": [
     {
+      "id": "official.dplm2.1",
+      "name": "DPLM2.1",
+      "family": "DPLM",
+      "style": "open",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "score": 85.0364128036499,
+      "scores": {
+        "plddt_overall": 85.0364128036499,
+        "plddt_100": 78.39811710357667,
+        "plddt_200": 86.68543968200683,
+        "plddt_300": 87.4438387298584,
+        "plddt_400": 85.76009635925293,
+        "plddt_500": 86.89457214355468,
+        "repeat": 2.8276666666666666,
+        "rep2": 43.85095969056862,
+        "rep5": 1.104052101805558
+      },
+      "source": "official.dplm2.1.jsonl",
+      "source_sha256": "0c51c0ecfd23bad44c7a66e21dec69ba2005d8d8d45be840a8c8a2f52b5d1e95"
+    },
+    {
+      "id": "official.dplm1",
+      "name": "DPLM1",
+      "family": "DPLM",
+      "style": "open",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "score": 81.96281246948242,
+      "scores": {
+        "plddt_overall": 81.96281246948242,
+        "plddt_100": 72.17018465042115,
+        "plddt_200": 84.40162979125977,
+        "plddt_300": 83.35803783416748,
+        "plddt_400": 85.73474605560303,
+        "plddt_500": 84.14946401596069,
+        "repeat": 12.923166666666667,
+        "rep2": 55.65194316876638,
+        "rep5": 17.02402565052335
+      },
+      "source": "official.dplm1.jsonl",
+      "source_sha256": "9a37150f9862f6a344bb217472603966bed6aab7570c88a684aef49dfc7870a3"
+    },
+    {
       "id": "official.dplm2",
       "name": "DPLM2",
       "family": "DPLM",
