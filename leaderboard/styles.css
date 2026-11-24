@@ -37,6 +37,8 @@ thead th { color:var(--ink); font-size:.88rem; font-weight:650; border-bottom:1p
 td.num,th.num { text-align:center; white-space:nowrap; }
 tbody tr:last-child>* { border-bottom:0; }
 tr.lead-row>* { background:rgba(232,240,254,.36); }
+tr.control-row>* { background:var(--surface-soft); }
+tr.control-row .rank { color:var(--subtle); font-size:.8rem; font-weight:650; }
 tbody tr:hover>* { background:#eef3fb; }
 .leaderboard-table th,.leaderboard-table td { padding:5px 8px; line-height:1.24; vertical-align:middle; text-align:center; }
 .leaderboard-table td,.leaderboard-table tbody th { font-size:.9rem; }

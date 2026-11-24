@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Protein Benchmark Leaderboard · Tianyu Lu</title>
   <meta name="description" content="Protein benchmark leaderboards for unconditional sequence generation and AMIX2 sequence understanding.">
-  <link rel="stylesheet" href="styles.css?v=256cd48c315d">
+  <link rel="stylesheet" href="styles.css?v=89dccddd74c9">
 </head>
 <body>
   <header class="site-header"><div class="nav-bar">
@@ -23,7 +23,7 @@
     <h2 id="sequence-uncond-title">Sequence Uncond</h2>
     <p class="section-sub">Unconditional protein sequence generation. Compare overall folding confidence and sequence repetitiveness.</p>
     <div class="lb-top-bar">
-      <span class="view-label">Scoreboard <span class="count">Sequence Uncond · 1 model · 500 sequences</span></span>
+      <span class="view-label">Scoreboard <span class="count">Sequence Uncond · 1 model + 1 control</span></span>
       <span class="sub">Click a metric to sort</span>
     </div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Sequence Uncond scores, scroll horizontally on small screens">
@@ -36,13 +36,15 @@
           <th class="num" scope="col" data-sort="2" data-label="Rep2" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by Rep2 percentage, lower is better"><span class="metric-label">Rep2</span></button></th>
           <th class="num" scope="col" data-sort="3" data-label="Rep5" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by Rep5 percentage, lower is better"><span class="metric-label">Rep5</span></button></th>
         </tr></thead>
-        <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2 (official)</strong></div></th><td class="num" data-value="80.27254156112672"><span class="lb-score-cell"><span class="metric-value"><strong>80.27</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:80.27254156112672%"></span></span></span></td><td class="num" data-value="5.192333333333334"><span class="metric-value"><strong>5.19</strong></span></td><td class="num" data-value="44.96727942285879"><span class="metric-value"><strong>44.97</strong></span></td><td class="num" data-value="5.830447988685316"><span class="metric-value"><strong>5.83</strong></span></td></tr></tbody>
+        <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2</strong></div></th><td class="num" data-value="80.27254156112672"><span class="lb-score-cell"><span class="metric-value"><strong>80.27</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:80.27254156112672%"></span></span></span></td><td class="num" data-value="5.192333333333334"><span class="metric-value"><strong>5.19</strong></span></td><td class="num" data-value="44.96727942285879"><span class="metric-value"><strong>44.97</strong></span></td><td class="num" data-value="5.830447988685316"><span class="metric-value"><strong>5.83</strong></span></td></tr>
+<tr class="control-row" data-control="true"><td class="num rank">Ctrl</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-ctrl">Ctrl</span><strong>UniRef50</strong></div></th><td class="num" data-value="70.88119307327271"><span class="lb-score-cell"><span class="metric-value"><strong>70.88</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-ctrl" style="width:70.88119307327271%"></span></span></span></td><td class="num" data-value="2.4446333333333334"><span class="metric-value">2.44</span></td><td class="num" data-value="39.26393063914839"><span class="metric-value">39.26</span></td><td class="num" data-value="0.5445224186871653"><span class="metric-value">0.54</span></td></tr></tbody>
       </table>
     </div>
     <p class="sub">All scores average the full set of sequences. pLDDT uses a 0–100 scale; Repeat, Rep2 and Rep5 are percentages. Bars show overall pLDDT.</p>
-    <p class="sub" id="uncond-sort-status" role="status" aria-live="polite">Sorted by pLDDT · highest first. Equal scores share a rank.</p>
+    <p class="sub" id="uncond-sort-status" role="status" aria-live="polite">Sorted by pLDDT · highest first. Equal scores share a rank. Ctrl rows sort with models but are not ranked.</p>
     <div class="protocol sub">
-      <p><strong>Fixed-length evaluation.</strong> DPLM2 (official): 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Scores are aggregated from the existing evaluation results.</p>
+      <p><strong>Fixed-length evaluation.</strong> DPLM2: 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Scores are aggregated from the existing evaluation results.</p>
+      <p><strong>Native control.</strong> UniRef50: 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Ctrl rows are excluded from ranks and best-score comparisons.</p>
       <p><strong>Repeat.</strong> Percentage of residues covered by contiguous motifs of 1–20 residues repeated at least three times. Overlapping repeat regions are merged.</p>
       <p><strong>Rep2 / Rep5.</strong> Repeated 2-gram and 5-gram fractions: 1 − unique n-grams / (L − n + 1), where L is sequence length. A sequence of length ≤ n receives 0. Values are averaged over sequences and shown as percentages, following qiukeyue’s PDFBench implementation. <a href="uncond-scores.json">Metric data ↗</a></p>
     </div>
@@ -148,18 +150,21 @@
         ascending = metric === activeMetric ? !ascending : lowerIsBetter;
         activeMetric = metric;
         const rows = originalRows.slice().sort((a,b) => compareValues(valueOf(a,metric), valueOf(b,metric), ascending));
-        const ranking = originalRows.map(row => valueOf(row,metric)).filter(value => value !== null)
+        const ranking = originalRows.filter(row => row.dataset.control !== 'true')
+          .map(row => valueOf(row,metric)).filter(value => value !== null)
           .sort((a,b) => lowerIsBetter ? a-b : b-a);
         rows.forEach(row => {
           const value = valueOf(row,metric);
-          const rank = value === null ? null : ranking.indexOf(value)+1;
-          row.cells[0].textContent = rank === null ? '—' : String(rank);
+          const control = row.dataset.control === 'true';
+          const rank = value === null || control ? null : ranking.indexOf(value)+1;
+          row.cells[0].textContent = control ? 'Ctrl' : (rank === null ? '—' : String(rank));
           row.classList.toggle('lead-row', rank !== null && rank <= 3);
           tbody.appendChild(row);
         });
         headings.forEach((heading,index) => heading.setAttribute('aria-sort',index === metric ? (ascending ? 'ascending' : 'descending') : 'none'));
         const label = headings[metric].dataset.label || headings[metric].querySelector('button').textContent.replace(/\s+/g, ' ').trim();
-        document.getElementById(table.dataset.status).textContent = `Sorted by ${label} · ${ascending ? 'lowest' : 'highest'} first. Ranks indicate performance, with equal scores sharing a rank.`;
+        const controlNote = originalRows.some(row => row.dataset.control === 'true') ? ' Ctrl rows sort with models but are not ranked.' : '';
+        document.getElementById(table.dataset.status).textContent = `Sorted by ${label} · ${ascending ? 'lowest' : 'highest'} first. Ranks indicate performance, with equal scores sharing a rank.${controlNote}`;
       }
       headings.forEach((heading,index) => heading.querySelector('button').addEventListener('click',() => sortBy(index)));
     }

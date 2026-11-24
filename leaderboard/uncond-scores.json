@@ -11,9 +11,10 @@
   "models": [
     {
       "id": "official.dplm2",
-      "name": "DPLM2 (official)",
+      "name": "DPLM2",
       "family": "DPLM",
       "style": "open",
+      "control": false,
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -30,9 +31,33 @@
       },
       "source": "official.dplm2.jsonl",
       "source_sha256": "9de64b5ffadb2a2258e5dbb5a98f027554ea46dedb82f22d2732015a49b4b99c"
+    },
+    {
+      "id": "native.uniref50",
+      "name": "UniRef50",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "scores": {
+        "plddt_overall": 70.88119307327271,
+        "repeat": 2.4446333333333334,
+        "rep2": 39.26393063914839,
+        "rep5": 0.5445224186871653
+      },
+      "source": "native.uniref50.jsonl",
+      "source_sha256": "362b4810b1f7183924a5ca2ff7b544d044d2dcd352f398acc7bfd9950a4fd2e1"
     }
   ],
   "status": "results_available",
+  "control_policy": "Controls participate in sorting, display Ctrl instead of a rank, and are excluded from ranking and best-score comparisons.",
   "metrics": [
     {
       "key": "plddt_overall",
