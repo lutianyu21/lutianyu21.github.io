@@ -45,6 +45,9 @@ tbody tr:hover>* { background:#eef3fb; }
 .leaderboard-table tbody th { font-weight:400; }
 .leaderboard-table thead th:nth-child(2),.leaderboard-table tbody th[scope="row"] { text-align:left; }
 .leaderboard-table .model-cell { display:inline-flex; align-items:center; justify-content:flex-start; gap:7px; white-space:nowrap; }
+.row-variant { color:var(--subtle); font-size:.78rem; white-space:nowrap; }
+.structure-table .model-cell { flex-wrap:wrap; max-width:270px; white-space:normal; }
+.structure-table th[data-sort]:not([data-sort="0"]) { padding-left:14px; padding-right:14px; }
 .fam-pill { display:inline-block; font-size:.85rem; font-weight:700; border-radius:999px; letter-spacing:.01em; white-space:nowrap; flex-shrink:0; }
 .leaderboard-table .fam-pill { padding:1px 6px; font-size:.85rem; line-height:1.25; }
 .fam-gemini { background:#e8f0fe; color:#1967d2; }

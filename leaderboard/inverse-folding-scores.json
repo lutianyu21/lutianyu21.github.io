@@ -1,0 +1,128 @@
+{
+  "task": "B2S",
+  "title": "Inverse Folding",
+  "dataset": "CAMEO2022",
+  "sample_count": 183,
+  "metrics": [
+    {
+      "key": "AAR",
+      "label": "AAR (%)",
+      "direction": "higher",
+      "unit": "percent"
+    },
+    {
+      "key": "scTMbb",
+      "label": "scTMbb",
+      "direction": "higher",
+      "unit": "ratio"
+    }
+  ],
+  "score_metric": {
+    "key": "score",
+    "source_metric": "scTMbb",
+    "multiplier": 100,
+    "direction": "higher",
+    "scale": [
+      0,
+      100
+    ]
+  },
+  "models": [
+    {
+      "id": "esm-if1",
+      "name": "ESM-IF1",
+      "family_name": "ESM-IF1",
+      "score": 89.86288686611068,
+      "scores": {
+        "AAR": 52.96388988585966,
+        "scTMbb": 0.8986288686611068
+      },
+      "medians": {
+        "AAR": 54.9792531120332,
+        "scTMbb": 0.9636835285775693
+      },
+      "sample_count": 183,
+      "source": "baseline/esm-if1/B2S_monomeric.json",
+      "source_sha256": "2b9669b38563c28ee6ea23bc5bc5b6b6a23aab1a4ccf928a4baf30c3c7ad3d09",
+      "family": "ESM",
+      "style": "openai"
+    },
+    {
+      "id": "esm3",
+      "name": "ESM3",
+      "family_name": "ESM3",
+      "score": 89.60849173738312,
+      "scores": {
+        "AAR": 48.526519781684634,
+        "scTMbb": 0.8960849173738312
+      },
+      "medians": {
+        "AAR": 49.65277777777778,
+        "scTMbb": 0.9549995180593764
+      },
+      "sample_count": 183,
+      "source": "baseline/esm3/B2S_monomeric.json",
+      "source_sha256": "431cf961a0a6b99f15acb0bba14e5e5578985412886fdab42c832897e63a4663",
+      "family": "ESM",
+      "style": "openai"
+    },
+    {
+      "id": "dplm2-3b",
+      "name": "DPLM2 · 3B",
+      "family_name": "DPLM2 · 3B",
+      "score": 88.33564923341005,
+      "scores": {
+        "AAR": 51.478092051114885,
+        "scTMbb": 0.8833564923341005
+      },
+      "medians": {
+        "AAR": 54.090909090909086,
+        "scTMbb": 0.9374983569188975
+      },
+      "sample_count": 183,
+      "source": "baseline/dplm2-3b/B2S_monomeric.json",
+      "source_sha256": "add7cbc30d02b24924de238b0277e5c210484b34289a0882f532b271b10a6f3f",
+      "family": "DPLM",
+      "style": "open"
+    },
+    {
+      "id": "dplm2-650m",
+      "name": "DPLM2 · 650M",
+      "family_name": "DPLM2 · 650M",
+      "score": 87.09070700535509,
+      "scores": {
+        "AAR": 48.48595513188296,
+        "scTMbb": 0.8709070700535508
+      },
+      "medians": {
+        "AAR": 50.90909090909091,
+        "scTMbb": 0.9329675097724924
+      },
+      "sample_count": 183,
+      "source": "baseline/dplm2-650m/B2S_monomeric.json",
+      "source_sha256": "892b103016e051736c7c5dc3c9b72e35f4010deb4b9cab833836fee621a4e13e",
+      "family": "DPLM",
+      "style": "open"
+    },
+    {
+      "id": "biomatrix",
+      "name": "BioMatrix · 4B",
+      "family_name": "BioMatrix · 4B",
+      "score": 57.207103825136606,
+      "scores": {
+        "AAR": 19.758087431693987,
+        "scTMbb": 0.5720710382513661
+      },
+      "medians": {
+        "AAR": 12.139999999999999,
+        "scTMbb": 0.5009
+      },
+      "sample_count": 183,
+      "source": "baseline/biomatrix/B2S_monomeric.json",
+      "source_sha256": "ed3972d0b702c9bcc379d03a606bceee57ee113a3e41d461093ffd498dcc51ca",
+      "family": "BioMatrix",
+      "style": "open"
+    }
+  ],
+  "aggregation": "Arithmetic means over 183 CAMEO2022 proteins; medians retained separately. Existing judge metrics are preserved."
+}
