@@ -21,37 +21,26 @@
     <section id="sequence-uncond" class="benchmark-section" aria-labelledby="sequence-uncond-title">
     <span class="sec-kicker">Benchmark results</span>
     <h2 id="sequence-uncond-title">Sequence Uncond</h2>
-    <p class="section-sub">Unconditional protein sequence generation. Compare folding confidence at fixed sequence lengths and sequence repetitiveness.</p>
+    <p class="section-sub">Unconditional protein sequence generation. Compare overall folding confidence and sequence repetitiveness.</p>
     <div class="lb-top-bar">
-      <span class="view-label">Scoreboard <span class="count">Fixed lengths · 100–500 aa</span></span>
-      <span class="count">1 model · 500 sequences</span>
+      <span class="view-label">Scoreboard <span class="count">Sequence Uncond · 1 model · 500 sequences</span></span>
+      <span class="sub">Click a metric to sort</span>
     </div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Sequence Uncond scores, scroll horizontally on small screens">
-      <table id="uncond-table">
-        <caption class="sr-only">Sequence Uncond benchmark. Overall and 100, 200, 300, 400, and 500 amino acid groups, each with pLDDT and a Rep cell containing Repeat / Rep2 / Rep5 (%).</caption>
-        <colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup>
-        <thead>
-          <tr class="metric-groups">
-            <th class="num" scope="col" rowspan="2">#</th>
-            <th scope="col" rowspan="2">Model</th>
-            <th class="group-start" scope="colgroup" colspan="2">Overall</th>
-<th class="group-start" scope="colgroup" colspan="2">100 aa</th>
-<th class="group-start" scope="colgroup" colspan="2">200 aa</th>
-<th class="group-start" scope="colgroup" colspan="2">300 aa</th>
-<th class="group-start" scope="colgroup" colspan="2">400 aa</th>
-<th class="group-start" scope="colgroup" colspan="2">500 aa</th>
-          </tr>
-          <tr><th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="Overall Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
-<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="100 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
-<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="200 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
-<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="300 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
-<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="400 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
-<th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="500 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th></tr>
-        </thead>
-        <tbody><tr><td class="num rank">1</td><th scope="row" class="uncond-model">DPLM2 (official)</th><td class="num group-start" data-value="80.27254156112672">80.27</td><td class="num rep-column" aria-label="Overall: Repeat 5.19%, Rep2 44.97%, Rep5 5.83%">5.19/44.97/5.83</td><td class="num group-start" data-value="76.93474544525147">76.93</td><td class="num rep-column" aria-label="100 aa: Repeat 3.94%, Rep2 24.32%, Rep5 3.06%">3.94/24.32/3.06</td><td class="num group-start" data-value="83.76878984451294">83.77</td><td class="num rep-column" aria-label="200 aa: Repeat 3.31%, Rep2 38.73%, Rep5 3.47%">3.31/38.73/3.47</td><td class="num group-start" data-value="81.06079668045044">81.06</td><td class="num rep-column" aria-label="300 aa: Repeat 7.05%, Rep2 48.64%, Rep5 8.90%">7.05/48.64/8.90</td><td class="num group-start" data-value="80.49212490081787">80.49</td><td class="num rep-column" aria-label="400 aa: Repeat 5.19%, Rep2 53.54%, Rep5 5.68%">5.19/53.54/5.68</td><td class="num group-start" data-value="79.10625093460084">79.11</td><td class="num rep-column" aria-label="500 aa: Repeat 6.47%, Rep2 59.61%, Rep5 8.03%">6.47/59.61/8.03</td></tr></tbody>
+      <table id="uncond-table" class="leaderboard-table" data-status="uncond-sort-status">
+        <caption class="sr-only">Sequence Uncond overall scores. Higher pLDDT is better; lower Repeat, Rep2, and Rep5 percentages are better.</caption>
+        <thead><tr>
+          <th class="num" scope="col">#</th><th scope="col">Model</th>
+          <th class="num" scope="col" data-sort="0" data-label="pLDDT" aria-sort="descending"><button type="button" aria-label="Sort by overall pLDDT">pLDDT ↑</button></th>
+          <th class="num" scope="col" data-sort="1" data-label="Repeat" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by Repeat percentage">Repeat ↓</button></th>
+          <th class="num" scope="col" data-sort="2" data-label="Rep2" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by Rep2 percentage">Rep2 ↓</button></th>
+          <th class="num" scope="col" data-sort="3" data-label="Rep5" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by Rep5 percentage">Rep5 ↓</button></th>
+        </tr></thead>
+        <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2 (official)</strong></div></th><td class="num" data-value="80.27254156112672"><span class="lb-score-cell"><strong>80.27</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:80.27254156112672%"></span></span></span></td><td class="num" data-value="5.192333333333334"><strong>5.19</strong></td><td class="num" data-value="44.96727942285879"><strong>44.97</strong></td><td class="num" data-value="5.830447988685316"><strong>5.83</strong></td></tr></tbody>
       </table>
     </div>
-    <p class="sub">Each length group reports pLDDT and Rep. Rep cells show Repeat / Rep2 / Rep5 (%), in that order. Overall averages all sequences; each fixed-length group averages only sequences of that length.</p>
+    <p class="sub">All scores average the full set of sequences. pLDDT uses a 0–100 scale; Repeat, Rep2 and Rep5 are percentages. Bars show overall pLDDT.</p>
+    <p class="sub" id="uncond-sort-status" role="status" aria-live="polite">Sorted by pLDDT · highest first. Equal scores share a rank.</p>
     <div class="protocol sub">
       <p><strong>Fixed-length evaluation.</strong> DPLM2 (official): 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Scores are aggregated from the existing evaluation results.</p>
       <p><strong>Repeat.</strong> Percentage of residues covered by contiguous motifs of 1–20 residues repeated at least three times. Overlapping repeat regions are merged.</p>
@@ -65,14 +54,14 @@
     <p class="section-sub">Sequence-to-text evaluation on AMIX2. Compare model accuracy across protein function, interaction and binding, and location and modification.</p>
     <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">S2T · 17 model settings · 455 questions</span></span><span class="sub">Click a metric to sort</span></div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Protein understanding scores, scroll horizontally on small screens">
-      <table id="lb-table">
+      <table id="lb-table" class="leaderboard-table" data-status="sort-status">
         <caption class="sr-only">AMIX2 S2T accuracy (%). Higher is better. Click a metric heading to sort.</caption>
         <thead><tr>
           <th class="num" scope="col">#</th><th scope="col">Model</th>
-          <th class="num" scope="col" data-sort="0" aria-sort="descending"><button type="button" aria-label="Sort by Overall accuracy">Overall</button><span class="metric-meta">ACC (%) · n = 455</span></th>
-          <th class="num" scope="col" data-sort="1" aria-sort="none"><button type="button" aria-label="Sort by Function and Family accuracy">Function &amp;<br>Family</button><span class="metric-meta">ACC (%) · n = 150</span></th>
-          <th class="num" scope="col" data-sort="2" aria-sort="none"><button type="button" aria-label="Sort by Interaction and Binding accuracy">Interaction &amp;<br>Binding</button><span class="metric-meta">ACC (%) · n = 152</span></th>
-          <th class="num" scope="col" data-sort="3" aria-sort="none"><button type="button" aria-label="Sort by Location and Modification accuracy">Location &amp;<br>Modification</button><span class="metric-meta">ACC (%) · n = 153</span></th>
+          <th class="num" scope="col" data-sort="0" data-label="Overall" aria-sort="descending"><button type="button" aria-label="Sort by Overall accuracy">Overall</button><span class="metric-meta">ACC (%) · n = 455</span></th>
+          <th class="num" scope="col" data-sort="1" data-label="Function &amp; Family" aria-sort="none"><button type="button" aria-label="Sort by Function and Family accuracy">Function &amp;<br>Family</button><span class="metric-meta">ACC (%) · n = 150</span></th>
+          <th class="num" scope="col" data-sort="2" data-label="Interaction &amp; Binding" aria-sort="none"><button type="button" aria-label="Sort by Interaction and Binding accuracy">Interaction &amp;<br>Binding</button><span class="metric-meta">ACC (%) · n = 152</span></th>
+          <th class="num" scope="col" data-sort="3" data-label="Location &amp; Modification" aria-sort="none"><button type="button" aria-label="Sort by Location and Modification accuracy">Location &amp;<br>Modification</button><span class="metric-meta">ACC (%) · n = 153</span></th>
         </tr></thead>
         <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-anthropic">Anthropic</span><strong>Claude Opus 4.7</strong></div></th><td class="num" data-value="64.39"><span class="lb-score-cell"><strong>64.39</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-anthropic" style="width:64.39%"></span></span></span></td><td class="num" data-value="64.0"><strong>64.00</strong></td><td class="num" data-value="61.84">61.84</td><td class="num" data-value="67.32">67.32</td></tr>
 <tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix2</span><strong>Amix2-SFT2-4B</strong></div></th><td class="num" data-value="64.39"><span class="lb-score-cell"><strong>64.39</strong><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:64.39%"></span></span></span></td><td class="num" data-value="59.33">59.33</td><td class="num" data-value="62.5"><strong>62.50</strong></td><td class="num" data-value="71.24"><strong>71.24</strong></td></tr>
@@ -144,33 +133,37 @@
       if (b === null) return -1;
       return ascending ? a - b : b - a;
     }
-    const table = document.getElementById('lb-table');
-    const tbody = table.tBodies[0];
-    const originalRows = Array.from(tbody.rows);
-    const headings = Array.from(table.querySelectorAll('th[data-sort]'));
-    let activeMetric = 0;
-    let ascending = false;
-    function valueOf(row, metric) {
-      const value = row.cells[metric + 2].dataset.value;
-      return value === '' ? null : Number(value);
+    function enableScoreboard(table) {
+      const tbody = table.tBodies[0];
+      const originalRows = Array.from(tbody.rows);
+      const headings = Array.from(table.querySelectorAll('th[data-sort]'));
+      let activeMetric = 0;
+      let ascending = headings[0].dataset.direction === 'lower';
+      function valueOf(row, metric) {
+        const value = row.cells[metric + 2].dataset.value;
+        return value === '' ? null : Number(value);
+      }
+      function sortBy(metric) {
+        const lowerIsBetter = headings[metric].dataset.direction === 'lower';
+        ascending = metric === activeMetric ? !ascending : lowerIsBetter;
+        activeMetric = metric;
+        const rows = originalRows.slice().sort((a,b) => compareValues(valueOf(a,metric), valueOf(b,metric), ascending));
+        const ranking = originalRows.map(row => valueOf(row,metric)).filter(value => value !== null)
+          .sort((a,b) => lowerIsBetter ? a-b : b-a);
+        rows.forEach(row => {
+          const value = valueOf(row,metric);
+          const rank = value === null ? null : ranking.indexOf(value)+1;
+          row.cells[0].textContent = rank === null ? '—' : String(rank);
+          row.classList.toggle('lead-row', rank !== null && rank <= 3);
+          tbody.appendChild(row);
+        });
+        headings.forEach((heading,index) => heading.setAttribute('aria-sort',index === metric ? (ascending ? 'ascending' : 'descending') : 'none'));
+        const label = headings[metric].dataset.label || headings[metric].querySelector('button').textContent.replace(/\s+/g, ' ').trim();
+        document.getElementById(table.dataset.status).textContent = `Sorted by ${label} · ${ascending ? 'lowest' : 'highest'} first. Ranks indicate performance, with equal scores sharing a rank.`;
+      }
+      headings.forEach((heading,index) => heading.querySelector('button').addEventListener('click',() => sortBy(index)));
     }
-    function sortBy(metric) {
-      ascending = metric === activeMetric ? !ascending : false;
-      activeMetric = metric;
-      const rows = originalRows.slice().sort((a,b) => compareValues(valueOf(a,metric), valueOf(b,metric), ascending));
-      const ranking = originalRows.map(row => valueOf(row,metric)).filter(value => value !== null).sort((a,b) => b-a);
-      rows.forEach(row => {
-        const value = valueOf(row,metric);
-        const rank = value === null ? null : ranking.indexOf(value)+1;
-        row.cells[0].textContent = rank === null ? '—' : String(rank);
-        row.classList.toggle('lead-row', rank !== null && rank <= 3);
-        tbody.appendChild(row);
-      });
-      headings.forEach((heading,index) => heading.setAttribute('aria-sort',index === metric ? (ascending ? 'ascending' : 'descending') : 'none'));
-      const label = ['Overall','Function & Family','Interaction & Binding','Location & Modification'][metric];
-      document.getElementById('sort-status').textContent = `Sorted by ${label} · ${ascending ? 'lowest' : 'highest'} first. Ranks indicate performance, with equal scores sharing a rank.`;
-    }
-    headings.forEach((heading,index) => heading.querySelector('button').addEventListener('click',() => sortBy(index)));
+    document.querySelectorAll('.leaderboard-table').forEach(enableScoreboard);
   </script>
 </body>
 </html>
