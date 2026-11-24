@@ -1,0 +1,207 @@
+{
+  "task": "S2T",
+  "dataset": "AMIX2",
+  "metrics": [
+    "Overall",
+    "Function & Family",
+    "Interaction & Binding",
+    "Location & Modification"
+  ],
+  "sample_counts": [
+    455,
+    150,
+    152,
+    153
+  ],
+  "models": [
+    {
+      "name": "Claude Opus 4.7",
+      "family": "Anthropic",
+      "style": "anthropic",
+      "scores": [
+        64.39,
+        64.0,
+        61.84,
+        67.32
+      ]
+    },
+    {
+      "name": "Amix2-SFT2-4B",
+      "family": "Amix2",
+      "style": "gemini",
+      "scores": [
+        64.39,
+        59.33,
+        62.5,
+        71.24
+      ]
+    },
+    {
+      "name": "Amix2-SFT1-4B",
+      "family": "Amix2",
+      "style": "gemini",
+      "scores": [
+        61.76,
+        58.67,
+        61.18,
+        65.36
+      ]
+    },
+    {
+      "name": "Amix2-Uni-4B",
+      "family": "Amix2",
+      "style": "gemini",
+      "scores": [
+        57.14,
+        56.0,
+        53.95,
+        61.44
+      ]
+    },
+    {
+      "name": "Gemini 3.1 Pro",
+      "family": "Gemini",
+      "style": "gemini",
+      "scores": [
+        52.66,
+        42.0,
+        54.61,
+        61.18
+      ]
+    },
+    {
+      "name": "GPT-5.5 xHigh",
+      "family": "OpenAI",
+      "style": "openai",
+      "scores": [
+        50.51,
+        33.11,
+        51.66,
+        66.44
+      ]
+    },
+    {
+      "name": "Gemini 3 Flash Thinking",
+      "family": "Gemini",
+      "style": "gemini",
+      "scores": [
+        49.67,
+        42.0,
+        46.05,
+        60.78
+      ]
+    },
+    {
+      "name": "Gemini 3.1 Pro Thinking",
+      "family": "Gemini",
+      "style": "gemini",
+      "scores": [
+        49.45,
+        41.33,
+        47.37,
+        59.48
+      ]
+    },
+    {
+      "name": "GPT-5.5",
+      "family": "OpenAI",
+      "style": "openai",
+      "scores": [
+        48.57,
+        32.0,
+        46.05,
+        67.32
+      ]
+    },
+    {
+      "name": "GPT-5.4",
+      "family": "OpenAI",
+      "style": "openai",
+      "scores": [
+        47.25,
+        29.33,
+        42.76,
+        69.28
+      ]
+    },
+    {
+      "name": "Claude Opus 4.6 Thinking",
+      "family": "Anthropic",
+      "style": "anthropic",
+      "scores": [
+        46.82,
+        32.67,
+        48.03,
+        59.48
+      ]
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "family": "DeepSeek",
+      "style": "open",
+      "scores": [
+        46.38,
+        36.67,
+        44.74,
+        57.52
+      ]
+    },
+    {
+      "name": "GPT-OSS-120B",
+      "family": "OpenAI",
+      "style": "openai",
+      "scores": [
+        41.54,
+        32.0,
+        37.5,
+        54.9
+      ]
+    },
+    {
+      "name": "GLM-5.1",
+      "family": "GLM",
+      "style": "open",
+      "scores": [
+        38.46,
+        26.67,
+        37.5,
+        50.98
+      ]
+    },
+    {
+      "name": "Amix2-CPT2-4B",
+      "family": "Amix2",
+      "style": "gemini",
+      "scores": [
+        27.91,
+        32.0,
+        19.08,
+        32.68
+      ]
+    },
+    {
+      "name": "Amix2-CPT1-4B",
+      "family": "Amix2",
+      "style": "gemini",
+      "scores": [
+        27.03,
+        25.33,
+        16.45,
+        39.22
+      ]
+    },
+    {
+      "name": "BioMatrix-4B",
+      "family": "BioMatrix",
+      "style": "open",
+      "scores": [
+        26.81,
+        31.33,
+        25.0,
+        24.18
+      ]
+    }
+  ],
+  "source": "benchmark/summary.html",
+  "source_sha256": "6156a27e12933d1856f96fb410b700c013060423dd2c088a2d4da14826a04c5a"
+}
