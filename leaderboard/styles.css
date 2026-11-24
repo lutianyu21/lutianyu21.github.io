@@ -41,7 +41,8 @@ tbody tr:hover>* { background:#eef3fb; }
 .leaderboard-table th,.leaderboard-table td { padding:5px 8px; line-height:1.24; vertical-align:middle; text-align:center; }
 .leaderboard-table td,.leaderboard-table tbody th { font-size:.9rem; }
 .leaderboard-table tbody th { font-weight:400; }
-.leaderboard-table .model-cell { display:inline-flex; align-items:center; justify-content:center; gap:7px; white-space:nowrap; }
+.leaderboard-table thead th:nth-child(2),.leaderboard-table tbody th[scope="row"] { text-align:left; }
+.leaderboard-table .model-cell { display:inline-flex; align-items:center; justify-content:flex-start; gap:7px; white-space:nowrap; }
 .fam-pill { display:inline-block; font-size:.85rem; font-weight:700; border-radius:999px; letter-spacing:.01em; white-space:nowrap; flex-shrink:0; }
 .leaderboard-table .fam-pill { padding:1px 6px; font-size:.85rem; line-height:1.25; }
 .fam-gemini { background:#e8f0fe; color:#1967d2; }
@@ -50,8 +51,10 @@ tbody tr:hover>* { background:#eef3fb; }
 .fam-open { background:#f3e8ff; color:#6d28d9; }
 .fam-ctrl { background:#f1f5f9; color:#334155; }
 .metric-label,.metric-value { display:inline-block; text-align:center; }
-.lb-score-cell { display:inline-grid; justify-items:center; align-items:center; gap:3px; white-space:nowrap; }
-.lb-inline-track { width:72px; height:4px; border-radius:999px; background:#e2e8f0; overflow:hidden; }
+/* Reserve the bar's space in both header and body so labels align with numbers. */
+.leaderboard-table th[data-sort="0"],.leaderboard-table td:nth-child(3) { padding-right:104px; }
+.lb-score-cell { position:relative; display:inline-flex; align-items:center; white-space:nowrap; }
+.lb-inline-track { position:absolute; left:calc(100% + 8px); top:50%; transform:translateY(-50%); width:88px; height:6px; border-radius:999px; background:#e2e8f0; overflow:hidden; }
 .lb-inline-fill { display:block; height:100%; border-radius:999px; }
 .fill-gemini { background:#1a73e8; } .fill-openai { background:#0d9488; }
 .fill-anthropic { background:#d97706; } .fill-open { background:#7c3aed; } .fill-ctrl { background:#64748b; }
