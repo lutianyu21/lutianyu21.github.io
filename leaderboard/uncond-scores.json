@@ -23,6 +23,7 @@
         "400": 100,
         "500": 100
       },
+      "score": 80.27254156112672,
       "scores": {
         "plddt_overall": 80.27254156112672,
         "repeat": 5.192333333333334,
@@ -46,6 +47,7 @@
         "400": 100,
         "500": 100
       },
+      "score": 70.88119307327271,
       "scores": {
         "plddt_overall": 70.88119307327271,
         "repeat": 2.4446333333333334,
@@ -99,6 +101,16 @@
       ]
     }
   ],
+  "score_metric": {
+    "key": "score",
+    "label": "Score",
+    "direction": "higher",
+    "scale": [
+      0,
+      100
+    ],
+    "source_metric": "plddt_overall"
+  },
   "aggregation": "Arithmetic mean over all sequences across the five fixed generation lengths.",
   "repetition_protocol": {
     "source": "qiukeyue PDFBench",
