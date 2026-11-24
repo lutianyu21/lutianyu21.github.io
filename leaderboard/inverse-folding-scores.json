@@ -44,6 +44,7 @@
       "sample_count": 183,
       "source": "baseline/esm-if1/B2S_monomeric.json",
       "source_sha256": "2b9669b38563c28ee6ea23bc5bc5b6b6a23aab1a4ccf928a4baf30c3c7ad3d09",
+      "parameter_size": null,
       "family": "ESM-IF1",
       "style": "openai"
     },
@@ -63,6 +64,7 @@
       "sample_count": 183,
       "source": "baseline/esm3/B2S_monomeric.json",
       "source_sha256": "431cf961a0a6b99f15acb0bba14e5e5578985412886fdab42c832897e63a4663",
+      "parameter_size": null,
       "family": "ESM3",
       "style": "openai"
     },
@@ -82,6 +84,7 @@
       "sample_count": 183,
       "source": "baseline/dplm2-3b/B2S_monomeric.json",
       "source_sha256": "add7cbc30d02b24924de238b0277e5c210484b34289a0882f532b271b10a6f3f",
+      "parameter_size": "3B",
       "family": "DPLM",
       "style": "open"
     },
@@ -101,12 +104,13 @@
       "sample_count": 183,
       "source": "baseline/dplm2-650m/B2S_monomeric.json",
       "source_sha256": "892b103016e051736c7c5dc3c9b72e35f4010deb4b9cab833836fee621a4e13e",
+      "parameter_size": "650M",
       "family": "DPLM",
       "style": "open"
     },
     {
       "id": "biomatrix",
-      "name": "BioMatrix-4B",
+      "name": "BioMatrix",
       "family_name": "BioMatrix-4B",
       "score": 57.207103825136606,
       "scores": {
@@ -120,6 +124,7 @@
       "sample_count": 183,
       "source": "baseline/biomatrix/B2S_monomeric.json",
       "source_sha256": "ed3972d0b702c9bcc379d03a606bceee57ee113a3e41d461093ffd498dcc51ca",
+      "parameter_size": "4B",
       "family": "BioMatrix",
       "style": "open"
     }
