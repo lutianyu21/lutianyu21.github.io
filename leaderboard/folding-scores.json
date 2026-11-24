@@ -62,7 +62,7 @@
       "id": "paper-3",
       "name": "RoseTTAFold2",
       "family_name": "RoseTTAFold2",
-      "variant": "Paper",
+      "variant": "",
       "group": "MSA-based",
       "score": 86.4,
       "scores": {
@@ -88,14 +88,14 @@
       "sample_count": 183,
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
-      "family": "RoseTTAFold",
+      "family": "RoseTTAFold2",
       "style": "anthropic"
     },
     {
       "id": "paper-2",
-      "name": "AlphaFold2 · 93M",
+      "name": "AlphaFold2-93M",
       "family_name": "AlphaFold2",
-      "variant": "Paper",
+      "variant": "",
       "group": "MSA-based",
       "score": 86.3,
       "scores": {
@@ -121,14 +121,14 @@
       "sample_count": 183,
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
-      "family": "Alpha",
+      "family": "AlphaFold2",
       "style": "gemini"
     },
     {
       "id": "paper-9",
-      "name": "ESMFold · 3.7B",
+      "name": "ESMFold-3.7B",
       "family_name": "ESMFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "PLM-based",
       "score": 85.3,
       "scores": {
@@ -154,50 +154,14 @@
       "sample_count": 183,
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
-      "family": "ESM",
-      "style": "openai"
-    },
-    {
-      "id": "esmfold",
-      "name": "ESMFold · 3.7B",
-      "family_name": "ESMFold",
-      "variant": "Evaluated",
-      "group": "PLM-based",
-      "score": 84.5664043715847,
-      "scores": {
-        "TMus": 0.845664043715847,
-        "TMaa": 0.9089631946195791,
-        "GDT-TS": 0.8186463840365491,
-        "LDDTca": 0.864725366221958,
-        "LDDTaa": 0.7930172360202783,
-        "RMSDca": 4.1714029518768365,
-        "RMSDaa": 4.609697156854655
-      },
-      "medians": {
-        "TMus": 0.92145,
-        "TMaa": 0.9704960740572545,
-        "GDT-TS": 0.866701244813278,
-        "LDDTca": 0.9024229175206084,
-        "LDDTaa": 0.8332127445633017,
-        "RMSDca": 2.350177836221361,
-        "RMSDaa": 2.772095027848003
-      },
-      "source_type": "local",
-      "sample_count": 183,
-      "sample_budget": null,
-      "selection": "sample 0",
-      "source": "trion/baseline/monomeric_folding/esmfold/CAMEO2022.jsonl",
-      "source_sha256": "65b0d56e89854130319be168f053ee826bd7600b73b53852da8ffcdf1c10f254",
-      "protocol": "pomni-folding-v3",
-      "tmus_algorithm": "USalign",
-      "family": "ESM",
+      "family": "ESMFold",
       "style": "openai"
     },
     {
       "id": "paper-1",
-      "name": "AlphaFlow · 95M",
+      "name": "AlphaFlow-95M",
       "family_name": "AlphaFlow",
-      "variant": "Paper",
+      "variant": "",
       "group": "MSA-based",
       "score": 84.0,
       "scores": {
@@ -223,14 +187,14 @@
       "sample_count": 183,
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
-      "family": "Alpha",
+      "family": "AlphaFlow",
       "style": "gemini"
     },
     {
       "id": "paper-15",
-      "name": "SimpleFold · 3B",
+      "name": "SimpleFold-3B",
       "family_name": "SimpleFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "SimpleFold",
       "score": 83.7,
       "scores": {
@@ -261,9 +225,9 @@
     },
     {
       "id": "paper-14",
-      "name": "SimpleFold · 1.6B",
+      "name": "SimpleFold-1.6B",
       "family_name": "SimpleFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "SimpleFold",
       "score": 83.5,
       "scores": {
@@ -294,9 +258,9 @@
     },
     {
       "id": "paper-13",
-      "name": "SimpleFold · 1.1B",
+      "name": "SimpleFold-1.1B",
       "family_name": "SimpleFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "SimpleFold",
       "score": 83.3,
       "scores": {
@@ -326,46 +290,10 @@
       "style": "gemini"
     },
     {
-      "id": "simplefold-3b",
-      "name": "SimpleFold · 3B",
-      "family_name": "SimpleFold",
-      "variant": "Evaluated",
-      "group": "SimpleFold",
-      "score": 83.0414262295082,
-      "scores": {
-        "TMus": 0.830414262295082,
-        "TMaa": 0.8972788666415632,
-        "GDT-TS": 0.7965456351979195,
-        "LDDTca": 0.8513192514390694,
-        "LDDTaa": 0.7786048720256807,
-        "RMSDca": 4.433061875068686,
-        "RMSDaa": 4.8760772683053215
-      },
-      "medians": {
-        "TMus": 0.92065,
-        "TMaa": 0.965162451566213,
-        "GDT-TS": 0.8538461538461539,
-        "LDDTca": 0.8888399843505477,
-        "LDDTaa": 0.8155962386642364,
-        "RMSDca": 2.3849519386197424,
-        "RMSDaa": 2.8453883806291067
-      },
-      "source_type": "local",
-      "sample_count": 183,
-      "sample_budget": null,
-      "selection": "sample 0",
-      "source": "trion/baseline/monomeric_folding/simplefold-3b/CAMEO2022.jsonl",
-      "source_sha256": "2e65e96dd4846808c3c1ba1c49332fd6531200475889c184374a5b2ec3d6a447",
-      "protocol": "pomni-folding-v3",
-      "tmus_algorithm": "USalign",
-      "family": "SimpleFold",
-      "style": "gemini"
-    },
-    {
       "id": "paper-12",
-      "name": "SimpleFold · 0.7B",
+      "name": "SimpleFold-0.7B",
       "family_name": "SimpleFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "SimpleFold",
       "score": 82.89999999999999,
       "scores": {
@@ -396,9 +324,9 @@
     },
     {
       "id": "paper-11",
-      "name": "SimpleFold · 0.4B",
+      "name": "SimpleFold-0.4B",
       "family_name": "SimpleFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "SimpleFold",
       "score": 82.6,
       "scores": {
@@ -429,9 +357,9 @@
     },
     {
       "id": "paper-8",
-      "name": "ESMFlow · 3.5B",
+      "name": "ESMFlow-3.5B",
       "family_name": "ESMFlow",
-      "variant": "Paper",
+      "variant": "",
       "group": "PLM-based",
       "score": 81.8,
       "scores": {
@@ -457,14 +385,14 @@
       "sample_count": 183,
       "protocol": "SimpleFold paper protocol",
       "tmus_algorithm": "USalign",
-      "family": "ESM",
+      "family": "ESMFlow",
       "style": "openai"
     },
     {
       "id": "paper-7",
-      "name": "OmegaFold · ≈0.8B",
+      "name": "OmegaFold-≈0.8B",
       "family_name": "OmegaFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "PLM-based",
       "score": 80.5,
       "scores": {
@@ -495,9 +423,9 @@
     },
     {
       "id": "paper-10",
-      "name": "SimpleFold · 0.1B",
+      "name": "SimpleFold-0.1B",
       "family_name": "SimpleFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "SimpleFold",
       "score": 80.30000000000001,
       "scores": {
@@ -527,46 +455,10 @@
       "style": "gemini"
     },
     {
-      "id": "esm3",
-      "name": "ESM3 · 1.4B",
-      "family_name": "ESM3",
-      "variant": "Evaluated",
-      "group": "PLM-based",
-      "score": 78.85432240437157,
-      "scores": {
-        "TMus": 0.7885432240437158,
-        "TMaa": 0.8644540136191693,
-        "GDT-TS": 0.7403439363298548,
-        "LDDTca": 0.791337696743737,
-        "LDDTaa": 0.7897311157825513,
-        "RMSDca": 5.506977632272257,
-        "RMSDaa": 5.462249382216062
-      },
-      "medians": {
-        "TMus": 0.87858,
-        "TMaa": 0.9446720447384909,
-        "GDT-TS": 0.8048561151079137,
-        "LDDTca": 0.8522417964615152,
-        "LDDTaa": 0.8510717569438129,
-        "RMSDca": 2.846296923010903,
-        "RMSDaa": 2.8243614095199034
-      },
-      "source_type": "local",
-      "sample_count": 183,
-      "sample_budget": null,
-      "selection": "sample 0",
-      "source": "trion/baseline/monomeric_folding/esm3/CAMEO2022.jsonl",
-      "source_sha256": "0d149f30151cc3a93ad3889402038ce9e851b8019bed37302d2bc7a0b98d65c9",
-      "protocol": "pomni-folding-v3",
-      "tmus_algorithm": "USalign",
-      "family": "ESM",
-      "style": "openai"
-    },
-    {
       "id": "paper-0",
       "name": "RoseTTAFold",
       "family_name": "RoseTTAFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "MSA-based",
       "score": 78.0,
       "scores": {
@@ -597,9 +489,10 @@
     },
     {
       "id": "dplm2-3b-oracle-200",
-      "name": "DPLM2 · 3B",
+      "name": "DPLM2-3B",
       "family_name": "DPLM2",
-      "variant": "@200",
+      "variant": "Best-of-200",
+      "control": true,
       "group": "PLM-based",
       "score": 77.99384699453552,
       "scores": {
@@ -633,9 +526,10 @@
     },
     {
       "id": "dplm2-3b-oracle-100",
-      "name": "DPLM2 · 3B",
+      "name": "DPLM2-3B",
       "family_name": "DPLM2",
-      "variant": "@100",
+      "variant": "Best-of-100",
+      "control": true,
       "group": "PLM-based",
       "score": 77.48504918032786,
       "scores": {
@@ -669,9 +563,10 @@
     },
     {
       "id": "dplm2-650m-oracle-200",
-      "name": "DPLM2 · 0.7B",
+      "name": "DPLM2-0.7B",
       "family_name": "DPLM2",
-      "variant": "@200",
+      "variant": "Best-of-200",
+      "control": true,
       "group": "PLM-based",
       "score": 75.93232786885245,
       "scores": {
@@ -705,9 +600,9 @@
     },
     {
       "id": "paper-5",
-      "name": "ESMDiff · 1.4B",
+      "name": "ESMDiff-1.4B",
       "family_name": "ESMDiff",
-      "variant": "Paper",
+      "variant": "",
       "group": "PLM-based",
       "score": 75.4,
       "scores": {
@@ -733,14 +628,15 @@
       "sample_count": 183,
       "protocol": "TMscore -seq fallback",
       "tmus_algorithm": "TMscore -seq",
-      "family": "ESM",
+      "family": "ESMDiff",
       "style": "openai"
     },
     {
       "id": "dplm2-650m-oracle-100",
-      "name": "DPLM2 · 0.7B",
+      "name": "DPLM2-0.7B",
       "family_name": "DPLM2",
-      "variant": "@100",
+      "variant": "Best-of-100",
+      "control": true,
       "group": "PLM-based",
       "score": 75.39445355191256,
       "scores": {
@@ -774,9 +670,9 @@
     },
     {
       "id": "paper-6",
-      "name": "EigenFold · 0.8B",
+      "name": "EigenFold-0.8B",
       "family_name": "EigenFold",
-      "variant": "Paper",
+      "variant": "",
       "group": "PLM-based",
       "score": 75.0,
       "scores": {
@@ -807,9 +703,10 @@
     },
     {
       "id": "dplm2-3b-oracle-10",
-      "name": "DPLM2 · 3B",
+      "name": "DPLM2-3B",
       "family_name": "DPLM2",
-      "variant": "@10",
+      "variant": "Best-of-10",
+      "control": true,
       "group": "PLM-based",
       "score": 74.95137158469946,
       "scores": {
@@ -843,9 +740,9 @@
     },
     {
       "id": "paper-4",
-      "name": "ESM3 · 1.4B",
+      "name": "ESM3-1.4B",
       "family_name": "ESM3",
-      "variant": "Paper",
+      "variant": "",
       "group": "PLM-based",
       "score": 74.6,
       "scores": {
@@ -871,14 +768,15 @@
       "sample_count": 183,
       "protocol": "TMscore -seq fallback",
       "tmus_algorithm": "TMscore -seq",
-      "family": "ESM",
+      "family": "ESM3",
       "style": "openai"
     },
     {
       "id": "dplm2_1-650m",
-      "name": "DPLM2.1 · 0.7B",
+      "name": "DPLM2.1-0.7B",
       "family_name": "DPLM2.1",
       "variant": "Greedy",
+      "control": false,
       "group": "PLM-based",
       "score": 74.2199781420765,
       "scores": {
@@ -912,9 +810,10 @@
     },
     {
       "id": "dplm2-650m-oracle-10",
-      "name": "DPLM2 · 0.7B",
+      "name": "DPLM2-0.7B",
       "family_name": "DPLM2",
-      "variant": "@10",
+      "variant": "Best-of-10",
+      "control": true,
       "group": "PLM-based",
       "score": 72.35913661202186,
       "scores": {
@@ -948,9 +847,10 @@
     },
     {
       "id": "dplm2-3b",
-      "name": "DPLM2 · 3B",
+      "name": "DPLM2-3B",
       "family_name": "DPLM2",
       "variant": "Greedy",
+      "control": false,
       "group": "PLM-based",
       "score": 72.12587978142076,
       "scores": {
@@ -984,9 +884,10 @@
     },
     {
       "id": "dplm2-3b-oracle-1",
-      "name": "DPLM2 · 3B",
+      "name": "DPLM2-3B",
       "family_name": "DPLM2",
-      "variant": "@1",
+      "variant": "Sample-1",
+      "control": true,
       "group": "PLM-based",
       "score": 70.83971038251366,
       "scores": {
@@ -1020,9 +921,10 @@
     },
     {
       "id": "dplm2-650m",
-      "name": "DPLM2 · 0.7B",
+      "name": "DPLM2-0.7B",
       "family_name": "DPLM2",
       "variant": "Greedy",
+      "control": false,
       "group": "PLM-based",
       "score": 68.56882513661202,
       "scores": {
@@ -1056,9 +958,10 @@
     },
     {
       "id": "dplm2-650m-oracle-1",
-      "name": "DPLM2 · 0.7B",
+      "name": "DPLM2-0.7B",
       "family_name": "DPLM2",
-      "variant": "@1",
+      "variant": "Sample-1",
+      "control": true,
       "group": "PLM-based",
       "score": 67.35963387978143,
       "scores": {
@@ -1092,9 +995,10 @@
     },
     {
       "id": "biomatrix-4b-oracle-200",
-      "name": "BioMatrix · 4B",
+      "name": "BioMatrix-4B",
       "family_name": "BioMatrix",
-      "variant": "@200",
+      "variant": "Best-of-200",
+      "control": true,
       "group": "MMLLM-based",
       "score": 56.902437158469944,
       "scores": {
@@ -1128,9 +1032,10 @@
     },
     {
       "id": "biomatrix-4b-oracle-100",
-      "name": "BioMatrix · 4B",
+      "name": "BioMatrix-4B",
       "family_name": "BioMatrix",
-      "variant": "@100",
+      "variant": "Best-of-100",
+      "control": true,
       "group": "MMLLM-based",
       "score": 54.97536612021858,
       "scores": {
@@ -1164,9 +1069,10 @@
     },
     {
       "id": "biomatrix-4b-oracle-10",
-      "name": "BioMatrix · 4B",
+      "name": "BioMatrix-4B",
       "family_name": "BioMatrix",
-      "variant": "@10",
+      "variant": "Best-of-10",
+      "control": true,
       "group": "MMLLM-based",
       "score": 45.80361202185792,
       "scores": {
@@ -1200,9 +1106,10 @@
     },
     {
       "id": "biomatrix-4b-greedy",
-      "name": "BioMatrix · 4B",
+      "name": "BioMatrix-4B",
       "family_name": "BioMatrix",
       "variant": "Greedy",
+      "control": false,
       "group": "MMLLM-based",
       "score": 35.87790710382514,
       "scores": {
@@ -1236,9 +1143,10 @@
     },
     {
       "id": "biomatrix-4b-oracle-1",
-      "name": "BioMatrix · 4B",
+      "name": "BioMatrix-4B",
       "family_name": "BioMatrix",
-      "variant": "@1",
+      "variant": "Sample-1",
+      "control": true,
       "group": "MMLLM-based",
       "score": 34.66462841530055,
       "scores": {

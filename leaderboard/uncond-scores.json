@@ -40,7 +40,7 @@
     },
     {
       "id": "official.dplm1",
-      "name": "DPLM1",
+      "name": "DPLM1-650M",
       "family": "DPLM",
       "style": "open",
       "control": false,
@@ -69,7 +69,7 @@
     },
     {
       "id": "official.dplm2",
-      "name": "DPLM2",
+      "name": "DPLM2-650M",
       "family": "DPLM",
       "style": "open",
       "control": false,
