@@ -24,11 +24,11 @@
     <p class="section-sub">Unconditional protein sequence generation. Compare folding confidence at fixed sequence lengths and sequence repetitiveness.</p>
     <div class="lb-top-bar">
       <span class="view-label">Scoreboard <span class="count">Fixed lengths · 100–500 aa</span></span>
-      <span class="pending-badge">Awaiting results</span>
+      <span class="count">1 model · 500 sequences</span>
     </div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Sequence Uncond scores, scroll horizontally on small screens">
       <table id="uncond-table">
-        <caption class="sr-only">Sequence Uncond benchmark. Overall and 100, 200, 300, 400, and 500 amino acid groups, each with pLDDT and a Rep cell containing Repeat / Rep2 / Rep5 (%). Results have not been added.</caption>
+        <caption class="sr-only">Sequence Uncond benchmark. Overall and 100, 200, 300, 400, and 500 amino acid groups, each with pLDDT and a Rep cell containing Repeat / Rep2 / Rep5 (%).</caption>
         <colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup><colgroup span="2"></colgroup>
         <thead>
           <tr class="metric-groups">
@@ -48,17 +48,12 @@
 <th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="400 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th>
 <th class="num group-start" scope="col">pLDDT <span class="direction">↑</span></th><th class="num rep-column" scope="col" aria-label="500 aa Repeat / Rep2 / Rep5, percent, lower is better">Rep <span class="direction">↓</span></th></tr>
         </thead>
-        <tbody>
-          <tr class="empty-row"><td colspan="14">
-            <strong>No results yet</strong>
-            <span>Model scores will appear here once evaluations are available.</span>
-          </td></tr>
-        </tbody>
+        <tbody><tr><td class="num rank">1</td><th scope="row" class="uncond-model">DPLM2 (official)</th><td class="num group-start" data-value="80.27254156112672">80.27</td><td class="num rep-column" aria-label="Overall: Repeat 5.19%, Rep2 44.97%, Rep5 5.83%">5.19/44.97/5.83</td><td class="num group-start" data-value="76.93474544525147">76.93</td><td class="num rep-column" aria-label="100 aa: Repeat 3.94%, Rep2 24.32%, Rep5 3.06%">3.94/24.32/3.06</td><td class="num group-start" data-value="83.76878984451294">83.77</td><td class="num rep-column" aria-label="200 aa: Repeat 3.31%, Rep2 38.73%, Rep5 3.47%">3.31/38.73/3.47</td><td class="num group-start" data-value="81.06079668045044">81.06</td><td class="num rep-column" aria-label="300 aa: Repeat 7.05%, Rep2 48.64%, Rep5 8.90%">7.05/48.64/8.90</td><td class="num group-start" data-value="80.49212490081787">80.49</td><td class="num rep-column" aria-label="400 aa: Repeat 5.19%, Rep2 53.54%, Rep5 5.68%">5.19/53.54/5.68</td><td class="num group-start" data-value="79.10625093460084">79.11</td><td class="num rep-column" aria-label="500 aa: Repeat 6.47%, Rep2 59.61%, Rep5 8.03%">6.47/59.61/8.03</td></tr></tbody>
       </table>
     </div>
     <p class="sub">Each length group reports pLDDT and Rep. Rep cells show Repeat / Rep2 / Rep5 (%), in that order. Overall averages all sequences; each fixed-length group averages only sequences of that length.</p>
     <div class="protocol sub">
-      <p><strong>Fixed-length evaluation.</strong> Target lengths are 100, 200, 300, 400, and 500 amino acids. The table is awaiting model results.</p>
+      <p><strong>Fixed-length evaluation.</strong> DPLM2 (official): 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Scores are aggregated from the existing evaluation results.</p>
       <p><strong>Repeat.</strong> Percentage of residues covered by contiguous motifs of 1–20 residues repeated at least three times. Overlapping repeat regions are merged.</p>
       <p><strong>Rep2 / Rep5.</strong> Repeated 2-gram and 5-gram fractions: 1 − unique n-grams / (L − n + 1), where L is sequence length. A sequence of length ≤ n receives 0. Values are averaged over sequences and shown as percentages, following qiukeyue’s PDFBench implementation. <a href="uncond-scores.json">Metric data ↗</a></p>
     </div>
