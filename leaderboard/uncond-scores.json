@@ -145,6 +145,33 @@
       "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
     },
     {
+      "id": "ctrl.dplm1.no_remask",
+      "name": "DPLM1(no_remask)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 38,
+      "score": 7.6,
+      "scores": {
+        "plddt_overall": 55.38854225540161,
+        "ptm": 0.4569032106846571,
+        "ppl": 13.457754753108485,
+        "repeat": 2.6350333333333333,
+        "rep2": 41.88619193576957,
+        "rep5": 1.0429907382096324
+      },
+      "source": "ctrl.dplm1.no_remask.jsonl",
+      "source_sha256": "87b29df50c6ef7f50ec8d90315eb9279753fe326006806885d421b6feea0dfaf"
+    },
+    {
       "id": "ctrl.amix2_ar",
       "name": "Amix2-A",
       "family": "Ctrl",
