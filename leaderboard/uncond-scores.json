@@ -114,6 +114,32 @@
       "source_sha256": "6eed30fc4cd80f73aee307730ddd2e58f7f02c0e2bc615719bd70dabb767d1f5"
     },
     {
+      "id": "offcial.esm3_unlock",
+      "name": "ESM3-1.4B(unlock)",
+      "family": "ESM",
+      "style": "openai",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 55,
+      "score": 11.0,
+      "scores": {
+        "plddt_overall": 61.421769275665284,
+        "ptm": 0.4210324604511261,
+        "repeat": 56.1252,
+        "rep2": 81.12613168132302,
+        "rep5": 46.03736529036068
+      },
+      "source": "offcial.esm3_unlock.jsonl",
+      "source_sha256": "3c08cc5f86bacfa27b1990dce9827cb2c07e86fde255cae54738f2c5059ef52b"
+    },
+    {
       "id": "ctrl.amix2_ar",
       "name": "Amix2-A",
       "family": "Ctrl",
@@ -141,7 +167,7 @@
     },
     {
       "id": "offcial.esm3_open",
-      "name": "ESM3-1.4B",
+      "name": "ESM3-1.4B(default)",
       "family": "ESM",
       "style": "openai",
       "control": false,
