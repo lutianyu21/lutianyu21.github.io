@@ -18,6 +18,36 @@
       "label": "scRMSD (Å)",
       "direction": "lower",
       "unit": "angstrom"
+    },
+    {
+      "key": "helix",
+      "label": "Helix (%)",
+      "direction": "none",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "sheet",
+      "label": "Sheet (%)",
+      "direction": "none",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
+    },
+    {
+      "key": "coil",
+      "label": "Coil (%)",
+      "direction": "none",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
     }
   ],
   "score_metric": {
@@ -34,7 +64,16 @@
       100
     ]
   },
-  "aggregation": "Arithmetic mean over all records, without length grouping.",
+  "aggregation": "Arithmetic mean over all records, without length grouping. DSSP fractions are multiplied by 100 for display.",
+  "secondary_structure_protocol": {
+    "method": "MDTraj DSSP",
+    "structure": "Original generated backbone",
+    "helix": "H/G/I",
+    "sheet": "E/B",
+    "coil": "T/S/space",
+    "aggregation": "Mean of per-structure residue fractions",
+    "ranking": "Composition only; no performance ranking"
+  },
   "models": [
     {
       "id": "official.dplm2_650m",
@@ -45,11 +84,14 @@
       "passing_count": 454,
       "scores": {
         "scTM": 0.88241402,
-        "scRMSD": 3.4619248525356854
+        "scRMSD": 3.4619248525356854,
+        "helix": 44.34476666666667,
+        "sheet": 19.03933333333333,
+        "coil": 36.6159
       },
       "sample_count": 500,
       "source": "official.dplm2_650m.jsonl",
-      "source_sha256": "859493670278f6c16c97dbd41806acdec42c48e4cbb37431448e12d4080f0ff1",
+      "source_sha256": "4298cf9fc9f6b2137da556ce7b3b3a85d0ed9c8e4b1967c67acfa0a89a04728f",
       "family": "DPLM",
       "style": "open"
     }
