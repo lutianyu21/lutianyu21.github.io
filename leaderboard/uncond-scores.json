@@ -37,8 +37,35 @@
       "source_sha256": "9b0e2cb78b9be3d9680a6541c85d3a9e8482f3adf4760f1a8f941e655bad7340"
     },
     {
+      "id": "official.dplm2_3b",
+      "name": "DPLM2-3B",
+      "family": "DPLM",
+      "style": "open",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 249,
+      "score": 49.8,
+      "scores": {
+        "plddt_overall": 78.404654296875,
+        "ptm": 0.7150063265562058,
+        "ppl": 4.955632244556023,
+        "repeat": 20.1039,
+        "rep2": 57.0701771016898,
+        "rep5": 20.956358143109295
+      },
+      "source": "official.dplm2_3b.jsonl",
+      "source_sha256": "8df7bea687ee9ba4da370cc9cdd3e7d793214a59b04cf7a7df086bb7eed7f79c"
+    },
+    {
       "id": "official.dplm2",
-      "name": "DPLM2",
+      "name": "DPLM2-0.6B",
       "family": "DPLM",
       "style": "open",
       "control": false,
