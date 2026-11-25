@@ -1,0 +1,52 @@
+{
+  "task": "B",
+  "title": "Structure Generation",
+  "context": "500 structures",
+  "score_note": "Score = mean scTM × 100.",
+  "metrics": [
+    {
+      "key": "scTM",
+      "label": "scTM",
+      "direction": "higher",
+      "scale": [
+        0,
+        1
+      ]
+    },
+    {
+      "key": "scRMSD",
+      "label": "scRMSD (Å)",
+      "direction": "lower",
+      "unit": "angstrom"
+    }
+  ],
+  "score_metric": {
+    "key": "score",
+    "source_metric": "scTM",
+    "formula": "100 * mean(scTM)",
+    "direction": "higher",
+    "scale": [
+      0,
+      100
+    ]
+  },
+  "aggregation": "Arithmetic mean over all records, without length grouping.",
+  "models": [
+    {
+      "id": "official.dplm2_650m",
+      "name": "DPLM2",
+      "family_name": "DPLM",
+      "control": false,
+      "score": 88.24140200000001,
+      "scores": {
+        "scTM": 0.88241402,
+        "scRMSD": 3.4619248525356854
+      },
+      "sample_count": 500,
+      "source": "official.dplm2_650m.jsonl",
+      "source_sha256": "859493670278f6c16c97dbd41806acdec42c48e4cbb37431448e12d4080f0ff1",
+      "family": "DPLM",
+      "style": "open"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Protein Benchmark Leaderboard · Tianyu Lu</title>
   <meta name="description" content="Protein benchmark leaderboards for unconditional generation, sequence understanding, folding and inverse folding.">
-  <link rel="stylesheet" href="styles.css?v=a4dfc63d584e">
+  <link rel="stylesheet" href="styles.css?v=67fc13d113a9">
 </head>
 <body>
   <header class="site-header"><div class="nav-bar">
@@ -16,17 +16,16 @@
     <h1>Protein benchmark leaderboard</h1>
     <nav class="benchmark-tabs" aria-label="Benchmark sections">
       <a href="#sequence-uncond" aria-current="location" aria-label="S: Unconditional Generation" title="Unconditional Generation">S</a>
+      <a href="#structure-uncond" aria-label="B: Structure Generation" title="Structure Generation">B</a>
       <a href="#sequence-understanding" aria-label="S2T: Sequence Understanding" title="Sequence Understanding">S2T</a>
       <a href="#folding" aria-label="S2B: Folding" title="Folding">S2B</a>
       <a href="#inverse-folding" aria-label="B2S: Inverse Folding" title="Inverse Folding">B2S</a>
     </nav>
     <section id="sequence-uncond" class="benchmark-section" aria-labelledby="sequence-uncond-title">
-    <span class="sec-kicker">Benchmark results</span>
-    <h2 id="sequence-uncond-title">Unconditional Generation</h2>
-    <p class="section-sub">Unconditional protein sequence generation. Compare overall folding confidence and sequence repetitiveness.</p>
+    <h2 id="sequence-uncond-title">Unconditional Generation <span class="heading-tag">S</span></h2>
     <div class="lb-top-bar">
       <span class="view-label">Scoreboard <span class="count">Unconditional Generation · 5 models + 4 controls</span></span>
-      <span class="sub">Click a metric to sort</span>
+      
     </div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Unconditional Generation scores, scroll horizontally on small screens">
       <table id="uncond-table" class="leaderboard-table" data-status="uncond-sort-status">
@@ -52,32 +51,45 @@
 <tr class="control-row" data-control="true"><td class="num rank">Ctrl</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-ctrl">Ctrl</span><strong>Trion1-B(dplm1)</strong></div></th><td class="num" data-value="2.4"><span class="lb-score-cell"><span class="metric-value"><strong>2.40</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-ctrl" style="width:2.4%"></span></span></span></td><td class="num" data-value="45.64150455093384"><span class="metric-value">45.64</span></td><td class="num" data-value="0.2978266021311283"><span class="metric-value">0.298</span></td><td class="num" data-value="12.871932854194444"><span class="metric-value">12.872</span></td><td class="num" data-value="4.382233333333333"><span class="metric-value">4.38</span></td><td class="num" data-value="44.69117088282172"><span class="metric-value">44.69</span></td><td class="num" data-value="10.146966522600163"><span class="metric-value">10.15</span></td></tr></tbody>
       </table>
     </div>
-    <p class="sub">Score is the percentage of sequences with both pLDDT &gt; 80 and pTM &gt; 0.8. pLDDT, pTM and PPL are means over all sequences. Repeat, Rep2 and Rep5 are mean percentages.</p>
-    <p class="sub" id="uncond-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank. Ctrl rows sort with models but are not ranked.</p>
-    <div class="protocol sub">
+    <p class="sub">Score = % with pLDDT &gt; 80 and pTM &gt; 0.8.</p>
+    <p class="sr-only" id="uncond-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank. Ctrl rows sort with models but are not ranked.</p>
+    <details class="protocol sub"><summary>Details</summary>
       <p><strong>Fixed-length evaluation.</strong> DPLM1, DPLM2, DPLM2.1, ESM3-1.4B, ESM3-1.4B(unlock), Trion1-B(dplm1), Amix2-A, DPLM1(no_remask): 500 sequences each (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Scores are aggregated from the existing evaluation results.</p>
       <p><strong>Native control.</strong> UniRef50: 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Ctrl rows are excluded from ranks and best-score comparisons.</p>
       <p><strong>PPL.</strong> Mean per-sequence perplexity scored by ProGen2-base (FP32), following PDFBench.</p>
       <p><strong>Repeat.</strong> Percentage of residues covered by contiguous motifs of 1–20 residues repeated at least three times. Overlapping repeat regions are merged.</p>
       <p><strong>Rep2 / Rep5.</strong> Repeated 2-gram and 5-gram fractions: 1 − unique n-grams / (L − n + 1), where L is sequence length. A sequence of length ≤ n receives 0. Values are averaged over sequences and shown as percentages, following qiukeyue’s PDFBench implementation. <a href="uncond-scores.json">Metric data ↗</a></p>
-    </div>
+    </details>
+    </section>
+
+    <section id="structure-uncond" class="benchmark-section" aria-labelledby="structure-uncond-title">
+      <h2 id="structure-uncond-title">Structure Generation <span class="heading-tag">B</span></h2>
+      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">500 structures</span></span></div>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Structure Generation scores, scroll horizontally on small screens">
+        <table id="structure-uncond-table" class="leaderboard-table structure-table" data-status="structure-uncond-sort-status">
+          <caption class="sr-only">Structure Generation. Per-protein mean metrics. Click a metric heading to sort.</caption>
+          <thead><tr><th class="num" scope="col">#</th><th scope="col">Model</th><th class="num" scope="col" data-sort="0" data-label="Score" data-direction="higher" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th><th class="num" scope="col" data-sort="1" data-label="scTM" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by scTM"><span class="metric-label">scTM</span></button></th><th class="num" scope="col" data-sort="2" data-label="scRMSD (Å)" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by scRMSD (Å)"><span class="metric-label">scRMSD (Å)</span></button></th></tr></thead>
+          <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2</strong></div></th><td class="num" data-value="88.24140200000001"><span class="lb-score-cell"><span class="metric-value"><strong>88.24</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:88.24140200000001%"></span></span></span></td><td class="num" data-value="0.88241402"><span class="metric-value"><strong>0.882</strong></span></td><td class="num" data-value="3.4619248525356854"><span class="metric-value"><strong>3.462</strong></span></td></tr></tbody>
+        </table>
+      </div>
+      <p class="sr-only" id="structure-uncond-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
+      <p class="sub">Score = mean scTM × 100.</p>
+      <details class="protocol sub"><summary>Details</summary><p>Overall means over all structures. scTM and scRMSD are imported from the supplied evaluation results.</p><p><a href="structure-uncond-scores.json">Metric data ↗</a></p></details>
     </section>
 
     <section id="sequence-understanding" class="benchmark-section" aria-labelledby="sequence-understanding-title">
-    <span class="sec-kicker">Benchmark results</span>
     <h2 id="sequence-understanding-title">Sequence Understanding <span class="heading-tag">S2T</span></h2>
-    <p class="section-sub">Sequence-to-text evaluation on AMIX2. Compare model accuracy across protein function, interaction and binding, and location and modification.</p>
-    <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">S2T · 17 model settings · 455 questions</span></span><span class="sub">Click a metric to sort</span></div>
+    <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">S2T · 17 model settings · 455 questions</span></span></div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Protein understanding scores, scroll horizontally on small screens">
       <table id="lb-table" class="leaderboard-table" data-status="sort-status">
         <caption class="sr-only">AMIX2 S2T accuracy (%). Higher is better. Click a metric heading to sort.</caption>
         <thead><tr>
           <th class="num" scope="col">#</th><th scope="col">Model</th>
           <th class="num" scope="col" data-sort="0" data-label="Score" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th>
-          <th class="num" scope="col" data-sort="1" data-label="Overall" aria-sort="none"><button type="button" aria-label="Sort by Overall accuracy"><span class="metric-label">Overall</span></button><span class="metric-meta">ACC (%) · n = 455</span></th>
-          <th class="num" scope="col" data-sort="2" data-label="Function &amp; Family" aria-sort="none"><button type="button" aria-label="Sort by Function and Family accuracy"><span class="metric-label">Function &amp;<br>Family</span></button><span class="metric-meta">ACC (%) · n = 150</span></th>
-          <th class="num" scope="col" data-sort="3" data-label="Interaction &amp; Binding" aria-sort="none"><button type="button" aria-label="Sort by Interaction and Binding accuracy"><span class="metric-label">Interaction &amp;<br>Binding</span></button><span class="metric-meta">ACC (%) · n = 152</span></th>
-          <th class="num" scope="col" data-sort="4" data-label="Location &amp; Modification" aria-sort="none"><button type="button" aria-label="Sort by Location and Modification accuracy"><span class="metric-label">Location &amp;<br>Modification</span></button><span class="metric-meta">ACC (%) · n = 153</span></th>
+          <th class="num" scope="col" data-sort="1" data-label="Overall" aria-sort="none"><button type="button" aria-label="Sort by Overall accuracy"><span class="metric-label">Overall</span></button></th>
+          <th class="num" scope="col" data-sort="2" data-label="Function &amp; Family" aria-sort="none"><button type="button" aria-label="Sort by Function and Family accuracy"><span class="metric-label">Function &amp;<br>Family</span></button></th>
+          <th class="num" scope="col" data-sort="3" data-label="Interaction &amp; Binding" aria-sort="none"><button type="button" aria-label="Sort by Interaction and Binding accuracy"><span class="metric-label">Interaction &amp;<br>Binding</span></button></th>
+          <th class="num" scope="col" data-sort="4" data-label="Location &amp; Modification" aria-sort="none"><button type="button" aria-label="Sort by Location and Modification accuracy"><span class="metric-label">Location &amp;<br>Modification</span></button></th>
         </tr></thead>
         <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-anthropic">Anthropic</span><strong>Claude Opus 4.7</strong></div></th><td class="num" data-value="64.39"><span class="lb-score-cell"><span class="metric-value"><strong>64.39</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-anthropic" style="width:64.39%"></span></span></span></td><td class="num" data-value="64.39"><span class="metric-value"><strong>64.39</strong></span></td><td class="num" data-value="64.0"><span class="metric-value"><strong>64.00</strong></span></td><td class="num" data-value="61.84"><span class="metric-value">61.84</span></td><td class="num" data-value="67.32"><span class="metric-value">67.32</span></td></tr>
 <tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">Amix</span><strong>Amix2-SFT2-4B</strong></div></th><td class="num" data-value="64.39"><span class="lb-score-cell"><span class="metric-value"><strong>64.39</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:64.39%"></span></span></span></td><td class="num" data-value="64.39"><span class="metric-value"><strong>64.39</strong></span></td><td class="num" data-value="59.33"><span class="metric-value">59.33</span></td><td class="num" data-value="62.5"><span class="metric-value"><strong>62.50</strong></span></td><td class="num" data-value="71.24"><span class="metric-value"><strong>71.24</strong></span></td></tr>
@@ -98,21 +110,19 @@
 <tr class=""><td class="num rank">17</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">BioMatrix</span><strong>BioMatrix-4B</strong></div></th><td class="num" data-value="26.81"><span class="lb-score-cell"><span class="metric-value"><strong>26.81</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:26.81%"></span></span></span></td><td class="num" data-value="26.81"><span class="metric-value">26.81</span></td><td class="num" data-value="31.33"><span class="metric-value">31.33</span></td><td class="num" data-value="25.0"><span class="metric-value">25.00</span></td><td class="num" data-value="24.18"><span class="metric-value">24.18</span></td></tr></tbody>
       </table>
     </div>
-    <p class="sub">Higher is better for all metrics. Score equals Overall accuracy. Bars show Score on a 0–100 scale. Bold values mark each column’s best score; Score values are bold throughout.</p>
-    <p class="sub" id="sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
-    <div class="protocol sub">
+    <p class="sub">Score = Overall accuracy (%).</p>
+    <p class="sr-only" id="sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
+    <details class="protocol sub"><summary>Details</summary>
       <p><strong>Evaluation scope.</strong> 455 reference questions: Function &amp; Family (150), Interaction &amp; Binding (152), and Location &amp; Modification (153). Hydrophobicity Property and Structural Composition questions are excluded.</p>
       <p>Scores are reproduced from the existing benchmark summary, without recomputing or combining metrics. Models without reported S2T results are omitted. <a href="scores.json">Score data ↗</a></p>
-    </div>
+    </details>
     </section>
     <section id="folding" class="benchmark-section" aria-labelledby="folding-title">
-      <span class="sec-kicker">Benchmark results</span>
       <h2 id="folding-title">Folding <span class="heading-tag">S2B</span></h2>
-      <p class="section-sub">Sequence-to-structure prediction on CAMEO2022.</p>
-      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">CAMEO2022 · 28 model settings · 183 proteins</span></span><span class="sub">Click a metric to sort</span></div>
+      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">CAMEO2022 · 28 models · 183 proteins</span></span></div>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Folding scores, scroll horizontally on small screens">
         <table id="folding-table" class="leaderboard-table structure-table" data-status="folding-sort-status">
-          <caption class="sr-only">Folding on CAMEO2022. Per-protein mean metrics. Click a metric heading to sort.</caption>
+          <caption class="sr-only">Folding. Per-protein mean metrics. Click a metric heading to sort.</caption>
           <thead><tr><th class="num" scope="col">#</th><th scope="col">Model</th><th class="num" scope="col" data-sort="0" data-label="Score" data-direction="higher" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th><th class="num" scope="col" data-sort="1" data-label="TMus" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by TMus"><span class="metric-label">TMus</span></button></th><th class="num" scope="col" data-sort="2" data-label="TMaa" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by TMaa"><span class="metric-label">TMaa</span></button></th><th class="num" scope="col" data-sort="3" data-label="GDT-TS" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by GDT-TS"><span class="metric-label">GDT-TS</span></button></th><th class="num" scope="col" data-sort="4" data-label="LDDTca" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by LDDTca"><span class="metric-label">LDDTca</span></button></th><th class="num" scope="col" data-sort="5" data-label="LDDTaa" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by LDDTaa"><span class="metric-label">LDDTaa</span></button></th><th class="num" scope="col" data-sort="6" data-label="RMSDca" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by RMSDca"><span class="metric-label">RMSDca</span></button></th><th class="num" scope="col" data-sort="7" data-label="RMSDaa" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by RMSDaa"><span class="metric-label">RMSDaa</span></button></th></tr></thead>
           <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-anthropic">RoseTTAFold2</span><strong>RoseTTAFold2</strong></div></th><td class="num" data-value="86.4"><span class="lb-score-cell"><span class="metric-value"><strong>86.40</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-anthropic" style="width:86.4%"></span></span></span></td><td class="num" data-value="0.864"><span class="metric-value"><strong>0.864</strong></span></td><td class="num" data-value=""><span class="metric-value">—</span></td><td class="num" data-value="0.845"><span class="metric-value"><strong>0.845</strong></span></td><td class="num" data-value="0.893"><span class="metric-value"><strong>0.893</strong></span></td><td class="num" data-value="0.727"><span class="metric-value">0.727</span></td><td class="num" data-value="3.571"><span class="metric-value"><strong>3.571</strong></span></td><td class="num" data-value=""><span class="metric-value">—</span></td></tr>
 <tr class="lead-row"><td class="num rank">2</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-gemini">AlphaFold2</span><strong>AlphaFold2</strong></div></th><td class="num" data-value="86.3"><span class="lb-score-cell"><span class="metric-value"><strong>86.30</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-gemini" style="width:86.3%"></span></span></span></td><td class="num" data-value="0.863"><span class="metric-value">0.863</span></td><td class="num" data-value=""><span class="metric-value">—</span></td><td class="num" data-value="0.844"><span class="metric-value">0.844</span></td><td class="num" data-value="0.893"><span class="metric-value"><strong>0.893</strong></span></td><td class="num" data-value="0.816"><span class="metric-value"><strong>0.816</strong></span></td><td class="num" data-value="3.578"><span class="metric-value">3.578</span></td><td class="num" data-value=""><span class="metric-value">—</span></td></tr>
@@ -144,19 +154,18 @@
 <tr class=""><td class="num rank">19</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">BioMatrix</span><strong>BioMatrix</strong></div></th><td class="num" data-value="34.66462841530055"><span class="lb-score-cell"><span class="metric-value"><strong>34.66</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:34.66462841530055%"></span></span></span></td><td class="num" data-value="0.34664628415300547"><span class="metric-value">0.347</span></td><td class="num" data-value="0.45283554498246315"><span class="metric-value">0.453</span></td><td class="num" data-value="0.18483436456364208"><span class="metric-value">0.185</span></td><td class="num" data-value="0.2930559540467429"><span class="metric-value">0.293</span></td><td class="num" data-value="0.29212951253605046"><span class="metric-value">0.292</span></td><td class="num" data-value="18.805975848240152"><span class="metric-value">18.806</span></td><td class="num" data-value="18.71100992566389"><span class="metric-value">18.711</span></td></tr></tbody>
         </table>
       </div>
-      <p class="sub" id="folding-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
-      <div class="protocol sub"><p>Score = mean TMus × 100. The table reports means; medians are included in the metric data. TMus, TMaa, GDT-TS and LDDT use the 0–1 scale; RMSD uses Å.</p>
+      <p class="sr-only" id="folding-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
+      <p class="sub">Score = mean TMus × 100.</p>
+      <details class="protocol sub"><summary>Details</summary><p>Score = mean TMus × 100. The table reports means; medians are included in the metric data. TMus, TMaa, GDT-TS and LDDT use the 0–1 scale; RMSD uses Å.</p>
       <p><strong>Sources.</strong> Published results take precedence over local re-evaluations of the same model and size. Other rows use existing local evaluations. These protocols differ. Paper ESM3, ESMDiff and EigenFold use historical TMscore -seq values in the TMus column. Missing paper metrics are shown as —.</p>
-      <p><strong>Sampling.</strong> Ctrl marks oracle sampling configurations using native structures; these rows participate in sorting but do not receive numeric ranks. @k indicates the sampling budget. DPLM2 selects one candidate by TMus and reports all metrics from that structure; BioMatrix selects each metric independently. Greedy results are omitted; @1 uses the first sampled candidate.</p><p><a href="folding-scores.json">Metric data ↗</a></p></div>
+      <p><strong>Sampling.</strong> Ctrl marks oracle sampling configurations using native structures; these rows participate in sorting but do not receive numeric ranks. @k indicates the sampling budget. DPLM2 selects one candidate by TMus and reports all metrics from that structure; BioMatrix selects each metric independently. Greedy results are omitted; @1 uses the first sampled candidate.</p><p><a href="folding-scores.json">Metric data ↗</a></p></details>
     </section>
     <section id="inverse-folding" class="benchmark-section" aria-labelledby="inverse-folding-title">
-      <span class="sec-kicker">Benchmark results</span>
       <h2 id="inverse-folding-title">Inverse Folding <span class="heading-tag">B2S</span></h2>
-      <p class="section-sub">Structure-to-sequence design on CAMEO2022.</p>
-      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">CAMEO2022 · 5 model settings · 183 proteins</span></span><span class="sub">Click a metric to sort</span></div>
+      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">CAMEO2022 · 5 models · 183 proteins</span></span></div>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Inverse Folding scores, scroll horizontally on small screens">
         <table id="inverse-folding-table" class="leaderboard-table structure-table" data-status="inverse-folding-sort-status">
-          <caption class="sr-only">Inverse Folding on CAMEO2022. Per-protein mean metrics. Click a metric heading to sort.</caption>
+          <caption class="sr-only">Inverse Folding. Per-protein mean metrics. Click a metric heading to sort.</caption>
           <thead><tr><th class="num" scope="col">#</th><th scope="col">Model</th><th class="num" scope="col" data-sort="0" data-label="Score" data-direction="higher" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th><th class="num" scope="col" data-sort="1" data-label="AAR (%)" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by AAR (%)"><span class="metric-label">AAR (%)</span></button></th><th class="num" scope="col" data-sort="2" data-label="scTMbb" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by scTMbb"><span class="metric-label">scTMbb</span></button></th></tr></thead>
           <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-openai">ESM</span><strong>ESM-IF1</strong></div></th><td class="num" data-value="89.86288686611068"><span class="lb-score-cell"><span class="metric-value"><strong>89.86</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-openai" style="width:89.86288686611068%"></span></span></span></td><td class="num" data-value="52.96388988585966"><span class="metric-value"><strong>52.96</strong></span></td><td class="num" data-value="0.8986288686611068"><span class="metric-value"><strong>0.899</strong></span></td></tr>
 <tr class="lead-row"><td class="num rank">2</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-openai">ESM</span><strong>ESM3</strong></div></th><td class="num" data-value="89.60849173738312"><span class="lb-score-cell"><span class="metric-value"><strong>89.61</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-openai" style="width:89.60849173738312%"></span></span></span></td><td class="num" data-value="48.526519781684634"><span class="metric-value">48.53</span></td><td class="num" data-value="0.8960849173738312"><span class="metric-value">0.896</span></td></tr>
@@ -165,9 +174,10 @@
 <tr class=""><td class="num rank">5</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">BioMatrix</span><strong>BioMatrix</strong></div></th><td class="num" data-value="57.207103825136606"><span class="lb-score-cell"><span class="metric-value"><strong>57.21</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:57.207103825136606%"></span></span></span></td><td class="num" data-value="19.758087431693987"><span class="metric-value">19.76</span></td><td class="num" data-value="0.5720710382513661"><span class="metric-value">0.572</span></td></tr></tbody>
         </table>
       </div>
-      <p class="sub" id="inverse-folding-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
-      <div class="protocol sub"><p>Score = mean scTMbb × 100. AAR is reported as a percentage; scTMbb uses the 0–1 scale. The table reports per-protein means; medians are included in the metric data.</p>
-      <p><strong>Evaluation scope.</strong> Only the 183 CAMEO2022 records are included. Metrics are imported from the existing inverse-folding evaluations without recomputation.</p><p><a href="inverse-folding-scores.json">Metric data ↗</a></p></div>
+      <p class="sr-only" id="inverse-folding-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
+      <p class="sub">Score = mean scTMbb × 100.</p>
+      <details class="protocol sub"><summary>Details</summary><p>Score = mean scTMbb × 100. AAR is reported as a percentage; scTMbb uses the 0–1 scale. The table reports per-protein means; medians are included in the metric data.</p>
+      <p><strong>Evaluation scope.</strong> Only the 183 CAMEO2022 records are included. Metrics are imported from the existing inverse-folding evaluations without recomputation.</p><p><a href="inverse-folding-scores.json">Metric data ↗</a></p></details>
     </section>
 
     <footer>Scoreboard design adapted from <a href="https://jvogan.github.io/trace2fold/#results">Trace2Fold</a> by Jacob Vogan · <a href="THIRD_PARTY_LICENSE.txt">MIT license</a></footer>
