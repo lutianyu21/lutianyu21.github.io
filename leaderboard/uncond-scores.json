@@ -127,7 +127,7 @@
     },
     {
       "id": "ctrl.trion1_bdlm.dplm1",
-      "name": "Trion1-M(dplm1)",
+      "name": "Trion1-B(dplm1)",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
