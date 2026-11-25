@@ -114,6 +114,32 @@
       "source_sha256": "6eed30fc4cd80f73aee307730ddd2e58f7f02c0e2bc615719bd70dabb767d1f5"
     },
     {
+      "id": "ctrl.amix2_ar",
+      "name": "Amix2-A",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 61,
+      "score": 12.2,
+      "scores": {
+        "plddt_overall": 44.28914462661743,
+        "ptm": 0.3074270321279764,
+        "repeat": 2.6169333333333333,
+        "rep2": 39.46577730249245,
+        "rep5": 0.5734574428698854
+      },
+      "source": "ctrl.amix2_ar.jsonl",
+      "source_sha256": "2aa892e3d76ce8b88302ba2cab1be1fd7ee933b35618cf436f950a718e35c884"
+    },
+    {
       "id": "ctrl.trion1_bdlm.dplm1",
       "name": "Trion1-B(dplm1)",
       "family": "Ctrl",
