@@ -16,15 +16,15 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 472,
-      "score": 94.4,
+      "passing_count": 322,
+      "score": 64.4,
       "scores": {
         "plddt_overall": 85.0364128036499,
         "ptm": 0.8334033533632755,
@@ -42,15 +42,15 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 434,
-      "score": 86.8,
+      "passing_count": 245,
+      "score": 49.0,
       "scores": {
         "plddt_overall": 80.27254156112672,
         "ptm": 0.7705596139729023,
@@ -68,15 +68,15 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 417,
-      "score": 83.4,
+      "passing_count": 234,
+      "score": 46.8,
       "scores": {
         "plddt_overall": 81.96281246948242,
         "ptm": 0.7219872497022152,
@@ -94,15 +94,15 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 281,
-      "score": 56.2,
+      "passing_count": 154,
+      "score": 30.8,
       "scores": {
         "plddt_overall": 70.88119307327271,
         "ptm": 0.6132156745493412,
@@ -114,47 +114,21 @@
       "source_sha256": "6eed30fc4cd80f73aee307730ddd2e58f7f02c0e2bc615719bd70dabb767d1f5"
     },
     {
-      "id": "offcial.esm3_open",
-      "name": "ESM3-1.4B",
-      "family": "ESM",
-      "style": "openai",
-      "control": false,
-      "sample_counts": {
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100,
-        "overall": 500
-      },
-      "passing_count": 76,
-      "score": 15.2,
-      "scores": {
-        "plddt_overall": 57.67826163482666,
-        "ptm": 0.36560886082053184,
-        "repeat": 55.1362,
-        "rep2": 81.23750763134983,
-        "rep5": 43.56521408932123
-      },
-      "source": "offcial.esm3_open.jsonl",
-      "source_sha256": "e7d213d88696ba35dd46d4eda2b95becd4018b59d600337ee06fc25a33b4a1f5"
-    },
-    {
       "id": "ctrl.amix2_ar",
       "name": "Amix2-A",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 61,
-      "score": 12.2,
+      "passing_count": 27,
+      "score": 5.4,
       "scores": {
         "plddt_overall": 44.28914462661743,
         "ptm": 0.3074270321279764,
@@ -166,21 +140,47 @@
       "source_sha256": "2aa892e3d76ce8b88302ba2cab1be1fd7ee933b35618cf436f950a718e35c884"
     },
     {
+      "id": "offcial.esm3_open",
+      "name": "ESM3-1.4B",
+      "family": "ESM",
+      "style": "openai",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 20,
+      "score": 4.0,
+      "scores": {
+        "plddt_overall": 57.67826163482666,
+        "ptm": 0.36560886082053184,
+        "repeat": 55.1362,
+        "rep2": 81.23750763134983,
+        "rep5": 43.56521408932123
+      },
+      "source": "offcial.esm3_open.jsonl",
+      "source_sha256": "e7d213d88696ba35dd46d4eda2b95becd4018b59d600337ee06fc25a33b4a1f5"
+    },
+    {
       "id": "ctrl.trion1_bdlm.dplm1",
       "name": "Trion1-B(dplm1)",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 41,
-      "score": 8.2,
+      "passing_count": 12,
+      "score": 2.4,
       "scores": {
         "plddt_overall": 45.64150455093384,
         "ptm": 0.2978266021311283,
@@ -253,20 +253,20 @@
       100
     ],
     "unit": "percent",
-    "formula": "100 * count(plddt > 70 and ptm > 0.5) / count(all sequences)",
+    "formula": "100 * count(plddt > 80 and ptm > 0.8) / count(all sequences)",
     "thresholds": {
       "plddt": {
         "operator": ">",
-        "value": 70
+        "value": 80
       },
       "ptm": {
         "operator": ">",
-        "value": 0.5
+        "value": 0.8
       }
     },
     "combination": "and"
   },
-  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 70 and pTM > 0.5. pLDDT and pTM are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.8. pLDDT and pTM are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
   "repetition_protocol": {
     "source": "qiukeyue PDFBench",
     "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",
