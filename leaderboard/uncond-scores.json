@@ -28,12 +28,13 @@
       "scores": {
         "plddt_overall": 85.0364128036499,
         "ptm": 0.8334033533632755,
+        "ppl": 4.885156331310092,
         "repeat": 2.8276666666666666,
         "rep2": 43.85095969056862,
         "rep5": 1.104052101805558
       },
       "source": "official.dplm2.1.jsonl",
-      "source_sha256": "d2238f7323e7b7af785d0c929a297e39296cf42dc4d35a8e81a009f2788d1a38"
+      "source_sha256": "9b0e2cb78b9be3d9680a6541c85d3a9e8482f3adf4760f1a8f941e655bad7340"
     },
     {
       "id": "official.dplm2",
@@ -54,12 +55,13 @@
       "scores": {
         "plddt_overall": 80.27254156112672,
         "ptm": 0.7705596139729023,
+        "ppl": 4.618028792918845,
         "repeat": 5.192333333333334,
         "rep2": 44.96727942285879,
         "rep5": 5.830447988685316
       },
-      "source": "official.dplm2.jsonl",
-      "source_sha256": "ac955a949eb45bfda0c02590d8e1e596a4b065ccab8afd9c2615d0e94d8d6234"
+      "source": "official.dplm2_650m.jsonl",
+      "source_sha256": "2a5b902d0912d4a8e21a4aaedaf3be2bd9600c2fe3cbfb8b75d3b27969cd1bfc"
     },
     {
       "id": "official.dplm1",
@@ -80,12 +82,13 @@
       "scores": {
         "plddt_overall": 81.96281246948242,
         "ptm": 0.7219872497022152,
+        "ppl": 4.07115493189716,
         "repeat": 12.923166666666667,
         "rep2": 55.65194316876638,
         "rep5": 17.02402565052335
       },
       "source": "official.dplm1.jsonl",
-      "source_sha256": "b009662ac72568da34bee4cf5bf17fe6469fff1379cfed9eb2a3a689f8e0ef8e"
+      "source_sha256": "a640887b0d9e2aa7d926507c9a48a017da2a54764d7918a69a75616ebb4221db"
     },
     {
       "id": "native.uniref50",
@@ -106,12 +109,13 @@
       "scores": {
         "plddt_overall": 70.88119307327271,
         "ptm": 0.6132156745493412,
+        "ppl": 12.449176635637425,
         "repeat": 2.4446333333333334,
         "rep2": 39.26393063914839,
         "rep5": 0.5445224186871653
       },
       "source": "native.uniref50.jsonl",
-      "source_sha256": "6eed30fc4cd80f73aee307730ddd2e58f7f02c0e2bc615719bd70dabb767d1f5"
+      "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
     },
     {
       "id": "offcial.esm3_unlock",
@@ -132,12 +136,13 @@
       "scores": {
         "plddt_overall": 61.421769275665284,
         "ptm": 0.4210324604511261,
+        "ppl": 3.6829053881575002,
         "repeat": 56.1252,
         "rep2": 81.12613168132302,
         "rep5": 46.03736529036068
       },
       "source": "offcial.esm3_unlock.jsonl",
-      "source_sha256": "3c08cc5f86bacfa27b1990dce9827cb2c07e86fde255cae54738f2c5059ef52b"
+      "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
     },
     {
       "id": "ctrl.amix2_ar",
@@ -158,12 +163,13 @@
       "scores": {
         "plddt_overall": 44.28914462661743,
         "ptm": 0.3074270321279764,
+        "ppl": 14.242789564994283,
         "repeat": 2.6169333333333333,
         "rep2": 39.46577730249245,
         "rep5": 0.5734574428698854
       },
       "source": "ctrl.amix2_ar.jsonl",
-      "source_sha256": "2aa892e3d76ce8b88302ba2cab1be1fd7ee933b35618cf436f950a718e35c884"
+      "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
     },
     {
       "id": "offcial.esm3_open",
@@ -184,12 +190,13 @@
       "scores": {
         "plddt_overall": 57.67826163482666,
         "ptm": 0.36560886082053184,
+        "ppl": 3.987468043125029,
         "repeat": 55.1362,
         "rep2": 81.23750763134983,
         "rep5": 43.56521408932123
       },
       "source": "offcial.esm3_open.jsonl",
-      "source_sha256": "e7d213d88696ba35dd46d4eda2b95becd4018b59d600337ee06fc25a33b4a1f5"
+      "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
     },
     {
       "id": "ctrl.trion1_bdlm.dplm1",
@@ -210,12 +217,13 @@
       "scores": {
         "plddt_overall": 45.64150455093384,
         "ptm": 0.2978266021311283,
+        "ppl": 12.871932854194444,
         "repeat": 4.382233333333333,
         "rep2": 44.69117088282172,
         "rep5": 10.146966522600163
       },
       "source": "ctrl.trion1_bdlm.dplm1.jsonl",
-      "source_sha256": "a8a2b2f2aa41b9ba7a90b30433adb0292afe387c96ff2071b3510095e436ac3b"
+      "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
     }
   ],
   "status": "results_available",
@@ -238,6 +246,11 @@
         0,
         1
       ]
+    },
+    {
+      "key": "ppl",
+      "label": "PPL",
+      "direction": "lower"
     },
     {
       "key": "repeat",
@@ -292,7 +305,16 @@
     },
     "combination": "and"
   },
-  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.8. pLDDT and pTM are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.8. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "ppl_protocol": {
+    "model": "hugohrban/progen2-base",
+    "revision": "71228cbfca5960f9fab5775f378bba3673af9f00",
+    "dtype": "float32",
+    "source": "PDFBench",
+    "formula": "exp(mean next-token NLL)",
+    "max_length": 1024,
+    "aggregation": "Arithmetic mean of per-sequence PPL"
+  },
   "repetition_protocol": {
     "source": "qiukeyue PDFBench",
     "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",
