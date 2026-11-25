@@ -114,6 +114,32 @@
       "source_sha256": "6eed30fc4cd80f73aee307730ddd2e58f7f02c0e2bc615719bd70dabb767d1f5"
     },
     {
+      "id": "offcial.esm3_open",
+      "name": "ESM3-1.4B",
+      "family": "esm",
+      "style": "openai",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 76,
+      "score": 15.2,
+      "scores": {
+        "plddt_overall": 57.67826163482666,
+        "ptm": 0.36560886082053184,
+        "repeat": 55.1362,
+        "rep2": 81.23750763134983,
+        "rep5": 43.56521408932123
+      },
+      "source": "offcial.esm3_open.jsonl",
+      "source_sha256": "e7d213d88696ba35dd46d4eda2b95becd4018b59d600337ee06fc25a33b4a1f5"
+    },
+    {
       "id": "ctrl.amix2_ar",
       "name": "Amix2-A",
       "family": "Ctrl",
