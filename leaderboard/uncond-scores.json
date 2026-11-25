@@ -23,49 +23,17 @@
         "400": 100,
         "500": 100
       },
-      "score": 85.0364128036499,
+      "passing_count": 472,
+      "score": 94.4,
       "scores": {
         "plddt_overall": 85.0364128036499,
-        "plddt_100": 78.39811710357667,
-        "plddt_200": 86.68543968200683,
-        "plddt_300": 87.4438387298584,
-        "plddt_400": 85.76009635925293,
-        "plddt_500": 86.89457214355468,
+        "ptm": 0.8334033533632755,
         "repeat": 2.8276666666666666,
         "rep2": 43.85095969056862,
         "rep5": 1.104052101805558
       },
       "source": "official.dplm2.1.jsonl",
-      "source_sha256": "0c51c0ecfd23bad44c7a66e21dec69ba2005d8d8d45be840a8c8a2f52b5d1e95"
-    },
-    {
-      "id": "official.dplm1",
-      "name": "DPLM1",
-      "family": "DPLM",
-      "style": "open",
-      "control": false,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "score": 81.96281246948242,
-      "scores": {
-        "plddt_overall": 81.96281246948242,
-        "plddt_100": 72.17018465042115,
-        "plddt_200": 84.40162979125977,
-        "plddt_300": 83.35803783416748,
-        "plddt_400": 85.73474605560303,
-        "plddt_500": 84.14946401596069,
-        "repeat": 12.923166666666667,
-        "rep2": 55.65194316876638,
-        "rep5": 17.02402565052335
-      },
-      "source": "official.dplm1.jsonl",
-      "source_sha256": "9a37150f9862f6a344bb217472603966bed6aab7570c88a684aef49dfc7870a3"
+      "source_sha256": "d2238f7323e7b7af785d0c929a297e39296cf42dc4d35a8e81a009f2788d1a38"
     },
     {
       "id": "official.dplm2",
@@ -81,20 +49,43 @@
         "400": 100,
         "500": 100
       },
-      "score": 80.27254156112672,
+      "passing_count": 434,
+      "score": 86.8,
       "scores": {
         "plddt_overall": 80.27254156112672,
-        "plddt_100": 76.93474544525147,
-        "plddt_200": 83.76878984451294,
-        "plddt_300": 81.06079668045044,
-        "plddt_400": 80.49212490081787,
-        "plddt_500": 79.10625093460084,
+        "ptm": 0.7705596139729023,
         "repeat": 5.192333333333334,
         "rep2": 44.96727942285879,
         "rep5": 5.830447988685316
       },
       "source": "official.dplm2.jsonl",
-      "source_sha256": "9de64b5ffadb2a2258e5dbb5a98f027554ea46dedb82f22d2732015a49b4b99c"
+      "source_sha256": "ac955a949eb45bfda0c02590d8e1e596a4b065ccab8afd9c2615d0e94d8d6234"
+    },
+    {
+      "id": "official.dplm1",
+      "name": "DPLM1",
+      "family": "DPLM",
+      "style": "open",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 417,
+      "score": 83.4,
+      "scores": {
+        "plddt_overall": 81.96281246948242,
+        "ptm": 0.7219872497022152,
+        "repeat": 12.923166666666667,
+        "rep2": 55.65194316876638,
+        "rep5": 17.02402565052335
+      },
+      "source": "official.dplm1.jsonl",
+      "source_sha256": "b009662ac72568da34bee4cf5bf17fe6469fff1379cfed9eb2a3a689f8e0ef8e"
     },
     {
       "id": "native.uniref50",
@@ -110,20 +101,17 @@
         "400": 100,
         "500": 100
       },
-      "score": 70.88119307327271,
+      "passing_count": 281,
+      "score": 56.2,
       "scores": {
         "plddt_overall": 70.88119307327271,
-        "plddt_100": 53.10676809310913,
-        "plddt_200": 72.16232698440552,
-        "plddt_300": 75.1398711013794,
-        "plddt_400": 77.995950756073,
-        "plddt_500": 76.00104843139648,
+        "ptm": 0.6132156745493412,
         "repeat": 2.4446333333333334,
         "rep2": 39.26393063914839,
         "rep5": 0.5445224186871653
       },
       "source": "native.uniref50.jsonl",
-      "source_sha256": "362b4810b1f7183924a5ca2ff7b544d044d2dcd352f398acc7bfd9950a4fd2e1"
+      "source_sha256": "6eed30fc4cd80f73aee307730ddd2e58f7f02c0e2bc615719bd70dabb767d1f5"
     },
     {
       "id": "ctrl.trion1_bdlm.dplm1",
@@ -139,29 +127,25 @@
         "400": 100,
         "500": 100
       },
-      "score": 45.64150455093384,
+      "passing_count": 41,
+      "score": 8.2,
       "scores": {
         "plddt_overall": 45.64150455093384,
-        "plddt_100": 45.042460651397704,
-        "plddt_200": 48.93274967193604,
-        "plddt_300": 44.578085613250735,
-        "plddt_400": 46.53899236679077,
-        "plddt_500": 43.115234451293944,
+        "ptm": 0.2978266021311283,
         "repeat": 4.382233333333333,
         "rep2": 44.69117088282172,
         "rep5": 10.146966522600163
       },
       "source": "ctrl.trion1_bdlm.dplm1.jsonl",
-      "source_sha256": "86c9243d532be12716366661d6ceb92fc9a7ca4d96ff6a3239eb4524caf44290"
+      "source_sha256": "a8a2b2f2aa41b9ba7a90b30433adb0292afe387c96ff2071b3510095e436ac3b"
     }
   ],
   "status": "results_available",
   "control_policy": "Controls participate in sorting, display Ctrl instead of a rank, and are excluded from ranking and best-score comparisons.",
   "metrics": [
     {
-      "key": "plddt_100",
-      "label": "pLDDT 100 aa",
-      "length_aa": 100,
+      "key": "plddt_overall",
+      "label": "pLDDT",
       "direction": "higher",
       "scale": [
         0,
@@ -169,43 +153,12 @@
       ]
     },
     {
-      "key": "plddt_200",
-      "label": "pLDDT 200 aa",
-      "length_aa": 200,
+      "key": "ptm",
+      "label": "pTM",
       "direction": "higher",
       "scale": [
         0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_300",
-      "label": "pLDDT 300 aa",
-      "length_aa": 300,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_400",
-      "label": "pLDDT 400 aa",
-      "length_aa": 400,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
-      ]
-    },
-    {
-      "key": "plddt_500",
-      "label": "pLDDT 500 aa",
-      "length_aa": 500,
-      "direction": "higher",
-      "scale": [
-        0,
-        100
+        1
       ]
     },
     {
@@ -247,9 +200,21 @@
       0,
       100
     ],
-    "source_metric": "plddt_overall"
+    "unit": "percent",
+    "formula": "100 * count(plddt > 70 and ptm > 0.5) / count(all sequences)",
+    "thresholds": {
+      "plddt": {
+        "operator": ">",
+        "value": 70
+      },
+      "ptm": {
+        "operator": ">",
+        "value": 0.5
+      }
+    },
+    "combination": "and"
   },
-  "aggregation": "Score and repetition metrics average all sequences; each length-specific pLDDT averages only sequences of that length. Overall pLDDT is retained in the data as plddt_overall.",
+  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 70 and pTM > 0.5. pLDDT and pTM are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
   "repetition_protocol": {
     "source": "qiukeyue PDFBench",
     "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",
