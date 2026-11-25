@@ -2,7 +2,7 @@
   "task": "B",
   "title": "Structure Generation",
   "context": "500 structures",
-  "score_note": "Score = mean scTM × 100.",
+  "score_note": "Score = % with scTM &gt; 0.7.",
   "metrics": [
     {
       "key": "scTM",
@@ -23,7 +23,11 @@
   "score_metric": {
     "key": "score",
     "source_metric": "scTM",
-    "formula": "100 * mean(scTM)",
+    "formula": "100 * count(scTM > 0.7) / count(all structures)",
+    "threshold": {
+      "operator": ">",
+      "value": 0.7
+    },
     "direction": "higher",
     "scale": [
       0,
@@ -37,7 +41,8 @@
       "name": "DPLM2",
       "family_name": "DPLM",
       "control": false,
-      "score": 88.24140200000001,
+      "score": 90.8,
+      "passing_count": 454,
       "scores": {
         "scTM": 0.88241402,
         "scRMSD": 3.4619248525356854

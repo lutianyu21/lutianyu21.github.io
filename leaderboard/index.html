@@ -62,11 +62,11 @@
         <table id="structure-uncond-table" class="leaderboard-table structure-table" data-status="structure-uncond-sort-status">
           <caption class="sr-only">Structure Generation. Per-protein mean metrics. Click a metric heading to sort.</caption>
           <thead><tr><th class="num" scope="col">#</th><th scope="col">Model</th><th class="num" scope="col" data-sort="0" data-label="Score" data-direction="higher" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th><th class="num" scope="col" data-sort="1" data-label="scTM" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by scTM"><span class="metric-label">scTM</span></button></th><th class="num" scope="col" data-sort="2" data-label="scRMSD (Å)" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by scRMSD (Å)"><span class="metric-label">scRMSD (Å)</span></button></th></tr></thead>
-          <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2</strong></div></th><td class="num" data-value="88.24140200000001"><span class="lb-score-cell"><span class="metric-value"><strong>88.24</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:88.24140200000001%"></span></span></span></td><td class="num" data-value="0.88241402"><span class="metric-value"><strong>0.882</strong></span></td><td class="num" data-value="3.4619248525356854"><span class="metric-value"><strong>3.462</strong></span></td></tr></tbody>
+          <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2</strong></div></th><td class="num" data-value="90.8"><span class="lb-score-cell"><span class="metric-value"><strong>90.80</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:90.8%"></span></span></span></td><td class="num" data-value="0.88241402"><span class="metric-value"><strong>0.882</strong></span></td><td class="num" data-value="3.4619248525356854"><span class="metric-value"><strong>3.462</strong></span></td></tr></tbody>
         </table>
       </div>
       <p class="sr-only" id="structure-uncond-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
-      <p class="sub">Score = mean scTM × 100.</p>
+      <p class="sub">Score = % with scTM &gt; 0.7.</p>
     </section>
 
     <section id="sequence-understanding" class="benchmark-section" aria-labelledby="sequence-understanding-title">
