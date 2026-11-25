@@ -167,7 +167,7 @@
     },
     {
       "id": "offcial.esm3_open",
-      "name": "ESM3-1.4B(default)",
+      "name": "ESM3-1.4B",
       "family": "ESM",
       "style": "openai",
       "control": false,
