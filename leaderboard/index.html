@@ -53,13 +53,6 @@
     </div>
     <p class="sub">Score = % with pLDDT &gt; 80 and pTM &gt; 0.8.</p>
     <p class="sr-only" id="uncond-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank. Ctrl rows sort with models but are not ranked.</p>
-    <details class="protocol sub"><summary>Details</summary>
-      <p><strong>Fixed-length evaluation.</strong> DPLM1, DPLM2, DPLM2.1, ESM3-1.4B, ESM3-1.4B(unlock), Trion1-B(dplm1), Amix2-A, DPLM1(no_remask): 500 sequences each (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Scores are aggregated from the existing evaluation results.</p>
-      <p><strong>Native control.</strong> UniRef50: 500 sequences (100 aa: 100, 200 aa: 100, 300 aa: 100, 400 aa: 100, 500 aa: 100). Ctrl rows are excluded from ranks and best-score comparisons.</p>
-      <p><strong>PPL.</strong> Mean per-sequence perplexity scored by ProGen2-base (FP32), following PDFBench.</p>
-      <p><strong>Repeat.</strong> Percentage of residues covered by contiguous motifs of 1–20 residues repeated at least three times. Overlapping repeat regions are merged.</p>
-      <p><strong>Rep2 / Rep5.</strong> Repeated 2-gram and 5-gram fractions: 1 − unique n-grams / (L − n + 1), where L is sequence length. A sequence of length ≤ n receives 0. Values are averaged over sequences and shown as percentages, following qiukeyue’s PDFBench implementation. <a href="uncond-scores.json">Metric data ↗</a></p>
-    </details>
     </section>
 
     <section id="structure-uncond" class="benchmark-section" aria-labelledby="structure-uncond-title">
@@ -74,7 +67,6 @@
       </div>
       <p class="sr-only" id="structure-uncond-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
       <p class="sub">Score = mean scTM × 100.</p>
-      <details class="protocol sub"><summary>Details</summary><p>Overall means over all structures. scTM and scRMSD are imported from the supplied evaluation results.</p><p><a href="structure-uncond-scores.json">Metric data ↗</a></p></details>
     </section>
 
     <section id="sequence-understanding" class="benchmark-section" aria-labelledby="sequence-understanding-title">
@@ -112,10 +104,6 @@
     </div>
     <p class="sub">Score = Overall accuracy (%).</p>
     <p class="sr-only" id="sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
-    <details class="protocol sub"><summary>Details</summary>
-      <p><strong>Evaluation scope.</strong> 455 reference questions: Function &amp; Family (150), Interaction &amp; Binding (152), and Location &amp; Modification (153). Hydrophobicity Property and Structural Composition questions are excluded.</p>
-      <p>Scores are reproduced from the existing benchmark summary, without recomputing or combining metrics. Models without reported S2T results are omitted. <a href="scores.json">Score data ↗</a></p>
-    </details>
     </section>
     <section id="folding" class="benchmark-section" aria-labelledby="folding-title">
       <h2 id="folding-title">Folding <span class="heading-tag">S2B</span></h2>
@@ -156,9 +144,6 @@
       </div>
       <p class="sr-only" id="folding-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
       <p class="sub">Score = mean TMus × 100.</p>
-      <details class="protocol sub"><summary>Details</summary><p>Score = mean TMus × 100. The table reports means; medians are included in the metric data. TMus, TMaa, GDT-TS and LDDT use the 0–1 scale; RMSD uses Å.</p>
-      <p><strong>Sources.</strong> Published results take precedence over local re-evaluations of the same model and size. Other rows use existing local evaluations. These protocols differ. Paper ESM3, ESMDiff and EigenFold use historical TMscore -seq values in the TMus column. Missing paper metrics are shown as —.</p>
-      <p><strong>Sampling.</strong> Ctrl marks oracle sampling configurations using native structures; these rows participate in sorting but do not receive numeric ranks. @k indicates the sampling budget. DPLM2 selects one candidate by TMus and reports all metrics from that structure; BioMatrix selects each metric independently. Greedy results are omitted; @1 uses the first sampled candidate.</p><p><a href="folding-scores.json">Metric data ↗</a></p></details>
     </section>
     <section id="inverse-folding" class="benchmark-section" aria-labelledby="inverse-folding-title">
       <h2 id="inverse-folding-title">Inverse Folding <span class="heading-tag">B2S</span></h2>
@@ -176,8 +161,6 @@
       </div>
       <p class="sr-only" id="inverse-folding-sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
       <p class="sub">Score = mean scTMbb × 100.</p>
-      <details class="protocol sub"><summary>Details</summary><p>Score = mean scTMbb × 100. AAR is reported as a percentage; scTMbb uses the 0–1 scale. The table reports per-protein means; medians are included in the metric data.</p>
-      <p><strong>Evaluation scope.</strong> Only the 183 CAMEO2022 records are included. Metrics are imported from the existing inverse-folding evaluations without recomputation.</p><p><a href="inverse-folding-scores.json">Metric data ↗</a></p></details>
     </section>
 
     <footer>Scoreboard design adapted from <a href="https://jvogan.github.io/trace2fold/#results">Trace2Fold</a> by Jacob Vogan · <a href="THIRD_PARTY_LICENSE.txt">MIT license</a></footer>
