@@ -1,5 +1,5 @@
 {
-  "task": "Unconditional Generation",
+  "task": "Unconditional Sequence Generation",
   "length_mode": "fixed",
   "lengths_aa": [
     100,

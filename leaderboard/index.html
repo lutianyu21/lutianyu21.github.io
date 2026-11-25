@@ -15,21 +15,21 @@
   <main>
     <h1>Protein benchmark leaderboard</h1>
     <nav class="benchmark-tabs" aria-label="Benchmark sections">
-      <a href="#sequence-uncond" aria-current="location" aria-label="S: Unconditional Generation" title="Unconditional Generation">S</a>
-      <a href="#structure-uncond" aria-label="B: Structure Generation" title="Structure Generation">B</a>
+      <a href="#sequence-uncond" aria-current="location" aria-label="S: Unconditional Sequence Generation" title="Unconditional Sequence Generation">S</a>
+      <a href="#structure-uncond" aria-label="B: Unconditional Structure Generation" title="Unconditional Structure Generation">B</a>
       <a href="#sequence-understanding" aria-label="S2T: Sequence Understanding" title="Sequence Understanding">S2T</a>
       <a href="#folding" aria-label="S2B: Folding" title="Folding">S2B</a>
       <a href="#inverse-folding" aria-label="B2S: Inverse Folding" title="Inverse Folding">B2S</a>
     </nav>
     <section id="sequence-uncond" class="benchmark-section" aria-labelledby="sequence-uncond-title">
-    <h2 id="sequence-uncond-title">Unconditional Generation <span class="heading-tag">S</span></h2>
+    <h2 id="sequence-uncond-title">Unconditional Sequence Generation</h2>
     <div class="lb-top-bar">
-      <span class="view-label">Scoreboard <span class="count">Unconditional Generation · 5 models + 4 controls</span></span>
+      <span class="view-label">Scoreboard</span>
       
     </div>
-    <div class="table-wrap" tabindex="0" role="region" aria-label="Unconditional Generation scores, scroll horizontally on small screens">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Unconditional Sequence Generation scores, scroll horizontally on small screens">
       <table id="uncond-table" class="leaderboard-table" data-status="uncond-sort-status">
-        <caption class="sr-only">Unconditional Generation joint-threshold Score, overall pLDDT and pTM. Higher Score, pLDDT and pTM are better; lower PPL and lower Repeat, Rep2, and Rep5 percentages are better.</caption>
+        <caption class="sr-only">Unconditional Sequence Generation joint-threshold Score, overall pLDDT and pTM. Higher Score, pLDDT and pTM are better; lower PPL and lower Repeat, Rep2, and Rep5 percentages are better.</caption>
         <thead><tr>
           <th class="num" scope="col">#</th><th scope="col">Model</th>
           <th class="num" scope="col" data-sort="0" data-label="Score" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th>
@@ -56,11 +56,11 @@
     </section>
 
     <section id="structure-uncond" class="benchmark-section" aria-labelledby="structure-uncond-title">
-      <h2 id="structure-uncond-title">Structure Generation <span class="heading-tag">B</span></h2>
-      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">500 structures</span></span></div>
-      <div class="table-wrap" tabindex="0" role="region" aria-label="Structure Generation scores, scroll horizontally on small screens">
+      <h2 id="structure-uncond-title">Unconditional Structure Generation</h2>
+      <div class="lb-top-bar"><span class="view-label">Scoreboard</span></div>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Unconditional Structure Generation scores, scroll horizontally on small screens">
         <table id="structure-uncond-table" class="leaderboard-table structure-table" data-status="structure-uncond-sort-status">
-          <caption class="sr-only">Structure Generation. Per-protein mean metrics. Click a metric heading to sort.</caption>
+          <caption class="sr-only">Unconditional Structure Generation. Per-protein mean metrics. Click a metric heading to sort.</caption>
           <thead><tr><th class="num" scope="col">#</th><th scope="col">Model</th><th class="num" scope="col" data-sort="0" data-label="Score" data-direction="higher" aria-sort="descending"><button type="button" aria-label="Sort by Score"><span class="metric-label">Score</span></button></th><th class="num" scope="col" data-sort="1" data-label="scTM" data-direction="higher" aria-sort="none"><button type="button" aria-label="Sort by scTM"><span class="metric-label">scTM</span></button></th><th class="num" scope="col" data-sort="2" data-label="scRMSD (Å)" data-direction="lower" aria-sort="none"><button type="button" aria-label="Sort by scRMSD (Å)"><span class="metric-label">scRMSD (Å)</span></button></th><th class="num" scope="col"><span class="metric-label">Helix (%)</span></th><th class="num" scope="col"><span class="metric-label">Sheet (%)</span></th><th class="num" scope="col"><span class="metric-label">Coil (%)</span></th></tr></thead>
           <tbody><tr class="lead-row"><td class="num rank">1</td><th scope="row"><div class="model-cell"><span class="fam-pill fam-open">DPLM</span><strong>DPLM2</strong></div></th><td class="num" data-value="90.8"><span class="lb-score-cell"><span class="metric-value"><strong>90.80</strong></span><span class="lb-inline-track" aria-hidden="true"><span class="lb-inline-fill fill-open" style="width:90.8%"></span></span></span></td><td class="num" data-value="0.88241402"><span class="metric-value"><strong>0.882</strong></span></td><td class="num" data-value="3.4619248525356854"><span class="metric-value"><strong>3.462</strong></span></td><td class="num" data-value="44.34476666666667"><span class="metric-value">44.34</span></td><td class="num" data-value="19.03933333333333"><span class="metric-value">19.04</span></td><td class="num" data-value="36.6159"><span class="metric-value">36.62</span></td></tr></tbody>
         </table>
@@ -70,8 +70,8 @@
     </section>
 
     <section id="sequence-understanding" class="benchmark-section" aria-labelledby="sequence-understanding-title">
-    <h2 id="sequence-understanding-title">Sequence Understanding <span class="heading-tag">S2T</span></h2>
-    <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">S2T · 17 model settings · 455 questions</span></span></div>
+    <h2 id="sequence-understanding-title">Sequence Understanding</h2>
+    <div class="lb-top-bar"><span class="view-label">Scoreboard</span></div>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Protein understanding scores, scroll horizontally on small screens">
       <table id="lb-table" class="leaderboard-table" data-status="sort-status">
         <caption class="sr-only">AMIX2 S2T accuracy (%). Higher is better. Click a metric heading to sort.</caption>
@@ -106,8 +106,8 @@
     <p class="sr-only" id="sort-status" role="status" aria-live="polite">Sorted by Score · highest first. Equal scores share a rank.</p>
     </section>
     <section id="folding" class="benchmark-section" aria-labelledby="folding-title">
-      <h2 id="folding-title">Folding <span class="heading-tag">S2B</span></h2>
-      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">CAMEO2022 · 28 models · 183 proteins</span></span></div>
+      <h2 id="folding-title">Folding</h2>
+      <div class="lb-top-bar"><span class="view-label">Scoreboard</span></div>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Folding scores, scroll horizontally on small screens">
         <table id="folding-table" class="leaderboard-table structure-table" data-status="folding-sort-status">
           <caption class="sr-only">Folding. Per-protein mean metrics. Click a metric heading to sort.</caption>
@@ -146,8 +146,8 @@
       <p class="sub">Score = mean TMus × 100.</p>
     </section>
     <section id="inverse-folding" class="benchmark-section" aria-labelledby="inverse-folding-title">
-      <h2 id="inverse-folding-title">Inverse Folding <span class="heading-tag">B2S</span></h2>
-      <div class="lb-top-bar"><span class="view-label">Scoreboard <span class="count">CAMEO2022 · 5 models · 183 proteins</span></span></div>
+      <h2 id="inverse-folding-title">Inverse Folding</h2>
+      <div class="lb-top-bar"><span class="view-label">Scoreboard</span></div>
       <div class="table-wrap" tabindex="0" role="region" aria-label="Inverse Folding scores, scroll horizontally on small screens">
         <table id="inverse-folding-table" class="leaderboard-table structure-table" data-status="inverse-folding-sort-status">
           <caption class="sr-only">Inverse Folding. Per-protein mean metrics. Click a metric heading to sort.</caption>
