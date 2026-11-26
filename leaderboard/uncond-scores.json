@@ -16,12 +16,12 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 372,
       "score": 74.4,
@@ -43,12 +43,12 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 352,
       "score": 70.4,
@@ -70,15 +70,15 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 290,
-      "score": 58.0,
+      "score": 58,
       "scores": {
         "plddt_overall": 78.404654296875,
         "ptm": 0.7150063265562058,
@@ -97,12 +97,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 188,
       "score": 37.6,
@@ -124,12 +124,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 184,
       "score": 36.8,
@@ -151,12 +151,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 122,
       "score": 24.4,
@@ -178,12 +178,12 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 68,
       "score": 13.6,
@@ -205,25 +205,25 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 40,
-      "score": 8.0,
+      "score": 8,
       "scores": {
         "plddt_overall": 54.142878761291506,
         "ptm": 0.3199696555733681,
-        "ppl": null,
+        "ppl": 8.116603485253357,
         "repeat": 23.67653333333333,
         "rep2": 62.990056351724945,
         "rep5": 25.129788008503446
       },
       "source": "ctrl.trion1_mdlm.rdm.jsonl",
-      "source_sha256": "d89127c0bc16b9e591fac3939d112d4fbde4a90ebf0ebd0eeabb193fcb16dbf7"
+      "source_sha256": "0b81a854d37c20cd3fed98d30faa2ce83b24be8303392d779189e97db797a99a"
     },
     {
       "id": "ctrl.amix2_ar",
@@ -232,12 +232,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 32,
       "score": 6.4,
@@ -259,12 +259,12 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 29,
       "score": 5.8,
@@ -286,15 +286,15 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 15,
-      "score": 3.0,
+      "score": 3,
       "scores": {
         "plddt_overall": 45.64150455093384,
         "ptm": 0.2978266021311283,
