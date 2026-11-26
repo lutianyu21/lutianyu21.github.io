@@ -118,7 +118,7 @@
       "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
     },
     {
-      "id": "ctrl.dplm1_3b.greedy_ancestral",
+      "id": "ctrl.dplm1_3b.greedy_naive",
       "name": "DPLM1(GreedyNaive)",
       "family": "Ctrl",
       "style": "ctrl",
@@ -141,11 +141,11 @@
         "rep2": 41.92939326276087,
         "rep5": 2.260494265736201
       },
-      "source": "ctrl.dplm1_3b.greedy_ancestral.jsonl",
+      "source": "ctrl.dplm1_3b.greedy_naive.jsonl",
       "source_sha256": "5661dfcda439a39a7c602069187337f97627330618925b340b0db99e987a1982"
     },
     {
-      "id": "ctrl.dplm1_3b.ancestral",
+      "id": "ctrl.dplm1_3b.naive",
       "name": "DPLM1(Naive)",
       "family": "Ctrl",
       "style": "ctrl",
@@ -168,7 +168,7 @@
         "rep2": 39.53656663100524,
         "rep5": 0.6443381951734487
       },
-      "source": "ctrl.dplm1_3b.ancestral.jsonl",
+      "source": "ctrl.dplm1_3b.naive.jsonl",
       "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
     },
     {
@@ -197,6 +197,33 @@
       },
       "source": "offcial.esm3_unlock.jsonl",
       "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
+    },
+    {
+      "id": "ctrl.trion1_mdlm.rdm",
+      "name": "Trion1-M(RDM)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 40,
+      "score": 8.0,
+      "scores": {
+        "plddt_overall": 54.142878761291506,
+        "ptm": 0.3199696555733681,
+        "ppl": null,
+        "repeat": 23.67653333333333,
+        "rep2": 62.990056351724945,
+        "rep5": 25.129788008503446
+      },
+      "source": "ctrl.trion1_mdlm.rdm.jsonl",
+      "source_sha256": "d89127c0bc16b9e591fac3939d112d4fbde4a90ebf0ebd0eeabb193fcb16dbf7"
     },
     {
       "id": "ctrl.amix2_ar",
