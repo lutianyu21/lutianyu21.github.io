@@ -23,8 +23,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 322,
-      "score": 64.4,
+      "passing_count": 318,
+      "score": 63.6,
       "scores": {
         "plddt_overall": 85.0364128036499,
         "ptm": 0.8334033533632755,
@@ -35,33 +35,6 @@
       },
       "source": "official.dplm2.1.jsonl",
       "source_sha256": "9b0e2cb78b9be3d9680a6541c85d3a9e8482f3adf4760f1a8f941e655bad7340"
-    },
-    {
-      "id": "official.dplm2_3b",
-      "name": "DPLM2-3B",
-      "family": "DPLM",
-      "style": "open",
-      "control": false,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "passing_count": 249,
-      "score": 49.8,
-      "scores": {
-        "plddt_overall": 78.404654296875,
-        "ptm": 0.7150063265562058,
-        "ppl": 4.955632244556023,
-        "repeat": 20.1039,
-        "rep2": 57.0701771016898,
-        "rep5": 20.956358143109295
-      },
-      "source": "official.dplm2_3b.jsonl",
-      "source_sha256": "8df7bea687ee9ba4da370cc9cdd3e7d793214a59b04cf7a7df086bb7eed7f79c"
     },
     {
       "id": "official.dplm2",
@@ -77,8 +50,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 245,
-      "score": 49.0,
+      "passing_count": 232,
+      "score": 46.4,
       "scores": {
         "plddt_overall": 80.27254156112672,
         "ptm": 0.7705596139729023,
@@ -104,8 +77,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 234,
-      "score": 46.8,
+      "passing_count": 214,
+      "score": 42.8,
       "scores": {
         "plddt_overall": 81.96281246948242,
         "ptm": 0.7219872497022152,
@@ -116,6 +89,33 @@
       },
       "source": "official.dplm1.jsonl",
       "source_sha256": "a640887b0d9e2aa7d926507c9a48a017da2a54764d7918a69a75616ebb4221db"
+    },
+    {
+      "id": "official.dplm2_3b",
+      "name": "DPLM2-3B",
+      "family": "DPLM",
+      "style": "open",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 205,
+      "score": 41.0,
+      "scores": {
+        "plddt_overall": 78.404654296875,
+        "ptm": 0.7150063265562058,
+        "ppl": 4.955632244556023,
+        "repeat": 20.1039,
+        "rep2": 57.0701771016898,
+        "rep5": 20.956358143109295
+      },
+      "source": "official.dplm2_3b.jsonl",
+      "source_sha256": "8df7bea687ee9ba4da370cc9cdd3e7d793214a59b04cf7a7df086bb7eed7f79c"
     },
     {
       "id": "native.uniref50",
@@ -143,33 +143,6 @@
       },
       "source": "native.uniref50.jsonl",
       "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
-    },
-    {
-      "id": "offcial.esm3_unlock",
-      "name": "ESM3-1.4B(unlock)",
-      "family": "ESM",
-      "style": "openai",
-      "control": false,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "passing_count": 55,
-      "score": 11.0,
-      "scores": {
-        "plddt_overall": 61.421769275665284,
-        "ptm": 0.4210324604511261,
-        "ppl": 3.6829053881575002,
-        "repeat": 56.1252,
-        "rep2": 81.12613168132302,
-        "rep5": 46.03736529036068
-      },
-      "source": "offcial.esm3_unlock.jsonl",
-      "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
     },
     {
       "id": "ctrl.dplm1.no_remask",
@@ -226,8 +199,8 @@
       "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
     },
     {
-      "id": "offcial.esm3_open",
-      "name": "ESM3-1.4B",
+      "id": "offcial.esm3_unlock",
+      "name": "ESM3-1.4B(unlock)",
       "family": "ESM",
       "style": "openai",
       "control": false,
@@ -239,18 +212,18 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 20,
-      "score": 4.0,
+      "passing_count": 15,
+      "score": 3.0,
       "scores": {
-        "plddt_overall": 57.67826163482666,
-        "ptm": 0.36560886082053184,
-        "ppl": 3.987468043125029,
-        "repeat": 55.1362,
-        "rep2": 81.23750763134983,
-        "rep5": 43.56521408932123
+        "plddt_overall": 61.421769275665284,
+        "ptm": 0.4210324604511261,
+        "ppl": 3.6829053881575002,
+        "repeat": 56.1252,
+        "rep2": 81.12613168132302,
+        "rep5": 46.03736529036068
       },
-      "source": "offcial.esm3_open.jsonl",
-      "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
+      "source": "offcial.esm3_unlock.jsonl",
+      "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
     },
     {
       "id": "ctrl.trion1_bdlm.dplm1",
@@ -278,6 +251,33 @@
       },
       "source": "ctrl.trion1_bdlm.dplm1.jsonl",
       "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
+    },
+    {
+      "id": "offcial.esm3_open",
+      "name": "ESM3-1.4B",
+      "family": "ESM",
+      "style": "openai",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 7,
+      "score": 1.4,
+      "scores": {
+        "plddt_overall": 57.67826163482666,
+        "ptm": 0.36560886082053184,
+        "ppl": 3.987468043125029,
+        "repeat": 55.1362,
+        "rep2": 81.23750763134983,
+        "rep5": 43.56521408932123
+      },
+      "source": "offcial.esm3_open.jsonl",
+      "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
     }
   ],
   "status": "results_available",
@@ -346,7 +346,7 @@
       100
     ],
     "unit": "percent",
-    "formula": "100 * count(plddt > 80 and ptm > 0.8) / count(all sequences)",
+    "formula": "100 * count(plddt > 80 and ptm > 0.8 and repeat < 0.1) / count(all sequences)",
     "thresholds": {
       "plddt": {
         "operator": ">",
@@ -355,11 +355,16 @@
       "ptm": {
         "operator": ">",
         "value": 0.8
+      },
+      "repeat": {
+        "operator": "<",
+        "value": 0.1,
+        "unit": "fraction"
       }
     },
     "combination": "and"
   },
-  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.8. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80, pTM > 0.8 and Repeat < 10%. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
   "ppl_protocol": {
     "model": "hugohrban/progen2-base",
     "revision": "71228cbfca5960f9fab5775f378bba3673af9f00",
