@@ -71,6 +71,36 @@
       "source_sha256": "51b9b48ee2bf5d542d3808b4d5b46e4368604f2b5c94e94c442923fc654859f2"
     },
     {
+      "id": "native.swissprot",
+      "name": "SwissProt",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": 301,
+      "passing_count": 351,
+      "score": 70.2,
+      "scores": {
+        "plddt_overall": 87.13434001207352,
+        "ptm": 0.79286023914814,
+        "ppl": 6.584341749969621,
+        "repeat": 1.9055,
+        "rep2": 38.711663112167344,
+        "rep5": 0.3577313140389177,
+        "seq_diversity": 60.2
+      },
+      "source": "native.swissprot.jsonl",
+      "source_sha256": "f15aaa3f93b74927977df03571b7d8bc6e8cc8f0bc7e9fae99d3f156f1d08597"
+    },
+    {
       "id": "official.dplm1_3b",
       "name": "DPLM1",
       "family": "DPLM",
