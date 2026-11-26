@@ -2,7 +2,7 @@
   "task": "B",
   "title": "Unconditional Structure Generation",
   "context": "Overall structures",
-  "score_note": "Score = % with scTM &gt; 0.7.",
+  "score_note": "Score = % with scTM &gt; 0.7 and scRMSD &lt; 2 Å.",
   "metrics": [
     {
       "key": "scTM",
@@ -52,12 +52,23 @@
   ],
   "score_metric": {
     "key": "score",
-    "source_metric": "scTM",
-    "formula": "100 * count(scTM > 0.7) / count(all structures)",
-    "threshold": {
-      "operator": ">",
-      "value": 0.7
+    "source_metrics": [
+      "scTM",
+      "scRMSD"
+    ],
+    "formula": "100 * count(scTM > 0.7 and scRMSD < 2) / count(all structures)",
+    "thresholds": {
+      "scTM": {
+        "operator": ">",
+        "value": 0.7
+      },
+      "scRMSD": {
+        "operator": "<",
+        "value": 2,
+        "unit": "angstrom"
+      }
     },
+    "combination": "and",
     "direction": "higher",
     "scale": [
       0,
@@ -80,8 +91,8 @@
       "name": "DPLM2-0.6B",
       "family_name": "DPLM",
       "control": false,
-      "score": 90.8,
-      "passing_count": 454,
+      "score": 47.4,
+      "passing_count": 237,
       "scores": {
         "scTM": 0.88241402,
         "scRMSD": 3.4619248525356854,
@@ -100,8 +111,8 @@
       "name": "DPLM2-3B",
       "family_name": "DPLM",
       "control": false,
-      "score": 80.8,
-      "passing_count": 404,
+      "score": 44.0,
+      "passing_count": 220,
       "scores": {
         "scTM": 0.84491112,
         "scRMSD": 5.492348328753368,
