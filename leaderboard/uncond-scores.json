@@ -24,8 +24,8 @@
         "500": 100
       },
       "cluster_count": 378,
-      "passing_count": 372,
-      "score": 74.4,
+      "passing_count": 366,
+      "score": 73.2,
       "scores": {
         "plddt_overall": 85.0364128036499,
         "ptm": 0.8334033533632755,
@@ -53,8 +53,8 @@
         "500": 100
       },
       "cluster_count": 256,
-      "passing_count": 352,
-      "score": 70.4,
+      "passing_count": 337,
+      "score": 67.4,
       "scores": {
         "plddt_overall": 86.04648223876953,
         "ptm": 0.7848380891084671,
@@ -82,8 +82,8 @@
         "500": 100
       },
       "cluster_count": 318,
-      "passing_count": 290,
-      "score": 58.0,
+      "passing_count": 240,
+      "score": 48.0,
       "scores": {
         "plddt_overall": 78.404654296875,
         "ptm": 0.7150063265562058,
@@ -140,8 +140,8 @@
         "500": 100
       },
       "cluster_count": 382,
-      "passing_count": 184,
-      "score": 36.8,
+      "passing_count": 183,
+      "score": 36.6,
       "scores": {
         "plddt_overall": 69.54603603744506,
         "ptm": 0.6013442599922418,
@@ -184,35 +184,6 @@
       "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
     },
     {
-      "id": "offcial.esm3_unlock",
-      "name": "ESM3-1.4B(unlock)",
-      "family": "ESM",
-      "style": "openai",
-      "control": false,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "cluster_count": 481,
-      "passing_count": 68,
-      "score": 13.6,
-      "scores": {
-        "plddt_overall": 61.421769275665284,
-        "ptm": 0.4210324604511261,
-        "ppl": 3.6829053881575002,
-        "repeat": 56.1252,
-        "rep2": 81.12613168132302,
-        "rep5": 46.03736529036068,
-        "seq_diversity": 96.2
-      },
-      "source": "offcial.esm3_unlock.jsonl",
-      "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
-    },
-    {
       "id": "ctrl.trion1_mdlm.rdm",
       "name": "Trion1-M(RDM)",
       "family": "Ctrl",
@@ -227,8 +198,8 @@
         "500": 100
       },
       "cluster_count": 490,
-      "passing_count": 40,
-      "score": 8.0,
+      "passing_count": 38,
+      "score": 7.6,
       "scores": {
         "plddt_overall": 54.142878761291506,
         "ptm": 0.3199696555733681,
@@ -271,8 +242,8 @@
       "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
     },
     {
-      "id": "offcial.esm3_open",
-      "name": "ESM3-1.4B",
+      "id": "offcial.esm3_unlock",
+      "name": "ESM3-1.4B(unlock)",
       "family": "ESM",
       "style": "openai",
       "control": false,
@@ -284,20 +255,20 @@
         "400": 100,
         "500": 100
       },
-      "cluster_count": 498,
-      "passing_count": 29,
-      "score": 5.8,
+      "cluster_count": 481,
+      "passing_count": 17,
+      "score": 3.4,
       "scores": {
-        "plddt_overall": 57.67826163482666,
-        "ptm": 0.36560886082053184,
-        "ppl": 3.987468043125029,
-        "repeat": 55.1362,
-        "rep2": 81.23750763134983,
-        "rep5": 43.56521408932123,
-        "seq_diversity": 99.6
+        "plddt_overall": 61.421769275665284,
+        "ptm": 0.4210324604511261,
+        "ppl": 3.6829053881575002,
+        "repeat": 56.1252,
+        "rep2": 81.12613168132302,
+        "rep5": 46.03736529036068,
+        "seq_diversity": 96.2
       },
-      "source": "offcial.esm3_open.jsonl",
-      "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
+      "source": "offcial.esm3_unlock.jsonl",
+      "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
     },
     {
       "id": "ctrl.trion1_bdlm.dplm1",
@@ -327,6 +298,35 @@
       },
       "source": "ctrl.trion1_bdlm.dplm1.jsonl",
       "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
+    },
+    {
+      "id": "offcial.esm3_open",
+      "name": "ESM3-1.4B",
+      "family": "ESM",
+      "style": "openai",
+      "control": false,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": 498,
+      "passing_count": 10,
+      "score": 2.0,
+      "scores": {
+        "plddt_overall": 57.67826163482666,
+        "ptm": 0.36560886082053184,
+        "ppl": 3.987468043125029,
+        "repeat": 55.1362,
+        "rep2": 81.23750763134983,
+        "rep5": 43.56521408932123,
+        "seq_diversity": 99.6
+      },
+      "source": "offcial.esm3_open.jsonl",
+      "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
     }
   ],
   "status": "results_available",
@@ -405,7 +405,7 @@
       100
     ],
     "unit": "percent",
-    "formula": "100 * count(plddt > 80 and ptm > 0.7) / count(all sequences)",
+    "formula": "100 * count(plddt > 80 and ptm > 0.7 and repeat < 0.1) / count(all sequences)",
     "thresholds": {
       "plddt": {
         "operator": ">",
@@ -414,11 +414,15 @@
       "ptm": {
         "operator": ">",
         "value": 0.7
+      },
+      "repeat": {
+        "operator": "<",
+        "value": 0.1
       }
     },
     "combination": "and"
   },
-  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.7. pAE is not evaluated; Repeat is not a Score filter. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80, pTM > 0.7 and Repeat < 10%. pAE is not evaluated. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
   "diversity_protocol": {
     "tool": "MMseqs2",
     "version": "18.8cc5c",
