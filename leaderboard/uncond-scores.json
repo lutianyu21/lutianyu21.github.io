@@ -119,7 +119,7 @@
     },
     {
       "id": "ctrl.dplm1_3b.greedy_ancestral",
-      "name": "DPLM1(GreedyAncestral)",
+      "name": "DPLM1(GreedyNaive)",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
@@ -146,7 +146,7 @@
     },
     {
       "id": "ctrl.dplm1_3b.ancestral",
-      "name": "DPLM1(Ancestral)",
+      "name": "DPLM1(Naive)",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
