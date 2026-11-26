@@ -87,28 +87,8 @@
   },
   "models": [
     {
-      "id": "official.dplm2_650m",
-      "name": "DPLM2-0.6B",
-      "family_name": "DPLM",
-      "control": false,
-      "score": 47.4,
-      "passing_count": 237,
-      "scores": {
-        "scTM": 0.88241402,
-        "scRMSD": 3.4619248525356854,
-        "helix": 44.34476666666667,
-        "sheet": 19.03933333333333,
-        "coil": 36.6159
-      },
-      "sample_count": 500,
-      "source": "official.dplm2_650m.jsonl",
-      "source_sha256": "4298cf9fc9f6b2137da556ce7b3b3a85d0ed9c8e4b1967c67acfa0a89a04728f",
-      "family": "DPLM",
-      "style": "open"
-    },
-    {
       "id": "official.dplm2_3b",
-      "name": "DPLM2-3B",
+      "name": "DPLM2",
       "family_name": "DPLM",
       "control": false,
       "score": 44.0,

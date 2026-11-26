@@ -16,12 +16,12 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 318,
       "score": 63.6,
@@ -37,75 +37,48 @@
       "source_sha256": "9b0e2cb78b9be3d9680a6541c85d3a9e8482f3adf4760f1a8f941e655bad7340"
     },
     {
-      "id": "official.dplm2",
-      "name": "DPLM2-0.6B",
-      "family": "DPLM",
-      "style": "open",
-      "control": false,
-      "sample_counts": {
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100,
-        "overall": 500
-      },
-      "passing_count": 232,
-      "score": 46.4,
-      "scores": {
-        "plddt_overall": 80.27254156112672,
-        "ptm": 0.7705596139729023,
-        "ppl": 4.618028792918845,
-        "repeat": 5.192333333333334,
-        "rep2": 44.96727942285879,
-        "rep5": 5.830447988685316
-      },
-      "source": "official.dplm2_650m.jsonl",
-      "source_sha256": "2a5b902d0912d4a8e21a4aaedaf3be2bd9600c2fe3cbfb8b75d3b27969cd1bfc"
-    },
-    {
-      "id": "official.dplm1",
+      "id": "official.dplm1_3b",
       "name": "DPLM1",
       "family": "DPLM",
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
-      "passing_count": 214,
-      "score": 42.8,
+      "passing_count": 285,
+      "score": 57.0,
       "scores": {
-        "plddt_overall": 81.96281246948242,
-        "ptm": 0.7219872497022152,
-        "ppl": 4.07115493189716,
-        "repeat": 12.923166666666667,
-        "rep2": 55.65194316876638,
-        "rep5": 17.02402565052335
+        "plddt_overall": 86.04648223876953,
+        "ptm": 0.7848380891084671,
+        "ppl": 3.4973728458395184,
+        "repeat": 4.863266666666666,
+        "rep2": 48.5883584359313,
+        "rep5": 10.514617652693689
       },
-      "source": "official.dplm1.jsonl",
-      "source_sha256": "a640887b0d9e2aa7d926507c9a48a017da2a54764d7918a69a75616ebb4221db"
+      "source": "official.dplm1_3b.jsonl",
+      "source_sha256": "e552c50cfa6793bea0a977601895be30b697d9a537f738e6e05e1c56924dc42f"
     },
     {
       "id": "official.dplm2_3b",
-      "name": "DPLM2-3B",
+      "name": "DPLM2",
       "family": "DPLM",
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 205,
-      "score": 41,
+      "score": 41.0,
       "scores": {
         "plddt_overall": 78.404654296875,
         "ptm": 0.7150063265562058,
@@ -119,17 +92,17 @@
     },
     {
       "id": "ctrl.dplm1_3b.greedy_ancestral",
-      "name": "DPLM1-3B(GreedyAncestral)",
+      "name": "DPLM1(GreedyAncestral)",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 163,
       "score": 32.6,
@@ -151,12 +124,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 154,
       "score": 30.8,
@@ -173,17 +146,17 @@
     },
     {
       "id": "ctrl.dplm1_3b.ancestral",
-      "name": "DPLM1-3B(Ancestral)",
+      "name": "DPLM1(Ancestral)",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 102,
       "score": 20.4,
@@ -199,45 +172,18 @@
       "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
     },
     {
-      "id": "ctrl.dplm1.no_remask",
-      "name": "DPLM1(no_remask)",
-      "family": "Ctrl",
-      "style": "ctrl",
-      "control": true,
-      "sample_counts": {
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100,
-        "overall": 500
-      },
-      "passing_count": 38,
-      "score": 7.6,
-      "scores": {
-        "plddt_overall": 55.38854225540161,
-        "ptm": 0.4569032106846571,
-        "ppl": 13.457754753108485,
-        "repeat": 2.6350333333333333,
-        "rep2": 41.88619193576957,
-        "rep5": 1.0429907382096324
-      },
-      "source": "ctrl.dplm1.no_remask.jsonl",
-      "source_sha256": "87b29df50c6ef7f50ec8d90315eb9279753fe326006806885d421b6feea0dfaf"
-    },
-    {
       "id": "ctrl.amix2_ar",
       "name": "Amix2-A",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 27,
       "score": 5.4,
@@ -259,15 +205,15 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 15,
-      "score": 3,
+      "score": 3.0,
       "scores": {
         "plddt_overall": 61.421769275665284,
         "ptm": 0.4210324604511261,
@@ -286,12 +232,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 12,
       "score": 2.4,
@@ -313,12 +259,12 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
       "passing_count": 7,
       "score": 1.4,
