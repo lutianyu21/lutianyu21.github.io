@@ -145,6 +145,33 @@
       "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
     },
     {
+      "id": "ctrl.dplm1_3b.naive",
+      "name": "DPLM1-3B(naive)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 102,
+      "score": 20.4,
+      "scores": {
+        "plddt_overall": 61.10411377716064,
+        "ptm": 0.5071547622084618,
+        "ppl": null,
+        "repeat": 2.6410333333333336,
+        "rep2": 39.53656663100524,
+        "rep5": 0.6443381951734487
+      },
+      "source": "ctrl.dplm1_3b.naive.jsonl",
+      "source_sha256": "19f4b6f60c7f36faade109cfc35a60970398855b8df215baf65ce2f128609173"
+    },
+    {
       "id": "ctrl.dplm1.no_remask",
       "name": "DPLM1(no_remask)",
       "family": "Ctrl",
