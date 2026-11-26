@@ -15,6 +15,7 @@
       "family": "DPLM",
       "style": "open",
       "control": false,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -24,11 +25,11 @@
         "500": 100
       },
       "cluster_count": 378,
-      "passing_count": 366,
-      "score": 73.2,
+      "passing_count": 367,
+      "score": 73.4,
       "scores": {
-        "plddt_overall": 85.0364128036499,
-        "ptm": 0.8334033533632755,
+        "plddt_overall": 87.50764076709747,
+        "ptm": 0.8242855485975742,
         "ppl": 4.885156331310092,
         "repeat": 2.8276666666666666,
         "rep2": 43.85095969056862,
@@ -36,7 +37,7 @@
         "seq_diversity": 75.6
       },
       "source": "official.dplm2.1.jsonl",
-      "source_sha256": "9b0e2cb78b9be3d9680a6541c85d3a9e8482f3adf4760f1a8f941e655bad7340"
+      "source_sha256": "51b9b48ee2bf5d542d3808b4d5b46e4368604f2b5c94e94c442923fc654859f2"
     },
     {
       "id": "official.dplm1_3b",
@@ -44,6 +45,7 @@
       "family": "DPLM",
       "style": "open",
       "control": false,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -53,11 +55,11 @@
         "500": 100
       },
       "cluster_count": 256,
-      "passing_count": 337,
-      "score": 67.4,
+      "passing_count": 261,
+      "score": 52.2,
       "scores": {
-        "plddt_overall": 86.04648223876953,
-        "ptm": 0.7848380891084671,
+        "plddt_overall": 86.12947934865952,
+        "ptm": 0.7328143844902515,
         "ppl": 3.4973728458395184,
         "repeat": 4.863266666666666,
         "rep2": 48.5883584359313,
@@ -65,7 +67,7 @@
         "seq_diversity": 51.2
       },
       "source": "official.dplm1_3b.jsonl",
-      "source_sha256": "e552c50cfa6793bea0a977601895be30b697d9a537f738e6e05e1c56924dc42f"
+      "source_sha256": "a2cac2ee9466c8a10336063ad4ce76586f8c07df22ab32dcdf915042c67bfddc"
     },
     {
       "id": "official.dplm2_3b",
@@ -73,6 +75,7 @@
       "family": "DPLM",
       "style": "open",
       "control": false,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -82,11 +85,11 @@
         "500": 100
       },
       "cluster_count": 318,
-      "passing_count": 240,
-      "score": 48.0,
+      "passing_count": 259,
+      "score": 51.8,
       "scores": {
-        "plddt_overall": 78.404654296875,
-        "ptm": 0.7150063265562058,
+        "plddt_overall": 83.4013713479042,
+        "ptm": 0.7218038886636495,
         "ppl": 4.955632244556023,
         "repeat": 20.1039,
         "rep2": 57.0701771016898,
@@ -94,7 +97,7 @@
         "seq_diversity": 63.6
       },
       "source": "official.dplm2_3b.jsonl",
-      "source_sha256": "8df7bea687ee9ba4da370cc9cdd3e7d793214a59b04cf7a7df086bb7eed7f79c"
+      "source_sha256": "e3e2afc2286350db9c1035040f4cada339e12a3d4a6a7dcc15279040899023e3"
     },
     {
       "id": "native.uniref50",
@@ -102,6 +105,7 @@
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -111,11 +115,11 @@
         "500": 100
       },
       "cluster_count": 500,
-      "passing_count": 188,
-      "score": 37.6,
+      "passing_count": 217,
+      "score": 43.4,
       "scores": {
-        "plddt_overall": 70.88119307327271,
-        "ptm": 0.6132156745493412,
+        "plddt_overall": 77.54070827364922,
+        "ptm": 0.6199293075054884,
         "ppl": 12.449176635637425,
         "repeat": 2.4446333333333334,
         "rep2": 39.26393063914839,
@@ -123,7 +127,7 @@
         "seq_diversity": 100.0
       },
       "source": "native.uniref50.jsonl",
-      "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
+      "source_sha256": "c6cfca08b3851914604aa54336b7c2f5e512e69d69064efd1564a3a075fd6538"
     },
     {
       "id": "ctrl.dplm1_3b.greedy_naive",
@@ -131,6 +135,7 @@
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -140,11 +145,11 @@
         "500": 100
       },
       "cluster_count": 382,
-      "passing_count": 183,
-      "score": 36.6,
+      "passing_count": 83,
+      "score": 16.6,
       "scores": {
-        "plddt_overall": 69.54603603744506,
-        "ptm": 0.6013442599922418,
+        "plddt_overall": 71.15992800593376,
+        "ptm": 0.5409877338856459,
         "ppl": 9.47868342873805,
         "repeat": 3.2120333333333333,
         "rep2": 41.92939326276087,
@@ -152,7 +157,7 @@
         "seq_diversity": 76.4
       },
       "source": "ctrl.dplm1_3b.greedy_naive.jsonl",
-      "source_sha256": "5661dfcda439a39a7c602069187337f97627330618925b340b0db99e987a1982"
+      "source_sha256": "d90405ca56078aed017be1c1ad8636054c4066f74eaddc25d9c9e4669769ee50"
     },
     {
       "id": "ctrl.dplm1_3b.naive",
@@ -160,6 +165,7 @@
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -169,11 +175,11 @@
         "500": 100
       },
       "cluster_count": 416,
-      "passing_count": 122,
-      "score": 24.4,
+      "passing_count": 50,
+      "score": 10.0,
       "scores": {
-        "plddt_overall": 61.10411377716064,
-        "ptm": 0.5071547622084618,
+        "plddt_overall": 64.41804144382476,
+        "ptm": 0.45730264300107953,
         "ppl": 12.133406483591086,
         "repeat": 2.6410333333333336,
         "rep2": 39.53656663100524,
@@ -181,36 +187,7 @@
         "seq_diversity": 83.2
       },
       "source": "ctrl.dplm1_3b.naive.jsonl",
-      "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
-    },
-    {
-      "id": "ctrl.trion1_mdlm.rdm",
-      "name": "Trion1-M(RDM)",
-      "family": "Ctrl",
-      "style": "ctrl",
-      "control": true,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "cluster_count": 490,
-      "passing_count": 38,
-      "score": 7.6,
-      "scores": {
-        "plddt_overall": 54.142878761291506,
-        "ptm": 0.3199696555733681,
-        "ppl": 8.116603485253357,
-        "repeat": 23.67653333333333,
-        "rep2": 62.990056351724945,
-        "rep5": 25.129788008503446,
-        "seq_diversity": 98.0
-      },
-      "source": "ctrl.trion1_mdlm.rdm.jsonl",
-      "source_sha256": "0b81a854d37c20cd3fed98d30faa2ce83b24be8303392d779189e97db797a99a"
+      "source_sha256": "21cc1701acf35792f7468d3039bc5bf009877516f54335b2b467d54232d68be0"
     },
     {
       "id": "ctrl.amix2_ar",
@@ -218,6 +195,7 @@
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -227,11 +205,11 @@
         "500": 100
       },
       "cluster_count": 497,
-      "passing_count": 32,
-      "score": 6.4,
+      "passing_count": 35,
+      "score": 7.0,
       "scores": {
-        "plddt_overall": 44.28914462661743,
-        "ptm": 0.3074270321279764,
+        "plddt_overall": 53.43648527264595,
+        "ptm": 0.30493739011883736,
         "ppl": 14.242789564994283,
         "repeat": 2.6169333333333333,
         "rep2": 39.46577730249245,
@@ -239,7 +217,37 @@
         "seq_diversity": 99.4
       },
       "source": "ctrl.amix2_ar.jsonl",
-      "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
+      "source_sha256": "827d88c20dbb9890589e0dbf0fc681271985d069dc1582fc7a37fd3f0ff6bf0f"
+    },
+    {
+      "id": "ctrl.trion1_mdlm.rdm",
+      "name": "Trion1-M(RDM)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": 490,
+      "passing_count": 33,
+      "score": 6.6,
+      "scores": {
+        "plddt_overall": 65.47120409607888,
+        "ptm": 0.33266978830099103,
+        "ppl": 8.116603485253357,
+        "repeat": 23.67653333333333,
+        "rep2": 62.990056351724945,
+        "rep5": 25.129788008503446,
+        "seq_diversity": 98.0
+      },
+      "source": "ctrl.trion1_mdlm.rdm.jsonl",
+      "source_sha256": "37abbf681538fd7cce29f418a37c6195b74ec44d4bd85c09354688dbc53fa302"
     },
     {
       "id": "offcial.esm3_unlock",
@@ -247,6 +255,7 @@
       "family": "ESM",
       "style": "openai",
       "control": false,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -256,11 +265,11 @@
         "500": 100
       },
       "cluster_count": 481,
-      "passing_count": 17,
-      "score": 3.4,
+      "passing_count": 19,
+      "score": 3.8,
       "scores": {
-        "plddt_overall": 61.421769275665284,
-        "ptm": 0.4210324604511261,
+        "plddt_overall": 72.61731125712394,
+        "ptm": 0.4321004656106234,
         "ppl": 3.6829053881575002,
         "repeat": 56.1252,
         "rep2": 81.12613168132302,
@@ -268,7 +277,7 @@
         "seq_diversity": 96.2
       },
       "source": "offcial.esm3_unlock.jsonl",
-      "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
+      "source_sha256": "b4ff19ea9308fd42fc395984d713a6916085c94eefccf2afd33e3e4fd6c49319"
     },
     {
       "id": "ctrl.trion1_bdlm.dplm1",
@@ -276,6 +285,7 @@
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -285,11 +295,11 @@
         "500": 100
       },
       "cluster_count": 493,
-      "passing_count": 15,
-      "score": 3.0,
+      "passing_count": 17,
+      "score": 3.4,
       "scores": {
-        "plddt_overall": 45.64150455093384,
-        "ptm": 0.2978266021311283,
+        "plddt_overall": 53.670654439926146,
+        "ptm": 0.30785826240479947,
         "ppl": 12.871932854194444,
         "repeat": 4.382233333333333,
         "rep2": 44.69117088282172,
@@ -297,7 +307,7 @@
         "seq_diversity": 98.6
       },
       "source": "ctrl.trion1_bdlm.dplm1.jsonl",
-      "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
+      "source_sha256": "c6c9bc8b1977ea42bf7c1ee300fc4172606059ee161473a9f730000f7d1f6a8c"
     },
     {
       "id": "offcial.esm3_open",
@@ -305,6 +315,7 @@
       "family": "ESM",
       "style": "openai",
       "control": false,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
         "overall": 500,
         "100": 100,
@@ -317,8 +328,8 @@
       "passing_count": 10,
       "score": 2.0,
       "scores": {
-        "plddt_overall": 57.67826163482666,
-        "ptm": 0.36560886082053184,
+        "plddt_overall": 69.88829928636551,
+        "ptm": 0.3893131612688303,
         "ppl": 3.987468043125029,
         "repeat": 55.1362,
         "rep2": 81.23750763134983,
@@ -326,7 +337,7 @@
         "seq_diversity": 99.6
       },
       "source": "offcial.esm3_open.jsonl",
-      "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
+      "source_sha256": "1a3e8fed6823066ad3afbe71708f4d749f17d88a05f499d180250c263eb0f829"
     }
   ],
   "status": "results_available",
@@ -423,6 +434,14 @@
     "combination": "and"
   },
   "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80, pTM > 0.7 and Repeat < 10%. pAE is not evaluated. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "folding_protocol": {
+    "engine": "esmfold2-fast-reference-3x50-v1",
+    "metrics": [
+      "plddt",
+      "ptm"
+    ],
+    "source": "Updated top-level JSONL scores; all records have folding_rescore.status=complete"
+  },
   "diversity_protocol": {
     "tool": "MMseqs2",
     "version": "18.8cc5c",
