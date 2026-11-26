@@ -16,13 +16,14 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 378,
       "passing_count": 372,
       "score": 74.4,
       "scores": {
@@ -31,7 +32,8 @@
         "ppl": 4.885156331310092,
         "repeat": 2.8276666666666666,
         "rep2": 43.85095969056862,
-        "rep5": 1.104052101805558
+        "rep5": 1.104052101805558,
+        "seq_diversity": 75.6
       },
       "source": "official.dplm2.1.jsonl",
       "source_sha256": "9b0e2cb78b9be3d9680a6541c85d3a9e8482f3adf4760f1a8f941e655bad7340"
@@ -43,13 +45,14 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 256,
       "passing_count": 352,
       "score": 70.4,
       "scores": {
@@ -58,7 +61,8 @@
         "ppl": 3.4973728458395184,
         "repeat": 4.863266666666666,
         "rep2": 48.5883584359313,
-        "rep5": 10.514617652693689
+        "rep5": 10.514617652693689,
+        "seq_diversity": 51.2
       },
       "source": "official.dplm1_3b.jsonl",
       "source_sha256": "e552c50cfa6793bea0a977601895be30b697d9a537f738e6e05e1c56924dc42f"
@@ -70,22 +74,24 @@
       "style": "open",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 318,
       "passing_count": 290,
-      "score": 58,
+      "score": 58.0,
       "scores": {
         "plddt_overall": 78.404654296875,
         "ptm": 0.7150063265562058,
         "ppl": 4.955632244556023,
         "repeat": 20.1039,
         "rep2": 57.0701771016898,
-        "rep5": 20.956358143109295
+        "rep5": 20.956358143109295,
+        "seq_diversity": 63.6
       },
       "source": "official.dplm2_3b.jsonl",
       "source_sha256": "8df7bea687ee9ba4da370cc9cdd3e7d793214a59b04cf7a7df086bb7eed7f79c"
@@ -97,13 +103,14 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 500,
       "passing_count": 188,
       "score": 37.6,
       "scores": {
@@ -112,7 +119,8 @@
         "ppl": 12.449176635637425,
         "repeat": 2.4446333333333334,
         "rep2": 39.26393063914839,
-        "rep5": 0.5445224186871653
+        "rep5": 0.5445224186871653,
+        "seq_diversity": 100.0
       },
       "source": "native.uniref50.jsonl",
       "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
@@ -124,13 +132,14 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 382,
       "passing_count": 184,
       "score": 36.8,
       "scores": {
@@ -139,7 +148,8 @@
         "ppl": 9.47868342873805,
         "repeat": 3.2120333333333333,
         "rep2": 41.92939326276087,
-        "rep5": 2.260494265736201
+        "rep5": 2.260494265736201,
+        "seq_diversity": 76.4
       },
       "source": "ctrl.dplm1_3b.greedy_naive.jsonl",
       "source_sha256": "5661dfcda439a39a7c602069187337f97627330618925b340b0db99e987a1982"
@@ -151,13 +161,14 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 416,
       "passing_count": 122,
       "score": 24.4,
       "scores": {
@@ -166,7 +177,8 @@
         "ppl": 12.133406483591086,
         "repeat": 2.6410333333333336,
         "rep2": 39.53656663100524,
-        "rep5": 0.6443381951734487
+        "rep5": 0.6443381951734487,
+        "seq_diversity": 83.2
       },
       "source": "ctrl.dplm1_3b.naive.jsonl",
       "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
@@ -178,13 +190,14 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 481,
       "passing_count": 68,
       "score": 13.6,
       "scores": {
@@ -193,7 +206,8 @@
         "ppl": 3.6829053881575002,
         "repeat": 56.1252,
         "rep2": 81.12613168132302,
-        "rep5": 46.03736529036068
+        "rep5": 46.03736529036068,
+        "seq_diversity": 96.2
       },
       "source": "offcial.esm3_unlock.jsonl",
       "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
@@ -205,22 +219,24 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 490,
       "passing_count": 40,
-      "score": 8,
+      "score": 8.0,
       "scores": {
         "plddt_overall": 54.142878761291506,
         "ptm": 0.3199696555733681,
         "ppl": 8.116603485253357,
         "repeat": 23.67653333333333,
         "rep2": 62.990056351724945,
-        "rep5": 25.129788008503446
+        "rep5": 25.129788008503446,
+        "seq_diversity": 98.0
       },
       "source": "ctrl.trion1_mdlm.rdm.jsonl",
       "source_sha256": "0b81a854d37c20cd3fed98d30faa2ce83b24be8303392d779189e97db797a99a"
@@ -232,13 +248,14 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 497,
       "passing_count": 32,
       "score": 6.4,
       "scores": {
@@ -247,7 +264,8 @@
         "ppl": 14.242789564994283,
         "repeat": 2.6169333333333333,
         "rep2": 39.46577730249245,
-        "rep5": 0.5734574428698854
+        "rep5": 0.5734574428698854,
+        "seq_diversity": 99.4
       },
       "source": "ctrl.amix2_ar.jsonl",
       "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
@@ -259,13 +277,14 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 498,
       "passing_count": 29,
       "score": 5.8,
       "scores": {
@@ -274,7 +293,8 @@
         "ppl": 3.987468043125029,
         "repeat": 55.1362,
         "rep2": 81.23750763134983,
-        "rep5": 43.56521408932123
+        "rep5": 43.56521408932123,
+        "seq_diversity": 99.6
       },
       "source": "offcial.esm3_open.jsonl",
       "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
@@ -286,22 +306,24 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
+        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100,
-        "overall": 500
+        "500": 100
       },
+      "cluster_count": 493,
       "passing_count": 15,
-      "score": 3,
+      "score": 3.0,
       "scores": {
         "plddt_overall": 45.64150455093384,
         "ptm": 0.2978266021311283,
         "ppl": 12.871932854194444,
         "repeat": 4.382233333333333,
         "rep2": 44.69117088282172,
-        "rep5": 10.146966522600163
+        "rep5": 10.146966522600163,
+        "seq_diversity": 98.6
       },
       "source": "ctrl.trion1_bdlm.dplm1.jsonl",
       "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
@@ -362,6 +384,16 @@
         0,
         100
       ]
+    },
+    {
+      "key": "seq_diversity",
+      "label": "Seq. Diversity (%)",
+      "direction": "higher",
+      "unit": "percent",
+      "scale": [
+        0,
+        100
+      ]
     }
   ],
   "score_metric": {
@@ -387,6 +419,50 @@
     "combination": "and"
   },
   "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.7. pAE is not evaluated; Repeat is not a Score filter. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "diversity_protocol": {
+    "tool": "MMseqs2",
+    "version": "18.8cc5c",
+    "min_seq_id": 0.3,
+    "coverage": 0.8,
+    "cov_mode": 0,
+    "cluster_mode": 0,
+    "single_step": true,
+    "alignment_mode": 3,
+    "seq_id_mode": 0,
+    "sensitivity": 7.5,
+    "evalue": 0.001,
+    "low_complexity_masking": true,
+    "population": "All sequences within each model; no quality filter or length stratification",
+    "formula": "100 * cluster_count / sequence_count",
+    "parameters": [
+      "--min-seq-id",
+      "0.3",
+      "-c",
+      "0.8",
+      "--cov-mode",
+      "0",
+      "--alignment-mode",
+      "3",
+      "--seq-id-mode",
+      "0",
+      "--cluster-mode",
+      "0",
+      "--single-step-clustering",
+      "1",
+      "-s",
+      "7.5",
+      "-e",
+      "0.001",
+      "--max-seqs",
+      "1000",
+      "--mask",
+      "1",
+      "--threads",
+      "2",
+      "--split-memory-limit",
+      "4G"
+    ]
+  },
   "ppl_protocol": {
     "model": "hugohrban/progen2-base",
     "revision": "71228cbfca5960f9fab5775f378bba3673af9f00",
