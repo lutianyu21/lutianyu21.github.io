@@ -16,12 +16,12 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 318,
       "score": 63.6,
@@ -43,12 +43,12 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 232,
       "score": 46.4,
@@ -70,12 +70,12 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 214,
       "score": 42.8,
@@ -97,15 +97,15 @@
       "style": "open",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 205,
-      "score": 41.0,
+      "score": 41,
       "scores": {
         "plddt_overall": 78.404654296875,
         "ptm": 0.7150063265562058,
@@ -124,12 +124,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 163,
       "score": 32.6,
@@ -151,12 +151,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 154,
       "score": 30.8,
@@ -178,25 +178,25 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 102,
       "score": 20.4,
       "scores": {
         "plddt_overall": 61.10411377716064,
         "ptm": 0.5071547622084618,
-        "ppl": null,
+        "ppl": 12.133406483591086,
         "repeat": 2.6410333333333336,
         "rep2": 39.53656663100524,
         "rep5": 0.6443381951734487
       },
       "source": "ctrl.dplm1_3b.ancestral.jsonl",
-      "source_sha256": "19f4b6f60c7f36faade109cfc35a60970398855b8df215baf65ce2f128609173"
+      "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
     },
     {
       "id": "ctrl.dplm1.no_remask",
@@ -205,12 +205,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 38,
       "score": 7.6,
@@ -232,12 +232,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 27,
       "score": 5.4,
@@ -259,15 +259,15 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 15,
-      "score": 3.0,
+      "score": 3,
       "scores": {
         "plddt_overall": 61.421769275665284,
         "ptm": 0.4210324604511261,
@@ -286,12 +286,12 @@
       "style": "ctrl",
       "control": true,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 12,
       "score": 2.4,
@@ -313,12 +313,12 @@
       "style": "openai",
       "control": false,
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "passing_count": 7,
       "score": 1.4,
