@@ -87,6 +87,26 @@
   },
   "models": [
     {
+      "id": "official.dplm2.1",
+      "name": "DPLM2.1",
+      "family_name": "DPLM",
+      "control": false,
+      "score": 48.6,
+      "passing_count": 243,
+      "scores": {
+        "scTM": 0.87138718,
+        "scRMSD": 3.709799480138254,
+        "helix": 48.111599999999996,
+        "sheet": 16.1992,
+        "coil": 35.6892
+      },
+      "sample_count": 500,
+      "source": "official.dplm2.1.jsonl",
+      "source_sha256": "c3debe8f318e9d124b0655c3a50db113c0f615cfe94832738c8890e1a020d412",
+      "family": "DPLM",
+      "style": "open"
+    },
+    {
       "id": "official.dplm2_3b",
       "name": "DPLM2",
       "family_name": "DPLM",
