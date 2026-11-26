@@ -387,7 +387,7 @@
     },
     {
       "key": "seq_diversity",
-      "label": "Seq. Diversity (%)",
+      "label": "Diversity",
       "direction": "higher",
       "unit": "percent",
       "scale": [
