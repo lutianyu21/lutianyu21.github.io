@@ -23,8 +23,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 318,
-      "score": 63.6,
+      "passing_count": 372,
+      "score": 74.4,
       "scores": {
         "plddt_overall": 85.0364128036499,
         "ptm": 0.8334033533632755,
@@ -50,8 +50,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 285,
-      "score": 57.0,
+      "passing_count": 352,
+      "score": 70.4,
       "scores": {
         "plddt_overall": 86.04648223876953,
         "ptm": 0.7848380891084671,
@@ -77,8 +77,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 205,
-      "score": 41.0,
+      "passing_count": 290,
+      "score": 58.0,
       "scores": {
         "plddt_overall": 78.404654296875,
         "ptm": 0.7150063265562058,
@@ -89,33 +89,6 @@
       },
       "source": "official.dplm2_3b.jsonl",
       "source_sha256": "8df7bea687ee9ba4da370cc9cdd3e7d793214a59b04cf7a7df086bb7eed7f79c"
-    },
-    {
-      "id": "ctrl.dplm1_3b.greedy_ancestral",
-      "name": "DPLM1(GreedyAncestral)",
-      "family": "Ctrl",
-      "style": "ctrl",
-      "control": true,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "passing_count": 163,
-      "score": 32.6,
-      "scores": {
-        "plddt_overall": 69.54603603744506,
-        "ptm": 0.6013442599922418,
-        "ppl": 9.47868342873805,
-        "repeat": 3.2120333333333333,
-        "rep2": 41.92939326276087,
-        "rep5": 2.260494265736201
-      },
-      "source": "ctrl.dplm1_3b.greedy_ancestral.jsonl",
-      "source_sha256": "5661dfcda439a39a7c602069187337f97627330618925b340b0db99e987a1982"
     },
     {
       "id": "native.uniref50",
@@ -131,8 +104,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 154,
-      "score": 30.8,
+      "passing_count": 188,
+      "score": 37.6,
       "scores": {
         "plddt_overall": 70.88119307327271,
         "ptm": 0.6132156745493412,
@@ -143,6 +116,33 @@
       },
       "source": "native.uniref50.jsonl",
       "source_sha256": "cb149345d5f1cbbec6bb3598d12fe9b72120ec67143cdfc99721caccbd8203cb"
+    },
+    {
+      "id": "ctrl.dplm1_3b.greedy_ancestral",
+      "name": "DPLM1(GreedyAncestral)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 184,
+      "score": 36.8,
+      "scores": {
+        "plddt_overall": 69.54603603744506,
+        "ptm": 0.6013442599922418,
+        "ppl": 9.47868342873805,
+        "repeat": 3.2120333333333333,
+        "rep2": 41.92939326276087,
+        "rep5": 2.260494265736201
+      },
+      "source": "ctrl.dplm1_3b.greedy_ancestral.jsonl",
+      "source_sha256": "5661dfcda439a39a7c602069187337f97627330618925b340b0db99e987a1982"
     },
     {
       "id": "ctrl.dplm1_3b.ancestral",
@@ -158,8 +158,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 102,
-      "score": 20.4,
+      "passing_count": 122,
+      "score": 24.4,
       "scores": {
         "plddt_overall": 61.10411377716064,
         "ptm": 0.5071547622084618,
@@ -170,33 +170,6 @@
       },
       "source": "ctrl.dplm1_3b.ancestral.jsonl",
       "source_sha256": "72efc2493447c799364aff06004feef5b4b67d120cbec3c73f69ecf363131622"
-    },
-    {
-      "id": "ctrl.amix2_ar",
-      "name": "Amix2-A",
-      "family": "Ctrl",
-      "style": "ctrl",
-      "control": true,
-      "sample_counts": {
-        "overall": 500,
-        "100": 100,
-        "200": 100,
-        "300": 100,
-        "400": 100,
-        "500": 100
-      },
-      "passing_count": 27,
-      "score": 5.4,
-      "scores": {
-        "plddt_overall": 44.28914462661743,
-        "ptm": 0.3074270321279764,
-        "ppl": 14.242789564994283,
-        "repeat": 2.6169333333333333,
-        "rep2": 39.46577730249245,
-        "rep5": 0.5734574428698854
-      },
-      "source": "ctrl.amix2_ar.jsonl",
-      "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
     },
     {
       "id": "offcial.esm3_unlock",
@@ -212,8 +185,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 15,
-      "score": 3.0,
+      "passing_count": 68,
+      "score": 13.6,
       "scores": {
         "plddt_overall": 61.421769275665284,
         "ptm": 0.4210324604511261,
@@ -226,8 +199,8 @@
       "source_sha256": "1de426fd3115979d87ea73b1899c7e22feecbe2d632b06c816f8bd20c7527a5d"
     },
     {
-      "id": "ctrl.trion1_bdlm.dplm1",
-      "name": "Trion1-B(RDM)",
+      "id": "ctrl.amix2_ar",
+      "name": "Amix2-A",
       "family": "Ctrl",
       "style": "ctrl",
       "control": true,
@@ -239,18 +212,18 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 12,
-      "score": 2.4,
+      "passing_count": 32,
+      "score": 6.4,
       "scores": {
-        "plddt_overall": 45.64150455093384,
-        "ptm": 0.2978266021311283,
-        "ppl": 12.871932854194444,
-        "repeat": 4.382233333333333,
-        "rep2": 44.69117088282172,
-        "rep5": 10.146966522600163
+        "plddt_overall": 44.28914462661743,
+        "ptm": 0.3074270321279764,
+        "ppl": 14.242789564994283,
+        "repeat": 2.6169333333333333,
+        "rep2": 39.46577730249245,
+        "rep5": 0.5734574428698854
       },
-      "source": "ctrl.trion1_bdlm.dplm1.jsonl",
-      "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
+      "source": "ctrl.amix2_ar.jsonl",
+      "source_sha256": "be36ea637968722e84c706072e6341d0505c3b4051a37ef684917998ce1295c1"
     },
     {
       "id": "offcial.esm3_open",
@@ -266,8 +239,8 @@
         "400": 100,
         "500": 100
       },
-      "passing_count": 7,
-      "score": 1.4,
+      "passing_count": 29,
+      "score": 5.8,
       "scores": {
         "plddt_overall": 57.67826163482666,
         "ptm": 0.36560886082053184,
@@ -278,6 +251,33 @@
       },
       "source": "offcial.esm3_open.jsonl",
       "source_sha256": "7815d8ab298f72f9421c7725178ecb28cb6e0fd2209ea06ef1340c4139ce3c05"
+    },
+    {
+      "id": "ctrl.trion1_bdlm.dplm1",
+      "name": "Trion1-B(RDM)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "passing_count": 15,
+      "score": 3.0,
+      "scores": {
+        "plddt_overall": 45.64150455093384,
+        "ptm": 0.2978266021311283,
+        "ppl": 12.871932854194444,
+        "repeat": 4.382233333333333,
+        "rep2": 44.69117088282172,
+        "rep5": 10.146966522600163
+      },
+      "source": "ctrl.trion1_bdlm.dplm1.jsonl",
+      "source_sha256": "1cc00efdc6854affee58a071423c0a82bae2ee03a312df74b918611ac57276c3"
     }
   ],
   "status": "results_available",
@@ -346,7 +346,7 @@
       100
     ],
     "unit": "percent",
-    "formula": "100 * count(plddt > 80 and ptm > 0.8 and repeat < 0.1) / count(all sequences)",
+    "formula": "100 * count(plddt > 80 and ptm > 0.7) / count(all sequences)",
     "thresholds": {
       "plddt": {
         "operator": ">",
@@ -354,17 +354,12 @@
       },
       "ptm": {
         "operator": ">",
-        "value": 0.8
-      },
-      "repeat": {
-        "operator": "<",
-        "value": 0.1,
-        "unit": "fraction"
+        "value": 0.7
       }
     },
     "combination": "and"
   },
-  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80, pTM > 0.8 and Repeat < 10%. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
+  "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 80 and pTM > 0.7. pAE is not evaluated; Repeat is not a Score filter. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
   "ppl_protocol": {
     "model": "hugohrban/progen2-base",
     "revision": "71228cbfca5960f9fab5775f378bba3673af9f00",
