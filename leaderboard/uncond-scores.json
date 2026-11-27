@@ -251,6 +251,36 @@
       "source_sha256": "21cc1701acf35792f7468d3039bc5bf009877516f54335b2b467d54232d68be0"
     },
     {
+      "id": "official.progen2",
+      "name": "ProGen2",
+      "family": "ProGen",
+      "style": "anthropic",
+      "control": false,
+      "folding_engine": "ESMFold2-Fast",
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": 498,
+      "passing_count": 98,
+      "score": 19.6,
+      "scores": {
+        "plddt_overall": 65.07395952343941,
+        "ptm": 0.3487666628807783,
+        "ppl": 9.891301092603612,
+        "repeat": 6.373033333333334,
+        "rep2": 48.61660372701288,
+        "rep5": 5.023612944292668,
+        "seq_diversity": 99.6
+      },
+      "source": "official.progen2.jsonl",
+      "source_sha256": "f1f32c0b0c4185acdd4a64506b792343e07fdd4ed0305841154956a2f6e4b340"
+    },
+    {
       "id": "ctrl.trion1_mdlm.rdm",
       "name": "Trion1-M(RDM)",
       "family": "Ctrl",
