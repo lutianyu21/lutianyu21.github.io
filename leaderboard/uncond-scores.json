@@ -526,7 +526,7 @@
     }
   ],
   "status": "results_available",
-  "control_policy": "Controls participate in sorting, display Ctrl instead of a rank, and are excluded from ranking and best-score comparisons.",
+  "control_policy": "Native and Ctrl rows participate in sorting and display Ctrl instead of a numeric rank. Native rows participate in best-metric comparisons; other Ctrl rows do not.",
   "metrics": [
     {
       "key": "plddt_overall",
