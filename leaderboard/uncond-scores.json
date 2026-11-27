@@ -38,7 +38,8 @@
       },
       "source": "native.rcsb.jsonl",
       "source_sha256": "4a29495b730f3db92c34e584e605f4c9e873ab1e2a08e3b519e9865fcfb4de77",
-      "sampling_note": "500-aa target bin: 79 sequences of length 500, 11 of 499, 10 of 501; other target lengths exact."
+      "sampling_note": "500-aa target bin: 79 sequences of length 500, 11 of 499, 10 of 501; other target lengths exact.",
+      "tag_style": "native"
     },
     {
       "id": "official.dplm2.1",
@@ -98,7 +99,8 @@
         "seq_diversity": 60.2
       },
       "source": "native.swissprot.jsonl",
-      "source_sha256": "f15aaa3f93b74927977df03571b7d8bc6e8cc8f0bc7e9fae99d3f156f1d08597"
+      "source_sha256": "f15aaa3f93b74927977df03571b7d8bc6e8cc8f0bc7e9fae99d3f156f1d08597",
+      "tag_style": "native"
     },
     {
       "id": "official.dplm1_3b",
@@ -188,7 +190,8 @@
         "seq_diversity": 100
       },
       "source": "native.uniref50.jsonl",
-      "source_sha256": "c6cfca08b3851914604aa54336b7c2f5e512e69d69064efd1564a3a075fd6538"
+      "source_sha256": "c6cfca08b3851914604aa54336b7c2f5e512e69d69064efd1564a3a075fd6538",
+      "tag_style": "native"
     },
     {
       "id": "ctrl.dplm1_3b.greedy_naive",
