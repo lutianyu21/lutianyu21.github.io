@@ -66,6 +66,78 @@
           "cluster_count": 63,
           "seq_diversity": 63.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 64,
+          "score": 64.0,
+          "scores": {
+            "plddt_overall": 72.7909095287323,
+            "ptm": 0.6426011644303798,
+            "ppl": 9.915727643900384,
+            "repeat": 2.38,
+            "rep2": 18.242424242424242,
+            "rep5": 0.1770833333333327,
+            "seq_diversity": 81.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 97,
+          "score": 97.0,
+          "scores": {
+            "plddt_overall": 87.69356197118759,
+            "ptm": 0.853897296488285,
+            "ppl": 7.849810334224124,
+            "repeat": 2.42,
+            "rep2": 29.8643216080402,
+            "rep5": 0.4285714285714278,
+            "seq_diversity": 78.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 97,
+          "score": 97.0,
+          "scores": {
+            "plddt_overall": 89.28827166557312,
+            "ptm": 0.8828129786252975,
+            "ppl": 6.719761452866278,
+            "repeat": 1.73,
+            "rep2": 39.55518394648829,
+            "rep5": 0.4797297297297305,
+            "seq_diversity": 82.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 92,
+          "score": 92.0,
+          "scores": {
+            "plddt_overall": 88.61597922444344,
+            "ptm": 0.8667771558463574,
+            "ppl": 5.461891234344549,
+            "repeat": 1.7575,
+            "rep2": 45.34335839598997,
+            "rep5": 0.13383838383838265,
+            "seq_diversity": 65.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 89,
+          "score": 89.0,
+          "scores": {
+            "plddt_overall": 88.18596628308296,
+            "ptm": 0.8548343408107758,
+            "ppl": 5.407888637563887,
+            "repeat": 1.8000213200852804,
+            "rep2": 51.460177881868155,
+            "rep5": 0.15320149964629892,
+            "seq_diversity": 63.0
+          }
+        }
       }
     },
     {
@@ -122,6 +194,78 @@
           "sequence_count": 100,
           "cluster_count": 64,
           "seq_diversity": 64.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 24,
+          "score": 24.0,
+          "scores": {
+            "plddt_overall": 64.13525521755219,
+            "ptm": 0.4966755025088787,
+            "ppl": 7.7355556142720445,
+            "repeat": 2.34,
+            "rep2": 23.90909090909091,
+            "rep5": 0.6041666666666667,
+            "seq_diversity": 87.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 99,
+          "score": 99.0,
+          "scores": {
+            "plddt_overall": 93.1284014582634,
+            "ptm": 0.8879796141386032,
+            "ppl": 4.87790605998748,
+            "repeat": 2.77,
+            "rep2": 37.11055276381909,
+            "rep5": 0.2602040816326525,
+            "seq_diversity": 79.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 96,
+          "score": 96.0,
+          "scores": {
+            "plddt_overall": 93.76112514734268,
+            "ptm": 0.923289834856987,
+            "ppl": 3.965704806072631,
+            "repeat": 3.033333333333333,
+            "rep2": 46.98327759197324,
+            "rep5": 0.7871621621621625,
+            "seq_diversity": 76.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 100,
+          "score": 100.0,
+          "scores": {
+            "plddt_overall": 93.34069794416428,
+            "ptm": 0.9182365417480469,
+            "ppl": 4.017792017027651,
+            "repeat": 2.5149999999999997,
+            "rep2": 51.746867167919795,
+            "rep5": 0.3888888888888884,
+            "seq_diversity": 77.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 95,
+          "score": 95.0,
+          "scores": {
+            "plddt_overall": 93.17272406816483,
+            "ptm": 0.8952462497353554,
+            "ppl": 3.8288231591906503,
+            "repeat": 3.4799999999999995,
+            "rep2": 59.50501002004008,
+            "rep5": 3.479838709677421,
+            "seq_diversity": 64.0
+          }
         }
       }
     },
@@ -181,6 +325,78 @@
           "cluster_count": 54,
           "seq_diversity": 54.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 34,
+          "score": 34.0,
+          "scores": {
+            "plddt_overall": 65.07235130667686,
+            "ptm": 0.49722287714481356,
+            "ppl": 11.852823061543665,
+            "repeat": 2.03,
+            "rep2": 20.151515151515152,
+            "rep5": 0.1562499999999999,
+            "seq_diversity": 45.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 89,
+          "score": 89.0,
+          "scores": {
+            "plddt_overall": 92.0440399646759,
+            "ptm": 0.828711460530758,
+            "ppl": 5.257026349687344,
+            "repeat": 2.4,
+            "rep2": 33.16080402010051,
+            "rep5": 1.1581632653061222,
+            "seq_diversity": 65.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 87,
+          "score": 87.0,
+          "scores": {
+            "plddt_overall": 90.89525267481804,
+            "ptm": 0.8384611015021801,
+            "ppl": 6.323190519283607,
+            "repeat": 1.83,
+            "rep2": 40.57190635451505,
+            "rep5": 0.1486486486486489,
+            "seq_diversity": 80.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 93,
+          "score": 93.0,
+          "scores": {
+            "plddt_overall": 93.71456557512283,
+            "ptm": 0.8951241227984429,
+            "ppl": 4.7933984191324335,
+            "repeat": 1.6774999999999998,
+            "rep2": 47.48370927318295,
+            "rep5": 0.2449494949494945,
+            "seq_diversity": 57.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 96,
+          "score": 96.0,
+          "scores": {
+            "plddt_overall": 93.94549053907394,
+            "ptm": 0.9047816337645054,
+            "ppl": 4.695270400201057,
+            "repeat": 1.59,
+            "rep2": 52.190380761523045,
+            "rep5": 0.08064516129032306,
+            "seq_diversity": 54.0
+          }
+        }
       }
     },
     {
@@ -237,6 +453,78 @@
           "sequence_count": 100,
           "cluster_count": 45,
           "seq_diversity": 45.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 41,
+          "score": 41.0,
+          "scores": {
+            "plddt_overall": 69.10289365053177,
+            "ptm": 0.5415060101449489,
+            "ppl": 5.924005963046263,
+            "repeat": 6.08,
+            "rep2": 25.545454545454543,
+            "rep5": 3.958333333333333,
+            "seq_diversity": 78.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 79,
+          "score": 79.0,
+          "scores": {
+            "plddt_overall": 87.95023584365845,
+            "ptm": 0.808066069483757,
+            "ppl": 3.6647855087119976,
+            "repeat": 4.665,
+            "rep2": 39.76381909547739,
+            "rep5": 4.0102040816326525,
+            "seq_diversity": 52.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 91,
+          "score": 91.0,
+          "scores": {
+            "plddt_overall": 92.95432686805725,
+            "ptm": 0.834388672709465,
+            "ppl": 3.319770664394218,
+            "repeat": 4.223333333333333,
+            "rep2": 54.33110367892977,
+            "rep5": 7.972972972972974,
+            "seq_diversity": 44.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 88,
+          "score": 88.0,
+          "scores": {
+            "plddt_overall": 88.10994231700897,
+            "ptm": 0.7316055890917778,
+            "ppl": 2.154124956000243,
+            "repeat": 5.49,
+            "rep2": 55.62406015037594,
+            "rep5": 11.262626262626261,
+            "seq_diversity": 39.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 86,
+          "score": 86.0,
+          "scores": {
+            "plddt_overall": 92.52999806404114,
+            "ptm": 0.7485055810213089,
+            "ppl": 2.424177137044869,
+            "repeat": 3.8580000000000005,
+            "rep2": 67.67735470941884,
+            "rep5": 25.368951612903228,
+            "seq_diversity": 45.0
+          }
         }
       }
     },
@@ -296,6 +584,78 @@
           "cluster_count": 100,
           "seq_diversity": 100.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 62,
+          "score": 62.0,
+          "scores": {
+            "plddt_overall": 82.57180106639862,
+            "ptm": 0.7680233851075172,
+            "ppl": 9.191688238137594,
+            "repeat": 16.55,
+            "rep2": 48.91919191919192,
+            "rep5": 17.822916666666664,
+            "seq_diversity": 90.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 51,
+          "score": 51.0,
+          "scores": {
+            "plddt_overall": 90.71249535679817,
+            "ptm": 0.8561562460660934,
+            "ppl": 8.536716824787048,
+            "repeat": 17.385,
+            "rep2": 61.57788944723618,
+            "rep5": 23.658163265306122,
+            "seq_diversity": 99.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 75,
+          "score": 75.0,
+          "scores": {
+            "plddt_overall": 91.15443822741508,
+            "ptm": 0.8779381906986237,
+            "ppl": 10.73402060523999,
+            "repeat": 8.546666666666667,
+            "rep2": 60.27090301003345,
+            "rep5": 11.591216216216216,
+            "seq_diversity": 97.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 81,
+          "score": 81.0,
+          "scores": {
+            "plddt_overall": 91.06591936945915,
+            "ptm": 0.8721556690335274,
+            "ppl": 10.84098373725982,
+            "repeat": 5.7825,
+            "rep2": 64.15037593984962,
+            "rep5": 9.398989898989898,
+            "seq_diversity": 100.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 83,
+          "score": 83.0,
+          "scores": {
+            "plddt_overall": 91.88339963555336,
+            "ptm": 0.8992107689380646,
+            "ppl": 11.544264337060355,
+            "repeat": 4.8759999999999994,
+            "rep2": 66.92785571142285,
+            "rep5": 5.016129032258066,
+            "seq_diversity": 100.0
+          }
+        }
       }
     },
     {
@@ -352,6 +712,78 @@
           "sequence_count": 100,
           "cluster_count": 58,
           "seq_diversity": 58.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 31,
+          "score": 31.0,
+          "scores": {
+            "plddt_overall": 64.41986548900604,
+            "ptm": 0.49030259042978286,
+            "ppl": 7.290018542235373,
+            "repeat": 20.87,
+            "rep2": 38.45454545454546,
+            "rep5": 19.416666666666668,
+            "seq_diversity": 71.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 81,
+          "score": 81.0,
+          "scores": {
+            "plddt_overall": 90.33583605289459,
+            "ptm": 0.8404465079307556,
+            "ppl": 4.387643766015436,
+            "repeat": 12.22,
+            "rep2": 47.1608040201005,
+            "rep5": 11.51530612244898,
+            "seq_diversity": 79.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 69,
+          "score": 69.0,
+          "scores": {
+            "plddt_overall": 86.23816514015198,
+            "ptm": 0.7797245064377785,
+            "ppl": 4.605265745963503,
+            "repeat": 23.43,
+            "rep2": 62.819397993311036,
+            "rep5": 23.01689189189189,
+            "seq_diversity": 64.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 65,
+          "score": 65.0,
+          "scores": {
+            "plddt_overall": 89.36347478628159,
+            "ptm": 0.7911862938851119,
+            "ppl": 4.2372430480282635,
+            "repeat": 20.1675,
+            "rep2": 65.61152882205515,
+            "rep5": 20.38131313131313,
+            "seq_diversity": 56.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 61,
+          "score": 61.0,
+          "scores": {
+            "plddt_overall": 86.64951527118683,
+            "ptm": 0.707359544634819,
+            "ppl": 4.257990120537542,
+            "repeat": 23.832,
+            "rep2": 71.30460921843688,
+            "rep5": 30.451612903225804,
+            "seq_diversity": 58.0
+          }
         }
       }
     },
@@ -411,6 +843,78 @@
           "cluster_count": 100,
           "seq_diversity": 100.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 8,
+          "score": 8.0,
+          "scores": {
+            "plddt_overall": 53.92448732256889,
+            "ptm": 0.3308711291104555,
+            "ppl": 15.332312631833089,
+            "repeat": 2.4699999999999998,
+            "rep2": 19.555555555555557,
+            "rep5": 0.28125,
+            "seq_diversity": 100.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 69,
+          "score": 69.0,
+          "scores": {
+            "plddt_overall": 81.04389575123787,
+            "ptm": 0.6477553113549948,
+            "ppl": 12.996249138783435,
+            "repeat": 2.9349999999999996,
+            "rep2": 33.231155778894475,
+            "rep5": 0.724489795918367,
+            "seq_diversity": 100.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 73,
+          "score": 73.0,
+          "scores": {
+            "plddt_overall": 83.7629819214344,
+            "ptm": 0.7010558261722326,
+            "ppl": 12.249219367607367,
+            "repeat": 1.6966666666666668,
+            "rep2": 40.65886287625418,
+            "rep5": 0.20945945945945976,
+            "seq_diversity": 100.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 77,
+          "score": 77.0,
+          "scores": {
+            "plddt_overall": 84.89710369706154,
+            "ptm": 0.7201843391358852,
+            "ppl": 10.833990902738478,
+            "repeat": 2.2475,
+            "rep2": 48.661654135338345,
+            "rep5": 0.17676767676767646,
+            "seq_diversity": 100.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 73,
+          "score": 73.0,
+          "scores": {
+            "plddt_overall": 84.07507267594337,
+            "ptm": 0.6997799317538739,
+            "ppl": 10.834111137224754,
+            "repeat": 2.8739999999999997,
+            "rep2": 54.2124248496994,
+            "rep5": 1.3306451612903234,
+            "seq_diversity": 100.0
+          }
+        }
       }
     },
     {
@@ -467,6 +971,78 @@
           "sequence_count": 100,
           "cluster_count": 85,
           "seq_diversity": 85.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 19,
+          "score": 19.0,
+          "scores": {
+            "plddt_overall": 58.449573159217834,
+            "ptm": 0.3848667383939028,
+            "ppl": 12.543866756379636,
+            "repeat": 3.34,
+            "rep2": 21.929292929292927,
+            "rep5": 0.7083333333333334,
+            "seq_diversity": 84.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 40,
+          "score": 40.0,
+          "scores": {
+            "plddt_overall": 70.58342117071152,
+            "ptm": 0.5300905238091945,
+            "ppl": 10.799176498728766,
+            "repeat": 3.585,
+            "rep2": 34.427135678391956,
+            "rep5": 1.2857142857142856,
+            "seq_diversity": 86.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 42,
+          "score": 42.0,
+          "scores": {
+            "plddt_overall": 71.60449451208115,
+            "ptm": 0.5677110129594802,
+            "ppl": 11.045968907224244,
+            "repeat": 3.456666666666667,
+            "rep2": 45.565217391304344,
+            "rep5": 2.692567567567568,
+            "seq_diversity": 94.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 80,
+          "score": 80.0,
+          "scores": {
+            "plddt_overall": 79.22071853280067,
+            "ptm": 0.6033342778682709,
+            "ppl": 4.237825006978824,
+            "repeat": 2.6525,
+            "rep2": 48.739348370927324,
+            "rep5": 2.214646464646463,
+            "seq_diversity": 34.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 65,
+          "score": 65.0,
+          "scores": {
+            "plddt_overall": 75.94143265485764,
+            "ptm": 0.6189361163973808,
+            "ppl": 8.76657997437878,
+            "repeat": 3.026,
+            "rep2": 58.98597194388777,
+            "rep5": 4.401209677419356,
+            "seq_diversity": 85.0
+          }
         }
       }
     },
@@ -525,6 +1101,78 @@
           "cluster_count": 93,
           "seq_diversity": 93.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 16,
+          "score": 16.0,
+          "scores": {
+            "plddt_overall": 54.63676196336746,
+            "ptm": 0.340763303488493,
+            "ppl": 13.876815825280522,
+            "repeat": 2.67,
+            "rep2": 20.404040404040405,
+            "rep5": 0.19791666666666663,
+            "seq_diversity": 86.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 33,
+          "score": 33.0,
+          "scores": {
+            "plddt_overall": 64.38066375255585,
+            "ptm": 0.48529213905334473,
+            "ppl": 13.381575238097847,
+            "repeat": 2.75,
+            "rep2": 31.984924623115578,
+            "rep5": 0.2040816326530609,
+            "seq_diversity": 90.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 36,
+          "score": 36.0,
+          "scores": {
+            "plddt_overall": 66.0860826075077,
+            "ptm": 0.4780462029576302,
+            "ppl": 12.633508454786314,
+            "repeat": 2.726666666666667,
+            "rep2": 42.47157190635452,
+            "rep5": 0.8378378378378382,
+            "seq_diversity": 94.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 62,
+          "score": 62.0,
+          "scores": {
+            "plddt_overall": 72.36173152923584,
+            "ptm": 0.5360346554219723,
+            "ppl": 8.135878269337153,
+            "repeat": 2.2725,
+            "rep2": 48.30325814536341,
+            "rep5": 0.7499999999999992,
+            "seq_diversity": 53.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 24,
+          "score": 24.0,
+          "scores": {
+            "plddt_overall": 64.62496736645699,
+            "ptm": 0.4463769140839577,
+            "ppl": 12.639254630453593,
+            "repeat": 2.786,
+            "rep2": 54.519038076152306,
+            "rep5": 1.2318548387096786,
+            "seq_diversity": 93.0
+          }
+        }
       }
     },
     {
@@ -581,6 +1229,78 @@
           "sequence_count": 100,
           "cluster_count": 100,
           "seq_diversity": 100.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 4,
+          "score": 4.0,
+          "scores": {
+            "plddt_overall": 55.961030542850494,
+            "ptm": 0.3329729789495468,
+            "ppl": 9.59661680067226,
+            "repeat": 4.22,
+            "rep2": 26.121212121212125,
+            "rep5": 1.3229166666666663,
+            "seq_diversity": 100.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 43,
+          "score": 43.0,
+          "scores": {
+            "plddt_overall": 74.83079478144646,
+            "ptm": 0.5333647036552429,
+            "ppl": 9.170729403925614,
+            "repeat": 4.445,
+            "rep2": 41.321608040201006,
+            "rep5": 1.4642857142857142,
+            "seq_diversity": 99.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 44,
+          "score": 44.0,
+          "scores": {
+            "plddt_overall": 76.36643096804619,
+            "ptm": 0.5601275879144668,
+            "ppl": 7.652767884256306,
+            "repeat": 6.613333333333333,
+            "rep2": 52.64548494983278,
+            "rep5": 5.8141891891891895,
+            "seq_diversity": 100.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 28,
+          "score": 28.0,
+          "scores": {
+            "plddt_overall": 75.08756214380264,
+            "ptm": 0.46824264973402024,
+            "ppl": 7.745151927992083,
+            "repeat": 9.370000000000001,
+            "rep2": 60.48621553884712,
+            "rep5": 7.626262626262625,
+            "seq_diversity": 100.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 23,
+          "score": 23.0,
+          "scores": {
+            "plddt_overall": 74.59278810024261,
+            "ptm": 0.44482858836650846,
+            "ppl": 6.869030624040577,
+            "repeat": 12.614,
+            "rep2": 67.82565130260521,
+            "rep5": 13.235887096774194,
+            "seq_diversity": 100.0
+          }
         }
       }
     },
@@ -639,6 +1359,78 @@
           "cluster_count": 98,
           "seq_diversity": 98.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 5,
+          "score": 5.0,
+          "scores": {
+            "plddt_overall": 51.907182574272156,
+            "ptm": 0.2613760155439377,
+            "ppl": 11.09126388844502,
+            "repeat": 5.24,
+            "rep2": 27.25252525252525,
+            "rep5": 1.0416666666666665,
+            "seq_diversity": 100.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 28,
+          "score": 28.0,
+          "scores": {
+            "plddt_overall": 70.38836830854416,
+            "ptm": 0.40112268723547456,
+            "ppl": 10.092827821566887,
+            "repeat": 4.62,
+            "rep2": 40.4321608040201,
+            "rep5": 2.3520408163265296,
+            "seq_diversity": 100.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 20,
+          "score": 20.0,
+          "scores": {
+            "plddt_overall": 65.42155051231384,
+            "ptm": 0.35974941328167914,
+            "ppl": 11.095961322181742,
+            "repeat": 3.986666666666667,
+            "rep2": 49.86622073578595,
+            "rep5": 1.9425675675675678,
+            "seq_diversity": 100.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 26,
+          "score": 26.0,
+          "scores": {
+            "plddt_overall": 69.34157782793045,
+            "ptm": 0.3697163134068251,
+            "ppl": 8.682275842723122,
+            "repeat": 9.7325,
+            "rep2": 60.0952380952381,
+            "rep5": 9.517676767676766,
+            "seq_diversity": 100.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 19,
+          "score": 19.0,
+          "scores": {
+            "plddt_overall": 68.31111839413643,
+            "ptm": 0.35186888493597507,
+            "ppl": 8.494176588101292,
+            "repeat": 8.286,
+            "rep2": 65.436873747495,
+            "rep5": 10.264112903225806,
+            "seq_diversity": 98.0
+          }
+        }
       }
     },
     {
@@ -695,6 +1487,78 @@
           "sequence_count": 100,
           "cluster_count": 98,
           "seq_diversity": 98.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 5,
+          "score": 5.0,
+          "scores": {
+            "plddt_overall": 52.93273106217384,
+            "ptm": 0.25730488806962964,
+            "ppl": 10.926877973697167,
+            "repeat": 11.92,
+            "rep2": 39.63636363636363,
+            "rep5": 11.697916666666666,
+            "seq_diversity": 99.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 19,
+          "score": 19.0,
+          "scores": {
+            "plddt_overall": 69.52570992708206,
+            "ptm": 0.3801666853576899,
+            "ppl": 9.101063112268204,
+            "repeat": 18.13,
+            "rep2": 53.608040201005025,
+            "rep5": 14.862244897959185,
+            "seq_diversity": 97.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 23,
+          "score": 23.0,
+          "scores": {
+            "plddt_overall": 69.57966190576553,
+            "ptm": 0.39196153461933136,
+            "ppl": 7.846789333730178,
+            "repeat": 24.386666666666667,
+            "rep2": 65.0,
+            "rep5": 25.300675675675677,
+            "seq_diversity": 99.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 8,
+          "score": 8.0,
+          "scores": {
+            "plddt_overall": 65.51705726981163,
+            "ptm": 0.3216741196811199,
+            "ppl": 7.4456016498431685,
+            "repeat": 26.57,
+            "rep2": 73.93233082706767,
+            "rep5": 28.898989898989903,
+            "seq_diversity": 98.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 10,
+          "score": 10.0,
+          "scores": {
+            "plddt_overall": 69.8008603155613,
+            "ptm": 0.31224171377718446,
+            "ppl": 5.262685356728071,
+            "repeat": 37.376,
+            "rep2": 82.77354709418837,
+            "rep5": 44.88911290322581,
+            "seq_diversity": 98.0
+          }
         }
       }
     },
@@ -753,6 +1617,78 @@
           "cluster_count": 100,
           "seq_diversity": 100.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 0,
+          "score": 0.0,
+          "scores": {
+            "plddt_overall": 46.80162909626961,
+            "ptm": 0.24287040576338767,
+            "ppl": 14.898020450180576,
+            "repeat": 2.25,
+            "rep2": 19.747474747474747,
+            "rep5": 0.062499999999999896,
+            "seq_diversity": 99.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 20,
+          "score": 20.0,
+          "scores": {
+            "plddt_overall": 59.41412717103958,
+            "ptm": 0.37587234199047087,
+            "ppl": 13.37076268026977,
+            "repeat": 3.08,
+            "rep2": 32.64321608040201,
+            "rep5": 0.9438775510204078,
+            "seq_diversity": 98.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 17,
+          "score": 17.0,
+          "scores": {
+            "plddt_overall": 56.92493516206741,
+            "ptm": 0.3280849663168192,
+            "ppl": 13.894073345295766,
+            "repeat": 2.8166666666666664,
+            "rep2": 42.64548494983277,
+            "rep5": 0.37162162162162204,
+            "seq_diversity": 100.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 14,
+          "score": 14.0,
+          "scores": {
+            "plddt_overall": 53.46999233961105,
+            "ptm": 0.30326238125562666,
+            "ppl": 14.500238228828634,
+            "repeat": 2.44,
+            "rep2": 48.25062656641604,
+            "rep5": 0.6868686868686866,
+            "seq_diversity": 100.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 11,
+          "score": 11.0,
+          "scores": {
+            "plddt_overall": 50.571742594242096,
+            "ptm": 0.27459685526788236,
+            "ppl": 14.550853120396665,
+            "repeat": 2.4979999999999998,
+            "rep2": 54.04208416833668,
+            "rep5": 0.8024193548387109,
+            "seq_diversity": 100.0
+          }
+        }
       }
     },
     {
@@ -809,6 +1745,78 @@
           "sequence_count": 100,
           "cluster_count": 98,
           "seq_diversity": 98.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 2,
+          "score": 2.0,
+          "scores": {
+            "plddt_overall": 48.198879688978195,
+            "ptm": 0.262344461157918,
+            "ppl": 14.68663003932591,
+            "repeat": 2.52,
+            "rep2": 23.1010101010101,
+            "rep5": 2.9583333333333335,
+            "seq_diversity": 99.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 13,
+          "score": 13.0,
+          "scores": {
+            "plddt_overall": 56.59532034397125,
+            "ptm": 0.3264253401756287,
+            "ppl": 13.45478373158892,
+            "repeat": 3.7399999999999998,
+            "rep2": 37.88944723618091,
+            "rep5": 7.025510204081632,
+            "seq_diversity": 98.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 10,
+          "score": 10.0,
+          "scores": {
+            "plddt_overall": 54.0340835750103,
+            "ptm": 0.3268419268727303,
+            "ppl": 13.20560070038878,
+            "repeat": 4.026666666666666,
+            "rep2": 46.60535117056856,
+            "rep5": 10.013513513513514,
+            "seq_diversity": 99.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 12,
+          "score": 12.0,
+          "scores": {
+            "plddt_overall": 55.49154344201088,
+            "ptm": 0.3249851433932781,
+            "ppl": 11.905892866987962,
+            "repeat": 5.1325,
+            "rep2": 54.65162907268171,
+            "rep5": 12.537878787878787,
+            "seq_diversity": 99.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 6,
+          "score": 6.0,
+          "scores": {
+            "plddt_overall": 54.03344514966011,
+            "ptm": 0.29869444042444226,
+            "ppl": 11.106756932680645,
+            "repeat": 6.492000000000001,
+            "rep2": 61.208416833667336,
+            "rep5": 18.199596774193548,
+            "seq_diversity": 98.0
+          }
         }
       }
     },
@@ -867,6 +1875,78 @@
           "cluster_count": 98,
           "seq_diversity": 98.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 4,
+          "score": 4.0,
+          "scores": {
+            "plddt_overall": 65.6100617647171,
+            "ptm": 0.3715806673467159,
+            "ppl": 4.235615681333295,
+            "repeat": 57.69,
+            "rep2": 72.74747474747475,
+            "rep5": 38.354166666666664,
+            "seq_diversity": 99.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 6,
+          "score": 6.0,
+          "scores": {
+            "plddt_overall": 78.38427209854126,
+            "ptm": 0.49514574132859707,
+            "ppl": 3.6770239530472097,
+            "repeat": 55.21,
+            "rep2": 79.22110552763819,
+            "rep5": 44.01020408163265,
+            "seq_diversity": 97.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 9,
+          "score": 9.0,
+          "scores": {
+            "plddt_overall": 74.77360734343529,
+            "ptm": 0.47026556089520455,
+            "ppl": 3.639546762653378,
+            "repeat": 54.71,
+            "rep2": 82.38127090301003,
+            "rep5": 46.347972972972975,
+            "seq_diversity": 97.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 6,
+          "score": 6.0,
+          "scores": {
+            "plddt_overall": 75.45562297105789,
+            "ptm": 0.4618378250300884,
+            "ppl": 3.6527214228531224,
+            "repeat": 53.03,
+            "rep2": 83.49122807017544,
+            "rep5": 46.34343434343434,
+            "seq_diversity": 91.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 1,
+          "score": 1.0,
+          "scores": {
+            "plddt_overall": 68.8629921078682,
+            "ptm": 0.3616725334525108,
+            "ppl": 3.2096191209004963,
+            "repeat": 59.986,
+            "rep2": 87.78957915831663,
+            "rep5": 55.13104838709677,
+            "seq_diversity": 98.0
+          }
+        }
       }
     },
     {
@@ -924,6 +2004,78 @@
           "cluster_count": 100,
           "seq_diversity": 100.0
         }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 3,
+          "score": 3.0,
+          "scores": {
+            "plddt_overall": 65.85436427593231,
+            "ptm": 0.3612496967613697,
+            "ppl": 4.857957327680902,
+            "repeat": 51.38,
+            "rep2": 70.56565656565657,
+            "rep5": 31.614583333333336,
+            "seq_diversity": 100.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 5,
+          "score": 5.0,
+          "scores": {
+            "plddt_overall": 77.00265005230904,
+            "ptm": 0.44938090436160566,
+            "ppl": 3.951797340976398,
+            "repeat": 54.855,
+            "rep2": 80.00502512562814,
+            "rep5": 41.45918367346938,
+            "seq_diversity": 100.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 2,
+          "score": 2.0,
+          "scores": {
+            "plddt_overall": 71.04145869612694,
+            "ptm": 0.40152660220861436,
+            "ppl": 3.918913765464122,
+            "repeat": 55.34,
+            "rep2": 82.82608695652173,
+            "rep5": 43.87162162162162,
+            "seq_diversity": 99.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 3,
+          "score": 3.0,
+          "scores": {
+            "plddt_overall": 67.80326849222183,
+            "ptm": 0.3747968152165413,
+            "ppl": 3.745645378622023,
+            "repeat": 57.3,
+            "rep2": 85.37593984962406,
+            "rep5": 48.56818181818181,
+            "seq_diversity": 99.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 4,
+          "score": 4.0,
+          "scores": {
+            "plddt_overall": 67.73975491523743,
+            "ptm": 0.3596117877960205,
+            "ppl": 3.4630264028817006,
+            "repeat": 56.806,
+            "rep2": 87.41482965931864,
+            "rep5": 52.31249999999999,
+            "seq_diversity": 100.0
+          }
+        }
       }
     },
     {
@@ -980,6 +2132,78 @@
           "sequence_count": 100,
           "cluster_count": 100,
           "seq_diversity": 100.0
+        }
+      },
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 1,
+          "score": 1.0,
+          "scores": {
+            "plddt_overall": 44.892387837171555,
+            "ptm": 0.21959752403199673,
+            "ppl": 16.51415703186839,
+            "repeat": 3.06,
+            "rep2": 20.595959595959595,
+            "rep5": 0.1562499999999999,
+            "seq_diversity": 100.0
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 3,
+          "score": 3.0,
+          "scores": {
+            "plddt_overall": 48.6326248049736,
+            "ptm": 0.236049095839262,
+            "ppl": 16.441246756529452,
+            "repeat": 2.435,
+            "rep2": 33.19597989949749,
+            "rep5": 0.24999999999999967,
+            "seq_diversity": 100.0
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 1,
+          "score": 1.0,
+          "scores": {
+            "plddt_overall": 45.8688126206398,
+            "ptm": 0.22213209621608257,
+            "ppl": 16.258050448936324,
+            "repeat": 2.17,
+            "rep2": 42.22408026755853,
+            "rep5": 0.8648648648648652,
+            "seq_diversity": 100.0
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 2,
+          "score": 2.0,
+          "scores": {
+            "plddt_overall": 44.62376216053963,
+            "ptm": 0.20125500150024891,
+            "ppl": 16.008737437609767,
+            "repeat": 2.5775,
+            "rep2": 49.56892230576441,
+            "rep5": 0.7323232323232322,
+            "seq_diversity": 100.0
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 2,
+          "score": 2.0,
+          "scores": {
+            "plddt_overall": 44.54710227251053,
+            "ptm": 0.2113702392578125,
+            "ppl": 15.7090408990989,
+            "repeat": 2.238,
+            "rep2": 55.260521042084164,
+            "rep5": 0.6713709677419367,
+            "seq_diversity": 100.0
+          }
         }
       }
     }
@@ -1153,5 +2377,17 @@
     "repeat": "Fraction of residues covered by contiguous motifs of length 1–20 repeated at least 3 times; overlapping regions are merged.",
     "repn": "1 - unique n-grams / (L - n + 1), with 0 for L <= n; n = 2 or 5.",
     "display": "Mean per-sequence value multiplied by 100."
+  },
+  "length_views": {
+    "options": [
+      "overall",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500"
+    ],
+    "aggregation": "Metrics computed within each target-length bin. Overall retains all-record means; Diversity is the equal-weight mean of per-length cluster ratios.",
+    "rcsb_500": "Includes lengths 499–501 aa."
   }
 }

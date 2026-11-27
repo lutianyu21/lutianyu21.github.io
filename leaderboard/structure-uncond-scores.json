@@ -104,7 +104,69 @@
       "source": "official.rfd4_proteina.jsonl",
       "source_sha256": "f79e5731fd65f61d5da70d09aa20ec632a5f7dd9b55f098a2aab0c15b939609f",
       "family": "BakerLab",
-      "style": "gemini"
+      "style": "gemini",
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 97,
+          "score": 97.0,
+          "scores": {
+            "scTM": 0.9786834,
+            "scRMSD": 0.5089534317629073,
+            "helix": 77.5,
+            "sheet": 6.0600000000000005,
+            "coil": 16.439999999999998
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 86,
+          "score": 86.0,
+          "scores": {
+            "scTM": 0.9482855,
+            "scRMSD": 1.3823662147578006,
+            "helix": 71.745,
+            "sheet": 10.225000000000001,
+            "coil": 18.029999999999998
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 91,
+          "score": 91.0,
+          "scores": {
+            "scTM": 0.9679652,
+            "scRMSD": 1.0799063073765611,
+            "helix": 68.77666666666667,
+            "sheet": 12.426666666666666,
+            "coil": 18.796666666666667
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 93,
+          "score": 93.0,
+          "scores": {
+            "scTM": 0.9777001,
+            "scRMSD": 1.022956063230992,
+            "helix": 65.7025,
+            "sheet": 14.067499999999999,
+            "coil": 20.23
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 98,
+          "score": 98.0,
+          "scores": {
+            "scTM": 0.9912369,
+            "scRMSD": 0.6917395571243339,
+            "helix": 68.47,
+            "sheet": 11.696,
+            "coil": 19.834
+          }
+        }
+      }
     },
     {
       "id": "official.dplm2.1",
@@ -124,7 +186,69 @@
       "source": "official.dplm2.1.jsonl",
       "source_sha256": "c3debe8f318e9d124b0655c3a50db113c0f615cfe94832738c8890e1a020d412",
       "family": "DPLM",
-      "style": "open"
+      "style": "open",
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 55,
+          "score": 55.0,
+          "scores": {
+            "scTM": 0.8261804,
+            "scRMSD": 2.6121926913492617,
+            "helix": 46.97,
+            "sheet": 18.099999999999998,
+            "coil": 34.93
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 53,
+          "score": 53.0,
+          "scores": {
+            "scTM": 0.8603632,
+            "scRMSD": 3.647767643970941,
+            "helix": 49.515,
+            "sheet": 16.34,
+            "coil": 34.144999999999996
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 63,
+          "score": 63.0,
+          "scores": {
+            "scTM": 0.9048639,
+            "scRMSD": 2.895906971726575,
+            "helix": 53.38,
+            "sheet": 13.29,
+            "coil": 33.33
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 48,
+          "score": 48.0,
+          "scores": {
+            "scTM": 0.8999603,
+            "scRMSD": 3.71790395667427,
+            "helix": 41.985,
+            "sheet": 19.86,
+            "coil": 38.155
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 24,
+          "score": 24.0,
+          "scores": {
+            "scTM": 0.8655681,
+            "scRMSD": 5.675226136970221,
+            "helix": 48.708,
+            "sheet": 13.406,
+            "coil": 37.885999999999996
+          }
+        }
+      }
     },
     {
       "id": "official.dplm2_3b",
@@ -144,7 +268,81 @@
       "source": "official.dplm2_3b.jsonl",
       "source_sha256": "17ecfc9f4bb58d0f8d1c2aea9a8ba4b0d31bfac13b8d759ad16a4ef343cfc036",
       "family": "DPLM",
-      "style": "open"
+      "style": "open",
+      "results_by_length": {
+        "100": {
+          "sample_count": 100,
+          "passing_count": 47,
+          "score": 47.0,
+          "scores": {
+            "scTM": 0.7979257,
+            "scRMSD": 3.6036965133978875,
+            "helix": 62.2,
+            "sheet": 11.450000000000001,
+            "coil": 26.35
+          }
+        },
+        "200": {
+          "sample_count": 100,
+          "passing_count": 60,
+          "score": 60.0,
+          "scores": {
+            "scTM": 0.8727672,
+            "scRMSD": 3.2535645417408188,
+            "helix": 51.59,
+            "sheet": 14.97,
+            "coil": 33.44
+          }
+        },
+        "300": {
+          "sample_count": 100,
+          "passing_count": 58,
+          "score": 58.0,
+          "scores": {
+            "scTM": 0.8992922,
+            "scRMSD": 3.7847271311107713,
+            "helix": 47.02333333333333,
+            "sheet": 16.603333333333335,
+            "coil": 36.373333333333335
+          }
+        },
+        "400": {
+          "sample_count": 100,
+          "passing_count": 33,
+          "score": 33.0,
+          "scores": {
+            "scTM": 0.8416892,
+            "scRMSD": 6.9606556897828336,
+            "helix": 50.6325,
+            "sheet": 14.982499999999998,
+            "coil": 34.385
+          }
+        },
+        "500": {
+          "sample_count": 100,
+          "passing_count": 22,
+          "score": 22.0,
+          "scores": {
+            "scTM": 0.8128813,
+            "scRMSD": 9.859097767734532,
+            "helix": 45.788000000000004,
+            "sheet": 15.136,
+            "coil": 39.076
+          }
+        }
+      }
     }
-  ]
+  ],
+  "length_views": {
+    "options": [
+      "overall",
+      "100",
+      "200",
+      "300",
+      "400",
+      "500"
+    ],
+    "aggregation": "Metrics computed within each target-length bin. Overall retains all-record means; Diversity is the equal-weight mean of per-length cluster ratios.",
+    "rcsb_500": "Includes lengths 499–501 aa."
+  }
 }
