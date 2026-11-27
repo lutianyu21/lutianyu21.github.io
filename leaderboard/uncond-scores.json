@@ -415,20 +415,20 @@
         "400": 100,
         "500": 100
       },
-      "cluster_count": null,
+      "cluster_count": 500,
       "passing_count": 9,
       "score": 1.8,
       "scores": {
         "plddt_overall": 45.71293793916702,
         "ptm": 0.21808079136908054,
-        "ppl": null,
+        "ppl": 16.186246514808566,
         "repeat": 2.4961,
         "rep2": 40.16909262217283,
         "rep5": 0.5349618129860068,
-        "seq_diversity": null
+        "seq_diversity": 100.0
       },
       "source": "ctrl.trion1_bdlm.greedy_naive.jsonl",
-      "source_sha256": "2d903e58393237cf79528441ce5b42ebed791b8eae0775c2ec62ad1306e40fde"
+      "source_sha256": "f57ac183722742e67268a8091221f22056801252c3272f731d8ddee2a211896b"
     }
   ],
   "status": "results_available",
