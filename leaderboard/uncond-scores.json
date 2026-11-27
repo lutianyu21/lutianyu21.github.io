@@ -251,6 +251,36 @@
       "source_sha256": "21cc1701acf35792f7468d3039bc5bf009877516f54335b2b467d54232d68be0"
     },
     {
+      "id": "official.progen3",
+      "name": "ProGen3",
+      "family": "ProGen",
+      "style": "anthropic",
+      "control": false,
+      "folding_engine": "ESMFold2-Fast",
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": 499,
+      "passing_count": 142,
+      "score": 28.4,
+      "scores": {
+        "plddt_overall": 71.36772130727768,
+        "ptm": 0.46790730172395706,
+        "ppl": 8.206859328177368,
+        "repeat": 7.452466666666667,
+        "rep2": 49.680034390539646,
+        "rep5": 5.892708258635678,
+        "seq_diversity": 99.8
+      },
+      "source": "official.progen3.jsonl",
+      "source_sha256": "35f1e8bf297daaa9a1969620dd9b41435fbc5c4b04e5f67d2ffafc9984d31d73"
+    },
+    {
       "id": "official.progen2",
       "name": "ProGen2",
       "family": "ProGen",
