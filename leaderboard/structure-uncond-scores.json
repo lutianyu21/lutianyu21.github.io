@@ -88,10 +88,10 @@
   "models": [
     {
       "id": "official.rfd4_proteina",
-      "name": "RF4",
+      "name": "RFD4",
       "family_name": "BakerLab",
       "control": false,
-      "score": 93.0,
+      "score": 93,
       "passing_count": 465,
       "scores": {
         "scTM": 0.97277422,
@@ -131,7 +131,7 @@
       "name": "DPLM2",
       "family_name": "DPLM",
       "control": false,
-      "score": 44.0,
+      "score": 44,
       "passing_count": 220,
       "scores": {
         "scTM": 0.84491112,
