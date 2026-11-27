@@ -133,6 +133,37 @@
       "source_sha256": "a2cac2ee9466c8a10336063ad4ce76586f8c07df22ab32dcdf915042c67bfddc"
     },
     {
+      "id": "official.rfd4_proteina",
+      "name": "RFD4",
+      "family": "BakerLab",
+      "style": "gemini",
+      "tag_style": "gemini",
+      "control": false,
+      "folding_engine": "esmfold2-fast-reference-3x50-v1",
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": 489,
+      "passing_count": 352,
+      "score": 70.4,
+      "scores": {
+        "plddt_overall": 89.47761073112488,
+        "ptm": 0.8546968519687652,
+        "ppl": 10.169534748496961,
+        "repeat": 10.628033333333335,
+        "rep2": 60.36924320554681,
+        "rep5": 13.497483015887394,
+        "seq_diversity": 97.8
+      },
+      "source": "official.rfd4_proteina.jsonl",
+      "source_sha256": "43be2620c9b9dceee40049fcf84da6bc299719f76d84cabff75f2f5f7577f2e5"
+    },
+    {
       "id": "official.dplm2_3b",
       "name": "DPLM2",
       "family": "DPLM",
