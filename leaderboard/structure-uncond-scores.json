@@ -87,6 +87,26 @@
   },
   "models": [
     {
+      "id": "official.rfd4_proteina",
+      "name": "RF4",
+      "family_name": "BakerLab",
+      "control": false,
+      "score": 93.0,
+      "passing_count": 465,
+      "scores": {
+        "scTM": 0.97277422,
+        "scRMSD": 0.937184314850519,
+        "helix": 70.43883333333333,
+        "sheet": 10.895033333333332,
+        "coil": 18.666133333333335
+      },
+      "sample_count": 500,
+      "source": "official.rfd4_proteina.jsonl",
+      "source_sha256": "f79e5731fd65f61d5da70d09aa20ec632a5f7dd9b55f098a2aab0c15b939609f",
+      "family": "BakerLab",
+      "style": "gemini"
+    },
+    {
       "id": "official.dplm2.1",
       "name": "DPLM2.1",
       "family_name": "DPLM",
