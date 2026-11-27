@@ -12,17 +12,17 @@
     {
       "id": "native.rcsb",
       "name": "RCSB",
-      "family": "Ctrl",
+      "family": "Native",
       "style": "ctrl",
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 368,
       "passing_count": 439,
@@ -48,12 +48,12 @@
       "control": false,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 378,
       "passing_count": 414,
@@ -73,17 +73,17 @@
     {
       "id": "native.swissprot",
       "name": "SwissProt",
-      "family": "Ctrl",
+      "family": "Native",
       "style": "ctrl",
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 301,
       "passing_count": 399,
@@ -108,16 +108,16 @@
       "control": false,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 256,
       "passing_count": 385,
-      "score": 77.0,
+      "score": 77,
       "scores": {
         "plddt_overall": 86.12947934865952,
         "ptm": 0.7328143844902515,
@@ -138,12 +138,12 @@
       "control": false,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 318,
       "passing_count": 307,
@@ -163,21 +163,21 @@
     {
       "id": "native.uniref50",
       "name": "UniRef50",
-      "family": "Ctrl",
+      "family": "Native",
       "style": "ctrl",
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 500,
       "passing_count": 300,
-      "score": 60.0,
+      "score": 60,
       "scores": {
         "plddt_overall": 77.54070827364922,
         "ptm": 0.6199293075054884,
@@ -185,7 +185,7 @@
         "repeat": 2.4446333333333334,
         "rep2": 39.26393063914839,
         "rep5": 0.5445224186871653,
-        "seq_diversity": 100.0
+        "seq_diversity": 100
       },
       "source": "native.uniref50.jsonl",
       "source_sha256": "c6cfca08b3851914604aa54336b7c2f5e512e69d69064efd1564a3a075fd6538"
@@ -198,12 +198,12 @@
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 382,
       "passing_count": 246,
@@ -228,12 +228,12 @@
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 416,
       "passing_count": 171,
@@ -258,12 +258,12 @@
       "control": false,
       "folding_engine": "ESMFold2-Fast",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 499,
       "passing_count": 142,
@@ -288,12 +288,12 @@
       "control": false,
       "folding_engine": "ESMFold2-Fast",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 498,
       "passing_count": 98,
@@ -318,16 +318,16 @@
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 490,
       "passing_count": 65,
-      "score": 13.0,
+      "score": 13,
       "scores": {
         "plddt_overall": 65.47120409607888,
         "ptm": 0.33266978830099103,
@@ -335,7 +335,7 @@
         "repeat": 23.67653333333333,
         "rep2": 62.990056351724945,
         "rep5": 25.129788008503446,
-        "seq_diversity": 98.0
+        "seq_diversity": 98
       },
       "source": "ctrl.trion1_mdlm.rdm.jsonl",
       "source_sha256": "37abbf681538fd7cce29f418a37c6195b74ec44d4bd85c09354688dbc53fa302"
@@ -348,12 +348,12 @@
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 497,
       "passing_count": 62,
@@ -378,12 +378,12 @@
       "control": true,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 493,
       "passing_count": 43,
@@ -408,12 +408,12 @@
       "control": false,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 481,
       "passing_count": 26,
@@ -438,12 +438,12 @@
       "control": false,
       "folding_engine": "esmfold2-fast-reference-3x50-v1",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 498,
       "passing_count": 17,
@@ -468,12 +468,12 @@
       "control": true,
       "folding_engine": "ESMFold2-Fast",
       "sample_counts": {
-        "overall": 500,
         "100": 100,
         "200": 100,
         "300": 100,
         "400": 100,
-        "500": 100
+        "500": 100,
+        "overall": 500
       },
       "cluster_count": 500,
       "passing_count": 9,
@@ -485,7 +485,7 @@
         "repeat": 2.4961,
         "rep2": 40.16909262217283,
         "rep5": 0.5349618129860068,
-        "seq_diversity": 100.0
+        "seq_diversity": 100
       },
       "source": "ctrl.trion1_bdlm.greedy_naive.jsonl",
       "source_sha256": "f57ac183722742e67268a8091221f22056801252c3272f731d8ddee2a211896b"
