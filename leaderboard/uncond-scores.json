@@ -399,6 +399,36 @@
       },
       "source": "offcial.esm3_open.jsonl",
       "source_sha256": "1a3e8fed6823066ad3afbe71708f4d749f17d88a05f499d180250c263eb0f829"
+    },
+    {
+      "id": "ctrl.trion1_bdlm.greedy_naive",
+      "name": "Trion-B(GreedyNaive)",
+      "family": "Ctrl",
+      "style": "ctrl",
+      "control": true,
+      "folding_engine": "ESMFold2-Fast",
+      "sample_counts": {
+        "overall": 500,
+        "100": 100,
+        "200": 100,
+        "300": 100,
+        "400": 100,
+        "500": 100
+      },
+      "cluster_count": null,
+      "passing_count": 9,
+      "score": 1.8,
+      "scores": {
+        "plddt_overall": 45.71293793916702,
+        "ptm": 0.21808079136908054,
+        "ppl": null,
+        "repeat": 2.4961,
+        "rep2": 40.16909262217283,
+        "rep5": 0.5349618129860068,
+        "seq_diversity": null
+      },
+      "source": "ctrl.trion1_bdlm.greedy_naive.jsonl",
+      "source_sha256": "2d903e58393237cf79528441ce5b42ebed791b8eae0775c2ec62ad1306e40fde"
     }
   ],
   "status": "results_available",
@@ -496,12 +526,12 @@
   },
   "aggregation": "Score is the percentage of all sequences jointly satisfying pLDDT > 70, pTM > 0.5 and Repeat < 10%. pAE is not evaluated. pLDDT, pTM and PPL are arithmetic means over all sequences. Repetition metrics are mean per-sequence fractions multiplied by 100; no length-specific metric columns.",
   "folding_protocol": {
-    "engine": "esmfold2-fast-reference-3x50-v1",
+    "engine": "per-model",
     "metrics": [
       "plddt",
       "ptm"
     ],
-    "source": "Updated top-level JSONL scores; all records have folding_rescore.status=complete"
+    "source": "Top-level JSONL scores. See each model folding_engine; ESMFold2-Fast sources do not specify the detailed folding configuration."
   },
   "diversity_protocol": {
     "tool": "MMseqs2",
